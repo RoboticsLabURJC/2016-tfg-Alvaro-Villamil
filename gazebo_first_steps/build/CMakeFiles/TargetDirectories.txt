@@ -1,0 +1,6 @@
+/home/alvaro/TFG/gazebo_first_steps/build/CMakeFiles/InitialVelocityPlugin.dir
+/home/alvaro/TFG/gazebo_first_steps/build/CMakeFiles/factory.dir
+/home/alvaro/TFG/gazebo_first_steps/build/CMakeFiles/hello_world.dir
+/home/alvaro/TFG/gazebo_first_steps/build/CMakeFiles/model_push.dir
+/home/alvaro/TFG/gazebo_first_steps/build/CMakeFiles/system_gui.dir
+/home/alvaro/TFG/gazebo_first_steps/build/CMakeFiles/world_edit.dir
