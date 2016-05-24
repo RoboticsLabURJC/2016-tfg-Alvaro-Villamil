@@ -1,6 +1,11 @@
 <?xml version="1.0"?>
-<sdf version="1.4">
+<sdf version="1.5">
   <world name="default">
+
+    <physics type="ode">
+      <gravity>0 0 0</gravity>
+    </physics>
+
     <include>
       <uri>model://ground_plane</uri>
     </include>
@@ -9,6 +14,24 @@
       <uri>model://sun</uri>
     </include>
 
-    <plugin name="step1" filename="libstep1.so"/>
+    <model name ='cylinder1'>
+      <pose>0 0 0 0 0 0</pose>
+      <link name ='link'>
+        <pose>0 0 0 0 0 0</pose>
+        <collision name ='collision'>
+          <geometry>
+            <cylinder><radius>.5</radius><length>1</length></cylinder>
+          </geometry>
+        </collision>
+        <visual name ='visual'>
+          <geometry>
+            <cylinder><radius>.5</radius><length>1</length></cylinder>
+          </geometry>
+        </visual>
+      </link>
+
+      <plugin name="step1" filename="libstep1.so"/>
+    </model>
+
   </world>
 </sdf>

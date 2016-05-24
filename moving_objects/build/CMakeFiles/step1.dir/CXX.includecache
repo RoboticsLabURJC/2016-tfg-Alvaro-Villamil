@@ -13,8 +13,6 @@ gazebo/common/common.hh
 /home/alvaro/TFG/moving_objects/gazebo/common/common.hh
 gazebo/physics/physics.hh
 /home/alvaro/TFG/moving_objects/gazebo/physics/physics.hh
-ignition/math/Pose3.hh
--
 
 /usr/include/gazebo-7/gazebo/Master.hh
 string

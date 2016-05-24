@@ -17,7 +17,7 @@
 
 #include "gazebo/common/Assert.hh"
 #include "gazebo/physics/Model.hh"
-#include "0'InitialVelocityPlugin.hh"
+#include "InitialVelocityPlugin.hh"
 
 using namespace gazebo;
 

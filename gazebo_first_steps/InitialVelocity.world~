@@ -46,7 +46,7 @@
         </visual>
       </link>
       <plugin name="large_wz" filename="libInitialVelocityPlugin.so">
-        <linear>-2 -2 1</linear>
+        <linear>-2 -2 5</linear>
         <angular>0.1 5.0 0.1</angular>
       </plugin>
     </model>
