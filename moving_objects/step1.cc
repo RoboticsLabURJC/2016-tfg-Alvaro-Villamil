@@ -10,19 +10,15 @@ class Step1 : public ModelPlugin
   // Pointer to the model
   private: physics::ModelPtr model;
 
-
   public: void Load(physics::ModelPtr _parent, sdf::ElementPtr /*_sdf*/)
   {
-
     // Store the pointer to the model
     this->model = _parent;
 
     // Apply a small linear velocity to the model.
     this->model->SetLinearVel(math::Vector3(1, 0, 0));
-    this->model->SetAngularVel(math::Vector3(0, 0, 0));
-
+    this->model->SetAngularVel(math::Vector3(0, 0, 0.1));
   }
-
 };
 
 // Register this plugin with the simulator

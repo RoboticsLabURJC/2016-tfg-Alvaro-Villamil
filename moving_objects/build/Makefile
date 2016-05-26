@@ -111,6 +111,19 @@ step1/fast:
 	$(MAKE) -f CMakeFiles/step1.dir/build.make CMakeFiles/step1.dir/build
 .PHONY : step1/fast
 
+#=============================================================================
+# Target rules for targets named step2
+
+# Build rule for target.
+step2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 step2
+.PHONY : step2
+
+# fast build rule for target.
+step2/fast:
+	$(MAKE) -f CMakeFiles/step2.dir/build.make CMakeFiles/step2.dir/build
+.PHONY : step2/fast
+
 step1.o: step1.cc.o
 .PHONY : step1.o
 
@@ -135,6 +148,30 @@ step1.cc.s:
 	$(MAKE) -f CMakeFiles/step1.dir/build.make CMakeFiles/step1.dir/step1.cc.s
 .PHONY : step1.cc.s
 
+step2.o: step2.cc.o
+.PHONY : step2.o
+
+# target to build an object file
+step2.cc.o:
+	$(MAKE) -f CMakeFiles/step2.dir/build.make CMakeFiles/step2.dir/step2.cc.o
+.PHONY : step2.cc.o
+
+step2.i: step2.cc.i
+.PHONY : step2.i
+
+# target to preprocess a source file
+step2.cc.i:
+	$(MAKE) -f CMakeFiles/step2.dir/build.make CMakeFiles/step2.dir/step2.cc.i
+.PHONY : step2.cc.i
+
+step2.s: step2.cc.s
+.PHONY : step2.s
+
+# target to generate assembly for a file
+step2.cc.s:
+	$(MAKE) -f CMakeFiles/step2.dir/build.make CMakeFiles/step2.dir/step2.cc.s
+.PHONY : step2.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -144,9 +181,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... step1"
+	@echo "... step2"
 	@echo "... step1.o"
 	@echo "... step1.i"
 	@echo "... step1.s"
+	@echo "... step2.o"
+	@echo "... step2.i"
+	@echo "... step2.s"
 .PHONY : help
 
 
