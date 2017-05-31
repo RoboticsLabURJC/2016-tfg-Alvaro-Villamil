@@ -1,0 +1,8 @@
+prefix=/home/alvaro/TFG/2016-tfg-Alvaro-Villamil/BrazoRobotico/catkin_ws/install
+
+Name: ur3_moveit_config
+Description: Description of ur3_moveit_config
+Version: 1.1.9
+Cflags: 
+Libs: -L/home/alvaro/TFG/2016-tfg-Alvaro-Villamil/BrazoRobotico/catkin_ws/install/lib 
+Requires: 

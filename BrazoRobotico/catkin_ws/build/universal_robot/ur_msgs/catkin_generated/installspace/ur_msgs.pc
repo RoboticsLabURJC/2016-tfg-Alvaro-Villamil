@@ -1,0 +1,8 @@
+prefix=/home/alvaro/TFG/2016-tfg-Alvaro-Villamil/BrazoRobotico/catkin_ws/install
+
+Name: ur_msgs
+Description: Description of ur_msgs
+Version: 1.1.9
+Cflags: -I/home/alvaro/TFG/2016-tfg-Alvaro-Villamil/BrazoRobotico/catkin_ws/install/include
+Libs: -L/home/alvaro/TFG/2016-tfg-Alvaro-Villamil/BrazoRobotico/catkin_ws/install/lib 
+Requires: message_runtime std_msgs

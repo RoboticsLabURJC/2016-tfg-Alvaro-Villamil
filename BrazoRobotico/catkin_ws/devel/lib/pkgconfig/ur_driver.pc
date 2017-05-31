@@ -1,0 +1,8 @@
+prefix=/home/alvaro/TFG/2016-tfg-Alvaro-Villamil/BrazoRobotico/catkin_ws/devel
+
+Name: ur_driver
+Description: Description of ur_driver
+Version: 1.1.9
+Cflags: -I/home/alvaro/TFG/2016-tfg-Alvaro-Villamil/BrazoRobotico/catkin_ws/devel/include
+Libs: -L/home/alvaro/TFG/2016-tfg-Alvaro-Villamil/BrazoRobotico/catkin_ws/devel/lib 
+Requires: dynamic_reconfigure

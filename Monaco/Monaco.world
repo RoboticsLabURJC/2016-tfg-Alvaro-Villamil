@@ -38,9 +38,20 @@
       <link name="body">
         <visual name="visual">
           <geometry>
-            <mesh><uri>file://models/CircuitoMonaco.dae</uri></mesh>
+            <mesh>
+              <scale>15 15 15</scale>
+              <uri>file://models/CircuitoMonacoLinea.dae</uri>
+            </mesh>
           </geometry>
         </visual>
+        <collision name="visual">
+          <geometry>
+            <mesh>
+              <scale>15 15 15</scale>
+              <uri>file://models/CircuitoMonacoLinea.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
       </link>
     </model>
   </world>

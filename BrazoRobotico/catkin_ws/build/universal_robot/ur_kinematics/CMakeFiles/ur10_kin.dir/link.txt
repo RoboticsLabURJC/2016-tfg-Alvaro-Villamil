@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC   -shared -Wl,-soname,libur10_kin.so -o /home/alvaro/TFG/2016-tfg-Alvaro-Villamil/BrazoRobotico/catkin_ws/devel/lib/libur10_kin.so CMakeFiles/ur10_kin.dir/src/ur_kin.cpp.o 
