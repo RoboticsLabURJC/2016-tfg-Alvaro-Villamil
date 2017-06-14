@@ -1,0 +1,82 @@
+\documentclass[a4paper,openright,12pt]{book}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{a4wide}
+\usepackage{html}
+\usepackage{hthtml}
+\usepackage{listings}
+\usepackage{multirow}
+\usepackage{lscape}
+
+
+\usepackage{geometry}
+%\usepackage{named}
+\usepackage[normalsize]{subfigure}
+\usepackage{color}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{amsmath}
+
+\pretolerance=10000
+%Para que no corte las palabras al final de la linea.
+
+\DeclareGraphicsExtensions{.png,.jpg,.pdf,.eps}
+\usepackage{geometry}
+\geometry{a4paper, left=2.6cm, right=2.2cm, top=3.0cm, bottom=3.0cm}
+
+\linespread{1.3}
+
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+
+%listings style
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{lightgray}{rgb}{.9,.9,.9}
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+
+\begin{document}
+	
+	
+	
+	
+	
+	
+% Para que salga la bibliografia en el indice
+\let\OLDthebibliography=\thebibliography
+\def\thebibliography#1{\OLDthebibliography{#1}%
+	\addcontentsline{toc}{chapter}{\bibname}}
+
+\tableofcontents
+\listoffigures
+\listoftables
+	
+	
+	
+\include{3-plataforma}
+\include{4-Monaco}
+	
+
+
+
+
+
+	
+	
+\begin{thebibliography}{99}
+\bibitem{blender} Página oficial de Blender \url{https://www.blender.org/}
+\bibitem{gazebo} Página oficial de Gazebo \url{http://gazebosim.org/}
+\bibitem{jderobot} Página oficial de JdeRobot \url{http://jderobot.org/Main_Page}
+\bibitem{ariac} Página oficial de ARIAC \url{http://gazebosim.org/ariac}
+\bibitem{ros} Página oficial de ROS \url{http://www.ros.org/}
+\bibitem{moveit} Página oficial de MoveIt \url{http://moveit.ros.org/}
+\bibitem{rviz} Página oficial de rViz \url{http://wiki.ros.org/rviz}
+\bibitem{rqt} Página oficial de rqt \url{http://wiki.ros.org/rqt}
+\end{thebibliography} 
+	
+
+\end{document}
