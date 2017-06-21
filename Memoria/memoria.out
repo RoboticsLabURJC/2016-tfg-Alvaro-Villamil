@@ -1,16 +1,19 @@
-\BOOKMARK [0][-]{chapter.1}{Plataforma de Desarrollo}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Blender}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Simulador Gazebo}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.3}{JdeRobot}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.4}{ROS}{chapter.1}% 5
-\BOOKMARK [2][-]{subsection.1.4.1}{MoveIt!}{section.1.4}% 6
-\BOOKMARK [2][-]{subsection.1.4.2}{rviz}{section.1.4}% 7
-\BOOKMARK [2][-]{subsection.1.4.3}{rqt}{section.1.4}% 8
-\BOOKMARK [1][-]{section.1.5}{ARIAC}{chapter.1}% 9
-\BOOKMARK [0][-]{chapter.2}{Pr\341ctica M\363naco}{}% 10
-\BOOKMARK [1][-]{section.2.1}{Manejo de Blender}{chapter.2}% 11
-\BOOKMARK [2][-]{subsection.2.1.1}{Interfaz}{section.2.1}% 12
-\BOOKMARK [1][-]{section.2.2}{Circuito plano}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.3}{Circuito con elevaciones}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.4}{Mundos para Gazebo}{chapter.2}% 15
-\BOOKMARK [0][-]{chapter*.4}{Bibliograf\355a}{}% 16
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Rob\363tica}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Historia de la rob\363tica}{section.1.1}% 3
+\BOOKMARK [0][-]{chapter.2}{Plataforma de Desarrollo}{}% 4
+\BOOKMARK [1][-]{section.2.1}{Blender}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.2}{Simulador Gazebo}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.3}{JdeRobot}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.4}{ROS}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.4.1}{MoveIt!}{section.2.4}% 9
+\BOOKMARK [2][-]{subsection.2.4.2}{rviz}{section.2.4}% 10
+\BOOKMARK [2][-]{subsection.2.4.3}{rqt}{section.2.4}% 11
+\BOOKMARK [1][-]{section.2.5}{ARIAC}{chapter.2}% 12
+\BOOKMARK [0][-]{chapter.3}{Pr\341ctica M\363naco}{}% 13
+\BOOKMARK [1][-]{section.3.1}{Manejo de Blender}{chapter.3}% 14
+\BOOKMARK [2][-]{subsection.3.1.1}{Interfaz}{section.3.1}% 15
+\BOOKMARK [1][-]{section.3.2}{Circuito plano}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.3}{Circuito con elevaciones}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.4}{Mundos para Gazebo}{chapter.3}% 18
+\BOOKMARK [0][-]{chapter*.4}{Bibliograf\355a}{}% 19
