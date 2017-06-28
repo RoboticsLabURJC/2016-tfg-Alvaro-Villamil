@@ -14,8 +14,7 @@
 \usepackage{multirow}
 \usepackage{lscape}
 
-
-%\usepackage{named}
+\usepackage[font={footnotesize,it}]{caption}
 \usepackage[normalsize]{subfigure}
 \usepackage{color}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
@@ -40,6 +39,26 @@
 \definecolor{darkgray}{rgb}{.4,.4,.4}
 \definecolor{purple}{rgb}{0.65, 0.12, 0.82}
 
+\lstset{
+	language=xml,
+	tabsize=3,
+	label=code:sample,
+	frame=shadowbox,
+	rulesepcolor=\color{gray},
+	xleftmargin=20pt,
+	framexleftmargin=15pt,
+	keywordstyle=\color{blue}\bf,
+	commentstyle=\color{OliveGreen},
+	stringstyle=\color{red},
+	numbers=left,
+	numberstyle=\tiny,
+	numbersep=5pt,
+	breaklines=true,
+	showstringspaces=false,
+	basicstyle=\footnotesize,
+	emph={model, name, static, link, pose, collision, geometry, mesh, scale, uri, visual},emphstyle={\color{magenta}}
+}
+
 \begin{document}
 	
 	
@@ -54,13 +73,18 @@
 
 \tableofcontents
 \listoffigures
-\listoftables
 	
 	
 \include{1-introduccion}
+
+meter cosas de metodologia EN EL CAPITULO 2
+
+
+
+
 \include{3-plataforma}
 \include{4-Monaco}
-	
+\include{5-Brazo}
 
 
 
@@ -70,6 +94,8 @@
 	
 \begin{thebibliography}{99}
 \bibitem{wikipedia} Página oficial de Wikipedia \url{https://www.wikipedia.org/}
+\bibitem{github} Página oficial de GitHub \url{https://github.com/}
+\bibitem{git} Página oficial de Git \url{https://git-scm.com/}
 \bibitem{blender} Página oficial de Blender \url{https://www.blender.org/}
 \bibitem{gazebo} Página oficial de Gazebo \url{http://gazebosim.org/}
 \bibitem{jderobot} Página oficial de JdeRobot \url{http://jderobot.org/Main_Page}

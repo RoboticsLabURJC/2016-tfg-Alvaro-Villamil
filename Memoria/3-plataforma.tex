@@ -3,6 +3,53 @@
 
 En este capıtulo vamos a describir con más detalle todo el software utilizado en la realización del proyecto: programas, plataformas, simuladores, etc. El sistema operativo elegido para desarrollar todo el proyecto ha sido Ubuntu 16.04. Ubuntu es un sistema operativo basado en Debian GNU/Linux y que se distribuye como software libre, el cual incluye su propio entorno de escritorio denominado Unity. El nombre de la distribución proviene del concepto zulú y xhosa de ubuntu, que significa “humanidad hacia otros” o “yo soy porque nosotros somos”. Debido a las similitudes entre los ideales de los proyectos GNU, Debian y en general el movimiento del software libre, y el movimiento sudafricano encabezado por el obispo Desmond Tutu \textit{Premio Nobel de la Paz en 1984} llamado Ubuntu, la compañía británica Canonical Ltd. decidió nombrarlo en honor a dicho movimiento. El eslogan de Ubuntu – “Linux para seres humanos” (en inglés “Linux for Human Beings”) – resume una de sus metas principales: hacer de Linux un sistema operativo más accesible y fácil de usar.
 
+\section{GitHub}
+\label{sec:plat_github}
+
+GitHub\cite{github} es una plataforma de desarrollo colaborativo de software para alojar proyectos utilizando el sistema de control de versiones Git (\textit{Sección \ref{subsec:plat_git}}). Utiliza el framework Ruby on Rails por GitHub, Inc. (anteriormente conocida como Logical Awesome). Aloja tu repositorio de código de forma pública (o privada creando una cuenta de pago) y te brinda herramientas muy útiles para el trabajo en equipo dentro de un proyecto. GitHub facilita toda la infraestructura para trabajar en equipos distribuidos a través de una interfaz web. Incluso si no trabajas en equipo, si tienes una copia de tu código fuente en GitHub, tienes un backup de todo el proyecto completo. Ese backup incluye no sólo el código que tienes ahora sino también de todo el historial de modificaciones que el código ha sufrido desde el primer día. Esta copia la puedes recuperar en cualquier momento y continuar trabajando desde cualquier ordenador.
+
+También permite contribuir a mejorar el software de los demás. Para poder alcanzar esta meta, GitHub provee de funcionalidades para hacer un \textit{fork} y solicitar \textit{pulls}. Realizar un \textit{fork} es simplemente clonar un repositorio ajeno (genera una copia en tu cuenta), y trabajar sobre el para eliminar algún bug, modificar cosas o añadir funcionalidades. Una vez realizadas tus modificaciones puedes enviar un \textit{pull} al dueño del proyecto, el cual podrá analizar los cambios que has realizado fácilmente, y si considera interesante tu contribución, combinarlo con el repositorio original.
+
+En la actualidad, GitHub es mucho más que un servicio de alojamiento de código. Además de éste, se ofrecen varias herramientas útiles para el trabajo en equipo. Entre ellas, caben destacar:
+\begin{itemize}
+	\item Una wiki para el mantenimiento de las distintas versiones de las páginas.
+	\item Un sistema de seguimiento de problemas que permiten a los miembros de tu equipo detallar un problema con tu software o una sugerencia que deseen hacer.
+	\item Una herramienta de revisión de código, donde se pueden añadir anotaciones en cualquier punto de un fichero y debatir sobre determinados cambios realizados en un commit específico.
+	\item Un visor de ramas donde se pueden comparar los progresos realizados en las distintas ramas de nuestro repositorio.
+\end{itemize}
+
+Para comenzar a usarlo sólo hay que crearse una cuenta gratuita y ya tendremos acceso a todas sus funcionalidades. Para crear un repositorio solo hay que seleccionar el botón “Create a New Repo”, de la barra de herramientas, habiendo entrado a GitHub con tu cuenta y rellenar los datos de nombre y descripción del repositorio.
+
+Para utilizarlo desde el ordenador, GitHub nos ofrece una serie de comandos para introducir en la terminal. Los más usados son:
+
+\begin{itemize}
+	\item git init: Con este comando indicamos que vamos a iniciar un proyecto en la carpeta actual, y que lo queremos sincronizar y gestionar mediante GitHub.
+	\item git add: Con este comando añadimos archivos a la siguiente versión o actualización del proyecto. Su hacemos \textit{git add --all} estamos indicando que queremos añadir todo dentro de la carpeta donde estamos: los archivos nuevos, los eliminados, los modificados, etc.
+	\item git commit: Usamos este comando para añadir un mensaje a la versión o actualización o para indicar los cambios hechos. Una forma de usarlo sería \textit{git commit -m “comentario”}
+	\item git pull: Este comando se usa para descargar la última versión del código del repositorio, por ejemplo: \textit{git pull origin master}
+	\item git push: Este comando se usa para subir el código al repositorio, por ejemplo: \textit{git push origin master}
+	\item git remote add origin: Este comando se usa para establecer cuál es el repositorio al que subir el código o del cual descargar la última versión, por ejemplo: \textit{git remote add origin -url del repositorio-}
+\end{itemize}
+
+Para colaborar en un proyecto ajeno simplemente basta con buscarlo dentro de los repositorios en su página web, y luego presionar el botón fork. Esto genera automaticamente una copia del mismo en tu perfil y te permite trabajar sobre esa copia, sin peligro para el autor de que hagas modificaciones en su código. Al terminar tus modificaciones, y hacer los \textit{push} que necesites, podrás presionar Pull Request para enviárselo al autor y que él decida si acepta las modificaciones.
+
+\subsection{Git}
+\label{subsec:plat_git}
+
+Git\cite{git} es un software de control de versiones diseñado por Linus Torvalds pensando en la eficiencia y la confiabilidad del mantenimiento de versiones de aplicaciones cuando estas tienen un gran número de archivos de código fuente. Se trata de un sistema distribuido de control de código fuente o SCM \textit{(Source Code Management)}. Un SCM es una herramienta que nos resuelve una serie de problemas, como saber qué líneas de código han cambiado de una versión a otra, volver a una versión anterior de forma sencilla o saber quién ha cambiado qué partes del código entre otros. En este caso, Git nos aporta herramientas para:
+
+\begin{itemize}
+	\item Auditoría del código: saber quién ha tocado qué y cuándo
+	\item Control sobre cómo ha cambiado nuestro proyecto con el paso del tiempo
+	\item Volver hacia atrás de una forma rápida
+	\item Control de versiones a través de etiquetas: versión 1.0, versión 1.0.1, versión 1.1, etc. Sabremos exactamente que había en cada una de ellas y las diferencias entre cualquiera de ellas dos
+	\item Seguridad: todas las estructuras internas de datos están firmadas con SHA1. No se puede cambiar el código sin que nos enteremos
+	\item Merging y branching extremadamente eficientes
+	\item Mejora nuestra capacidad de trabajar en equipo
+\end{itemize}
+
+
+
 \section{Blender}
 \label{sec:plat_blender}
 
