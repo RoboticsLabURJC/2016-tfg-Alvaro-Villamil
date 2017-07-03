@@ -1,7 +1,7 @@
 \BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 1
 \BOOKMARK [1][-]{section.1.1}{Rob\363tica}{chapter.1}% 2
 \BOOKMARK [2][-]{subsection.1.1.1}{Historia de la rob\363tica}{section.1.1}% 3
-\BOOKMARK [1][-]{section.1.2}{La rob\363tica en la ense\361anza}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.2}{Educaci\363n en rob\363tica}{chapter.1}% 4
 \BOOKMARK [2][-]{subsection.1.2.1}{Entorno docente con JdeRobot: TeachingRobotics}{section.1.2}% 5
 \BOOKMARK [0][-]{chapter.2}{Plataforma de Desarrollo}{}% 6
 \BOOKMARK [1][-]{section.2.1}{GitHub}{chapter.2}% 7
@@ -14,12 +14,14 @@
 \BOOKMARK [2][-]{subsection.2.5.2}{rviz}{section.2.5}% 14
 \BOOKMARK [2][-]{subsection.2.5.3}{rqt}{section.2.5}% 15
 \BOOKMARK [1][-]{section.2.6}{ARIAC}{chapter.2}% 16
-\BOOKMARK [0][-]{chapter.3}{Pr\341ctica M\363naco}{}% 17
-\BOOKMARK [1][-]{section.3.1}{Manejo de Blender}{chapter.3}% 18
-\BOOKMARK [2][-]{subsection.3.1.1}{Interfaz}{section.3.1}% 19
-\BOOKMARK [1][-]{section.3.2}{Circuito plano}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.3}{Circuito con elevaciones}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.4}{Mundos para Gazebo}{chapter.3}% 22
-\BOOKMARK [0][-]{chapter.4}{Brazo rob\363tico}{}% 23
-\BOOKMARK [1][-]{section.4.1}{Ya veremos}{chapter.4}% 24
-\BOOKMARK [0][-]{chapter*.33}{Bibliograf\355a}{}% 25
+\BOOKMARK [1][-]{section.2.7}{Qt}{chapter.2}% 17
+\BOOKMARK [0][-]{chapter.3}{Pr\341ctica M\363naco}{}% 18
+\BOOKMARK [1][-]{section.3.1}{Manejo de Blender}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.1.1}{Interfaz}{section.3.1}% 20
+\BOOKMARK [1][-]{section.3.2}{Circuito plano}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.3}{Circuito con elevaciones}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.4}{Mundos para Gazebo}{chapter.3}% 23
+\BOOKMARK [0][-]{chapter.4}{Brazo rob\363tico}{}% 24
+\BOOKMARK [1][-]{section.4.1}{Hablando ROS}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.2}{Controlando el Brazo}{chapter.4}% 26
+\BOOKMARK [0][-]{chapter*.41}{Bibliograf\355a}{}% 27

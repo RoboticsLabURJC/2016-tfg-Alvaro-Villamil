@@ -134,7 +134,39 @@ Contiene una herramienta que ha resultado muy útil para la realización de este
 
 ARIAC\cite{ariac} (\textit{Agile Robotics for Industrial Automation Competition}) es una competición pionera cuyo objetivo es probar la agilidad de los sistemas robóticos industriales. Realizada por primera vez en Junio de 2017, nace de un esfuerzo conjunto entre la Conferencia de Automatización en Ciencia e Ingeniería del IEEE o CASE (\textit{Conference on Automation Science and Engineering}) y el NIST (\textit{National Institute of Standards and Technology}). Se sirve de Gazebo como plataforma de simulación y de un conjunto propio de modelos, plugins y scripts para simular un brazo robótico en un entorno dinámico, todo ello elaborado con la ayuda de la OSRF (\textit{Open Source Robotics Foundation}). Tiene el objetivo de aumentar la productividad y la autonomía de los robots industriales, entendiendo como agilidad la cosecución de manera automática de identificación de fallos y recuperación de los mismos, automatización para disminuir la reprogramación ante cambios en la producción, interacción con el entorno incluso en áreas no previstas inicialmente, y la capacidad de \textit{plug and play}, es decir, de introducir robots de otros fabricantes sin la necesidad de reprogramarlos.
 
+\begin{figure}[h]
+	\centering\includegraphics[width=0.7\textwidth]{ariac01.png}
+	\caption{Escenario de la competición ARIAC.}
+	\label{fig:ariac01}
+\end{figure}
+
+El objetivo de dicha competición es resolver una serie de problemas dentro del escenario proporcionado. En la Figura \ref{fig:ariac01} podemos observar el escenario donde los participantes realizarán las pruebas. Consta de un brazo manipulador ur10 (\textit{Figura \ref{fig:ur10}}) situado sobre un carril que le permite desplazarse, cámaras situadas en las zonas importantes, de una cinta transportadora a un lado del robot y de diversas bandejas al otro. El objetivo de las pruebas es recoger los objetos que aparecen en dicha cinta transportadora y depositarlos en la bandeja correspondiente, según las instrucciones de cada prueba. La competición consta de tres fases clasificatorias y una final que tendrá lugar en el mes de Junio de 2017.
+
 En este proyecto nos servimos del entorno y del propio brazo robótico para desarrollar nuestros propios plugins para entender y controlar el brazo por medio de ROS.
+
+
+\section{Qt}
+\label{sec:plat_qt}
+
+Qt\cite{qt} es un framework multiplataforma orientado a objetos ampliamente usado para desarrollar programas (software) que utilicen interfaz gráfica de usuario, así como también diferentes tipos de herramientas para la línea de comandos y consolas para servidores que no necesitan una interfaz gráfica de usuario.
+
+Qt es desarrollada como un software libre y de código abierto a través de Qt Project, donde participa tanto la comunidad, como desarrolladores de Nokia, Digia y otras empresas. Qt de distribuye bajo los términos de licencias como GNU Lesser General Public License. 
+
+Utiliza el lenguaje de programación C++ de forma nativa, aunque se pueden utilizar otros lenguajes de programación como Python añadiéndolos a través de bindings. Funciona en las principales plataformas y tiene un amplio apoyo. El API de la biblioteca cuenta con métodos para acceder a bases de datos mediante SQL, así como uso de XML, gestión de hilos, soporte de red, una API multiplataforma unificada para la manipulación de archivos y una multitud de otros métodos para el manejo de ficheros, además de estructuras de datos tradicionales.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

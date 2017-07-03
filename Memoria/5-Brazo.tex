@@ -1,8 +1,209 @@
 \chapter{Brazo robótico}
 \label{ch:BrazoRobotico}
 
-En este capítulo vamos a ver 
+En este capítulo vamos a estudiar el comportamiento y la estructura de un brazo robótico para luego crear un controlador de bajo nivel. Dado que el objetivo no es crear un brazo, sino trabajar sobre uno ya diseñado, comenzamos buscando uno sobre el cual realizar el estudio. Debido a un cambio en la distribución de los paquetes de ROS entre las versiones Indigo y Jade, la mayoría de brazos manipuladores encontrados son antiguos y dan muchos problemas de instalación y configuración en las versiones más modernas. A partir de Indigo, los paquetes que forman ROS Industrial se han separado del núcleo de ROS no están mantenidos por ROS, por lo que el desarrollo y la corrección de errores es más lenta. Puesto que queremos realizar el trabajo sobre ROS Kinetic y Gazebo 7 necesitamos encontrar un brazo que funcione bajo estas versiones. Tanteamos el uso de varios modelos:
+\begin{itemize}
+	\item PR2: De la empresa Clear Path Robotics\footnote{\url{https://www.clearpathrobotics.com/}}, responsables también del kobuki o turtlebot. Se trata de un robot con apariencia de androide (\textit{Figura \ref{fig:pr2}}). Se compone de una base con ruedas, dos brazos y una cabeza con diferentes sensores visuales, siendo los brazos donde centraríamos nuestra atención. Cuando miramos su página de ROS\footnote{\url{http://wiki.ros.org/Robots/PR2}} observamos que no da soporte más allá de Indigo, lo cual puede suponer un problema.
+	\begin{figure}[h]
+		\centering\includegraphics[width=0.5\textwidth]{pr2.png}
+		\caption{Robot PR2.}
+		\label{fig:pr2}
+	\end{figure}
+	\item kuka: La empresa Kuka\footnote{\url{https://www.kuka.com/}} fabrica diversos brazos mecánicos y robots industriales. Hay varios modelos disponibles para su uso con Gazebo y ROS, y todos tienen en común el brazo que monta el robot de la Figura \ref{fig:kuka}, aunque la plataforma donde se apoya el brazo puede ser diferente o no estar. En su página de ROS\footnote{\url{http://wiki.ros.org/kuka}} vemos que soporta las versiones de Indigo y Kinetic, pero mediante la instalación del paquete externo ROS-Industrial\footnote{\url{http://wiki.ros.org/Industrial}}.
+	\begin{figure}[h]
+		\centering\includegraphics[width=0.4\textwidth]{kuka.jpg}
+		\caption{Robot kuka.}
+		\label{fig:kuka}
+	\end{figure}
+	\item ur10: De la empresa Universal Robots\footnote{\url{https://www.universal-robots.com/es/}}. Es un brazo simple (\textit{Figura \ref{fig:ur10}}), al igual que sus hermanos el ur3 y el ur5. La diferencia entre estos no va más allá del tamaño y fuerza del robot. En su página de ROS\footnote{\url{http://wiki.ros.org/ur_gazebo}} observamos que no da soporte más allá de Indigo, lo cual puede suponer un problema.
+	\begin{figure}[h]
+		\centering\includegraphics[width=0.3\textwidth]{ur10.png}
+		\caption{Robot ur10.}
+		\label{fig:ur10}
+	\end{figure}
+\end{itemize}
 
+Probamos los brazos bajo la última versión de Gazebo y de ROS recurriendo a la extensa comunidad de ROS en busca de soluciones para incorporar los brazos a la última versión. Algunas de las soluciones propuestas y probadas por nosotros son la instalación manual desde fuente, la compilación manual del código fuente, paquetes alternativos de usuarios que han resuelto los problemas de compatibilidad o interfaces de usuarios para que el robot se comunique con las librerías actuales. Después de probar muchas de estas soluciones, y de intentar solucionar los problemas por nuestra cuenta, vemos que ninguno de ellos llega a funionar de forma correcta bajo nuestros requisitos.
 
-\section{Ya veremos}
-\label{sec:pm_yaveremos}
+Recurrimos a los escenarios de ARIAC (\textit{Sección \ref{sec:plat_ariac}}) para desarrollar nuestro trabajo. Como podemos ver en la Figura \ref{fig:ariac01} se trata de un escenario industrial, con un brazo ur10 situado sobre un carril que le permite desplazarse. Nos centramos en esta parte del escenario y del código, estudiando cómo está construido y cómo funciona. Es de gran ayuda la página de documentación de ARIAC\cite{ariacwiki} donde se detallan las interfaces de comunicación de los elementos del escenario.
+
+Para poder avanzar y comenzar a probar cosas sobre el funcionamiento del brazo, necesitamos comprender mejor cómo funciona ROS. 
+
+\section{Hablando ROS}
+\label{sec:br_hablandoros}
+
+Para aprender el funcionamiento de ROS vamos a la documentación oficial\cite{roswiki}. Una vez allí nos damos cuenta de que básicos que conocer para entender ROS son los \textit{topics}, los \textit{nodes} y  los \textit{messages}. 
+
+Los \textit{nodes} son los procesos ejecutables, en nuestro caso escritos en Python, que se combinan entre sí siguiendo un esquema de grafos. Se comunican unos con otros mediante \textit{topics}, servicios y acciones. Está pensado para que cada tarea dentro del robot la ejecute un nodo, facilitando APIs y canales de comunicación que hacen que el conjunto de código sea mucho mas sencillo de depurar y de utilizar. ROS facilita comandos de terminal como \textit{rosnode list}, que muestra una lista de los nodos activos. Estos comandos son de gran ayuda para entender el funcionamiento del brazo.
+
+Los \textit{topics} son \textit{buses}diferenciables mediante los cuales los nodos intercambian \textit{ROS messages} o mensajes. Normalmente los \textit{topics} y los nodos no se preocupan del destinatario de los mensajes. Los nodos se subscriben a los topics, y pueden publicar información en el topic haciendo \textit{publish}, por ejemplo un sensor de temperatura o de proximidad, o recibir información del topic haciendo \textit{subscribe}, para tomar decisiones o procesar los datos recibidos. Son canales de comunicación unidireccionales. Utilizan \textquotedblleft tipado fuerte\textquotedblright  mediante el tipo de \textit{ROS message} que transmiten, de forma que un tipo de mensaje erróneo no se puede transmitir por el \textit{topic} y no producirá fallos en otros nodos. ROS facilita comandos de terminal como \textit{rostopic list} y \textit{rostopic echo /topic\_name}. El primero muestra una lista con los \textit{topics} activos, y el segundo permite ver el flujo de mensajes a través del topic deseado. Ambos son una ayuda inestimable para conseguir entender, y más tarde replicar, la comunicación con el brazo.
+
+\begin{figure}[]
+	\centering\includegraphics[width=1\textwidth]{Brazo10a.png}
+	\caption{Grafo de los \textit{nodes} y \textit{topics} de ARIAC.}
+	\label{fig:ariacgraph1}
+\end{figure}
+
+Los servicios son canales bidireccionales de comunicación entre nodos. Esto quiere decir que cuando se envía un mensaje, el nodo destino debe enviar otro de respuesta, o la comunicación no tiene éxito. Las acciones son un método de comunicación mas directo, como si de una llamada a procedimiento se tratase. Ninguno de estos medios son usados para enviar órdenes al brazo, por lo que no profundizamos en ellos.
+
+Los \textit{ROS messages} contienen la información que los nodos se envían mediante los \textit{topics}. Se trata de estructuras de datos con campos fijos, que soportan tanto tipos de datos primitivos (enteros, \textit{floats}, \textit{boleanos}, etc) como arrays de estos tipos de datos. Estas estructuras están predefinidas en la mayoría de casos comunes, pero se pueden definir nuevas usando archivos en formato .msg donde se específique la estructura de datos del mensaje
+
+Una vez conocemos los elementos de comunicación probamos cómo se produce, creando un nodo \textit{publisher} y otro \textit{subscriber} y haciendo que hablen entre sí. Mediante los diferentes comandos de terminal que proporciona ROS comprobamos el correcto funcionamiento de los mismos. 
+
+Una vez entendemos el funcionamiento de ROS lanzamos el mundo de ARIAC. A través de los comandos visualizamos la lista de nodos y topics disponibles. Nos servimos de una herramienta de ROS para obtener un grafo con la relación entre todos ellos y tener una idea clara del funcionamiento y la relación entre los elementos del brazo. Para ellos ejecutamos en la terminal \textit{rosrun rqt\_graph rqt\_graph} y obtenemos la Figura \ref{fig:ariacgraph1}. En dicha figura, los elementos redondos son nodos y los cuadrados son \textit{topics}, y las flechas establecen la relación entre ellos. Si la flecha apunta hacia un \textit{node} desde un \textit{topic} quiere decir que el nodo es ta subscrito a ese \textit{topic}. Si por el contrario la flecha va desde un \textit{node} a un \textit{topic} quiere decir que el nodo publica en ese \textit{topic}.
+
+Aunque ya nos da una idea muy clara de la organización de los nodos y topics, la herramienta \textit{rqt\_graph} nos permite agruparlos por nombres. Dado que hay varios \textit{topics} cuyo nombre es \textquotedblleft /ariac/nombre\textquotedblright , \textit{rqt} incluye a todos los que tienen ese formato en el nombre en la caja ARIAC. De esta forma la caja ariac hace referencia a todos los nodos y \textit{topics} que comparten el nombre ariac.
+
+\begin{figure}[h]
+	\centering\includegraphics[width=1\textwidth]{Brazo10.png}
+	\caption{Grafo de los \textit{nodes} y \textit{topics} de ARIAC.}
+	\label{fig:ariacgraph2}
+\end{figure}
+
+En esa figura podemos diferenciar varios bloques importantes. En el centro del grafo se sitúan los \textit{topics} y nodos referentes al mundo ariac, A su izquierda se encuentra el nodo principal de Gazebo. Encima de éste y a la derecha del bloque ariac hay varios grupos que sirven de apoyo para el entorno ariac: \textit{fake\_joint\_calibration}, \textit{robot\_state\_publisher} y \textit{relay\_joint\_states}.
+Debajo de ariac se encuentra el topic \textquotedblleft /clock\textquotedblright  , que sirve de referencia para todos los elementos de la simulación. A la derecha de este está el nodo de \textit{rqt} que nos permite obtener esta imagen. A la derecha del grafo hay diversos nodos y topics de \textit{rosout}. Se trata de la consola de \textit{log} de ROS, donde se anotan los sucesos o errores de los diferentes procesos ejecutados.
+
+\section{Controlando el Brazo}
+\label{sec:br_controlandobrazo}
+
+Una vez tenemos este esquema en la cabeza acudimos tanto al código de ARIAC como a su documentación para ver qué hace cada nodo y cada topic, qué partes controlan el brazo y cómo podemos comunicarnos con ellas. De esta forma descubrimos dos \textit{topics} calve para poder controlar el brazo:
+\begin{itemize}
+	\item /ariac/joint\_states: En este \textit{topic} se publica la información relativa las posiciones de las articulaciones del brazo. Por este \textit{topic} se envían mensajes de tipo \textit{sensor\_msgs/JointState Message}, que veremos más adelante. Nos subscribiremos a este \textit{topic} para conocer la posición inicial del brazo y de sus articulaciones.
+	
+	\item /ariac/arm/command: Por este \textit{topic} se envía al brazo la posición a la que quieres moverlo mediante mensajes del tipo \textit{trajectory\_msgs/JointTrajectory Message}, que veremos más adelante. necesitamos publicar en este \textit{topic} para enviar órdenes al brazo.
+	
+\end{itemize}
+
+Los demás \textit{topics} tienen otras funciones que no necesitamos para conseguir nuestro objetivo.
+
+Los mensajes descritos anteriormente tienen la siguiente estructura:
+\begin{itemize}
+	\item \textit{sensor\_msgs/JointState Message}:
+	\begin{lstlisting}
+	std_msgs/Header header
+	string[] name
+	float64[] position
+	float64[] velocity
+	float64[] effort
+	\end{lstlisting}
+	\item \textit{trajectory\_msgs/JointTrajectory Message}:
+	\begin{lstlisting}
+	std_msgs/Header header
+	string[] joint_names
+	trajectory_msgs/JointTrajectoryPoint[] points
+	\end{lstlisting}
+\end{itemize}
+
+Ambos mensajes comienzan con un \textit{Header} de tipo \textit{std\_msg/Header}. Este es un tipo de mensaje estándar de ROS, que necesitan todos los mensajes para que pueda establecerse la comunicación, y se crea automáticamente al enviar el mensaje. No necesitamos crearlo para poder enviar mensajes y no necesitamos extraerlo al recibirlos, por lo que no nos preocupamos por el.
+
+El primer tipo de mensaje lo componen varios \textit{arrays} de datos primitivos. El primero de ellos es un \textit{array} de \textit{strings}. Los \textit{strings} son cadenas de caracteres, como palabras o frases. Este campo lo componen los nombres de las articulaciones del brazo, que son:
+\begin{itemize}
+	\item elbow\_joint : Esta es la articulación del codo, la del medio del brazo.
+	
+	\item linear\_arm\_actuator\_joint : Esta no es una articulación propiamente dicha, sino que se refiere a la posición del brazo en el carril sobre el que está situado.
+	
+	\item shoulder\_lift\_joint : Esta es la articulación del hombro, es decir, la más cercana a su base. En concreto esta es la articulación que controla la elevación del brazo. Realiza giros sobre un imaginario eje y.
+	
+	\item shoulder\_pan\_joint : Esta es la articulación del hombro, es decir, la más cercana a su base. En concreto esta es la articulación que controla la orientación del brazo y nos permite girarlo. Realiza giros sobre un imaginario eje z.
+	
+	\item wrist\_1\_joint : Esta es la articulación de la muñeca, la más alejada de la base. En concreto esta articulación controla la elevación de la muñeca y nos permite subirla y bajarla. Realiza giros sobre un imaginario eje y.
+	
+	\item wrist\_2\_joint : Esta es la articulación de la muñeca, la más alejada de la base. En concreto esta articulación controla el giro de la muñeca y nos permite rotarla verticalmente. Realiza giros sobre un imaginario eje z.
+	
+	\item wrist\_3\_joint : Esta es la articulación de la muñeca, la más alejada de la base. En concreto esta articulación controla el giro de la mano y nos permite rotar la muñeca horizontalmente. Realiza giros sobre un imaginario eje x.
+	
+	\item vacuum\_gripper\_joint : Esta articulación hace referencia a una pinza de vacío que se puede acoplar a la articulación de la muñeca del brazo, pero en nuestro caso no la incorpora y no necesitamos asignarle valores
+\end{itemize}
+
+En la Figura \ref{fig:brazoarticulaciones} podemos situar visualmente las articulaciones en el brazo, con la diferencia de que la articulación \textit{Base Joint} de la imágen en ARIAC se llama \textit{shoulder\_pan\_joint}. Todas articulaciones tienen definida su posición en radianes y unos límites de giro entre 6,28 y -6,28 en su mayoría. Esto quiere decir que cada articulación del brazo puede realizar dos giros completos si fuese necesario, pero los choques con los elementos de escenario limitan los movimientos.
+
+\begin{figure}[]
+	\centering\includegraphics[width=0.6\textwidth]{brazoarticulaciones.jpg}
+	\caption{Detalle de las articulaciones del brazo.}
+	\label{fig:brazoarticulaciones}
+\end{figure}
+
+Los siguientes campos del mensaje son \textit{arrays} de \textit{floats} (números) de posiciones, velocidades y esfuerzos. Dan información de la posición de cada articulación, la velocidad a la que se mueven, y el esfuerzo o fuerza que poseen en el momento de envío del mensaje, por lo que son arrays de ocho posiciones y en cada una está la información relativa a la articulación en la posición homóloga en el array de nombres. A nosotros nos interesa el primer \textit{array} para conocer la posición inicial de las articulaciones.
+
+Para ver mejor la estructura del mensaje lanzamos el mundo de ARIAC y ejecutamos el comando de terminal \textit{rostopic echo /ariac/joint\_states}, obteniendo en texto en la terminal la estructura de datos de este mensaje:
+
+\begin{lstlisting}
+---
+header: 
+seq: 265
+stamp: 
+secs: 5
+nsecs: 322000000
+frame_id: ''
+name: ['elbow_joint', 'linear_arm_actuator_joint', 'shoulder_lift_joint', 'shoulder_pan_joint', 'wrist_1_joint', 'wrist_2_joint', 'wrist_3_joint', 'vacuum_gripper_joint']
+position: [1.5072954794978815, 0.04169673392358113, -0.3793140712872205, 3.217984505432054, 3.085834205511564, -1.6130778569148077, -0.00793595855568796, 0.0]
+velocity: [0.027474972846918494, 0.007286219434794008, 0.05461882849916373, 0.0316967471028743, 0.1957558318356749, -1.091011699832568, -8.054309845386587, 0.0]
+effort: [150.0, -184.23945050318943, 330.0, 167.6704306272329, 0.0, 5.601291580407757, -5.541011517572109, 0.0]
+---
+\end{lstlisting}
+
+El \textit{header} o cabecera ocupa las primeras siete líneas, y refleja datos como el tiempo de simulación o el número de mensaje, ninguno de ellos relevante para nosotros. A continuación nos encontramos los cuatro \textit{arrays}: \textit{name} para los nombres de las articulaciones, \textit{position} para las posiciones, \textit{velocity} para las velocidades y \textit{effort} para las fuerzas. Este mensaje es el que recibiremos y que deberemos procesar para obtener la posición inicial del brazo.
+
+El segundo tipo de mensaje lo componen un \textit{array} de \textit{strings} y otro campo llamado \textit{points} compuesto por otro tipo de mensaje, el tipo \textit{trajectory\_msgs/JointTrajectoryPoint}. El primer \textit{array} hace referencia a los nomvres de las articulaciones, pero en este mensaje se llama \textit{joint\_names} Como podemos ver a continuación, este tipo de mensaje está formado por \textit{arrays} de números de forma muy similar a los del primer mensaje:
+\begin{lstlisting}
+float64[] positions
+float64[] velocities
+float64[] accelerations
+float64[] effort
+duration time_from_start
+\end{lstlisting}
+Tenemos un \textit{array} para las posiciones, otro para las velocidades, otro para las aceleraciones, otro para las fuerzas, y un último campo de tipo \textit{duration} para especificar el número de segundos desde el inicio para ejecutar los movimientos. Nosotros usaremos tanto el \textit{array} de nombres com el de posiciones, así como el campo para establecer el tiempo inicial de la orden. Los demás campos no son necesarios para el correcto funcionamiento del brazo.
+
+De la misma forma que con el mensaje anterios, arrancamos la simulación y ejecutamos en la terminal el comando \textit{rostopic echo /ariac/arm/commander} para obtener en texto el contenido de los mensajes que pasan por este topic. Nos servimos de los tutoriales para dar órdenes sencillas a través de comandos de terminal y poder capturar el contenido de estos mensajes:
+\begin{lstlisting}
+---
+header: 
+seq: 59
+stamp: 
+secs: 0
+nsecs:         0
+frame_id: ''
+joint_names: ['elbow_joint', 'linear_arm_actuator_joint', 'shoulder_lift_joint', 'shoulder_pan_joint', 'wrist_1_joint', 'wrist_2_joint', 'wrist_3_joint']
+points: 
+- 
+positions: [1.510634135925831, 1.4199980429372933e-06, -1.1286545928274752, 3.140002031709801, 3.772089274964015, -1.5100101552695162, 4.0770707014914365e-06, 0.0]
+velocities: []
+accelerations: []
+effort: []
+time_from_start: 
+secs: 1
+nsecs:         0
+---
+\end{lstlisting}
+Al igual que en el primer tipo de mensaje, la cabecera la componen las siete primeras líneas. Después nos encontramos con el \textit{array} de nombres de articulaciones. A continuación nos encontramos con el campo \textit{points}, es decir, el campo que contiene otro tipo de mensaje. Dentro podemos ver los cuatro arrays, y comprobamos que sólo el de posiciones está definido, los demás están en blanco y no son imprescindibles para dar órdenes al brazo. Por último podemos ver el campo \textit{time\_from\_start}, el cual establece el tiempo en 1 segundo.
+
+Una vez estudiados los mensajes y los \textit{topics} que necesitamos para controlar el brazo comenzamos a implementar el controlador. Utilizando Python como lenguaje, creamos un archivo en el que vamos probando paso a paso la aplicación de los conceptos adquiridos, tanto de ROS como de ARIAC. 
+Primero creamos un nodo al que llamaremos \textquotedblleft Mando\textquotedblright . Luego hacemos que se subscriba al \textit{topic} \textit{/ariac/joint\_states}, que descomponga los mensajes recibidos y que imprima por terminal los datos extraídos. De esta manera aprendemos a obtener información para conocer la posición inicial del brazo. 
+A continuación hacemos que el nodo publique en el \textit{topic /ariac/arm/command} una orden predefinida que hace que se mueva ligeramente, simplemente para comprobar que el envío de un mensaje bien construido a este \textit{topic} consigue mover el brazo. Para ello debemos construir el mensaje de acuerdo a las especificaciones anteriormente descritas. Vemos que es necesario introducir el envío de mensajes en un bucle, ya que si enviamos uno y salimos, ROS cierra el nodo antes de que el mensaje llegue, con lo que no se recibe.
+
+Una vez realizadas estas tareas pasamos a desarrollar la interfaz gráfica que nos permita controlar el brazo. Nos servimos de Qt para desarrollar la interfaz visual. Crearemos unos deslizadores para cambiar los valores de posición de cada articulación por separado, consiguiendo de una forma intuitiva saber donde están los límites de cada articulación y cuál es su posición respecto al total de su movimiento. También crearemos unas etiquetas que muestren el valor numérico de la posición del deslizador, así como unas etiquetas con el nombre de la articulación que controloa cada uno. 
+
+\begin{figure}[]
+	\centering\includegraphics[width=0.7\textwidth]{mando.png}
+	\caption{Interfaz gráfica del controlador del brazo.}
+	\label{fig:mando}
+\end{figure}
+
+En lugar de utilizar la interfaz gráfica proporcionada por Qt para construir nuestra GUI la escribimos directamente en código utilizando las propiedades de auto-colocación de objetos. Qt nos permite insertar los elementos como si de una tabla se tratase y automáticamente los separa y les dá un espacio suficiente para mostrarse completos. También resulta más fácil programar después el comportamiento de la interfaz, ya que tenemos un mayor control sobre lo que creamos. 
+
+A la hora de crear el controlador agrupando todos los elementos, podemos organizar el código en base a si es relativo a la interfaz o a ROS, por lo que lo dividimos en dos carpetas dentro de la carpetaa principal: \textit{gui} y \textit{ros\_manager}. Organizamos todo el código necesario en cinco ficheros:
+\begin{itemize}
+	\item \textit{main.py}: Este fichero es el encargado de lanzar los procesos relativos a la interfaz y a ROS. Es, por tanto, el ejecutable que invocamos para abrir el controlador. Se encuentra en la carpeta principal, y lanza los hilos de ejecución tanto de ROS como de la interfaz.
+	
+	\item \textit{gui.py}: En este fichero se encuentran definidos los elementos de la interfaz gráfica, así como el comportamiento de los mismos. Aquí creamos cada elemento, lo colocamos en la ventana, definimos los \textit{callbacks} de los deslizadores y capturamos el cierre de la ventana para realizar un cierre ordenado. Los \textit{callbacks} nos permiten capturar el movimiento de cada deslizador, actualizar la etiqueta correspondiente y enviar el nuevo valor al brazo. El cierre ordenado es necesario para poder cerrar el nodo de ROS y no dejar elementos corriendo en el sistema.
+	
+	\item \textit{threadGUI.py}: Este fichero crea un hilo de ejecución para los elementos de la interfaz gráfica. Dado que este elemento es común a todas las ventanas creadas con Qt, usamos el proporcionado en los tutoriales.
+	
+	\item \textit{ros.py}: En este fichero se encuentra el código relativo a ROS, el que gestiona el envío y recepción de mensajes. Aquí creamos el nodo, nos subscribimos al brazo, publicamos en él, gestionamos los cambios de posición de los deslizadores de la ventana y controlamos el cierre ordenado del nodo ROS.
+	
+	\item \textit{threadPublisher.py}: Este fichero crea un hilo de ejecución para los elementos de ROS. Dado que no es nuevo ni único para nuestro proyecto, reutilizamos uno de los usados en otros controladores de JdeRobot, simplemente cambiando el objeto de control del hilo.
+	
+\end{itemize}
+
+En la Figura \ref{fig:mando} podemos ver la apariencia final del controlador del brazo.
+

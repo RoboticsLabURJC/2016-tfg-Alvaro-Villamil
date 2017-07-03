@@ -1,7 +1,7 @@
 \chapter{Introducción}
 \label{ch:Introduccion}
 
-En este proyecto se construirán escenarios para la enseñanza utilizando diversas tecnologías. Para poder saber cual es el marco de desarrollo y donde se engloban los conceptos utilizados vamos a introducir algunos términos que servirán como contexto y que nos permitirán entender mejor de dónde surje la necesidad de estos escenarios y cuall es la utilidad de los mismos.
+En este proyecto se construirán escenarios para la enseñanza utilizando diversas tecnologías. Para poder saber cual es el marco de desarrollo y donde se engloban los conceptos utilizados vamos a introducir algunos términos que servirán como contexto y que nos permitirán entender mejor de dónde surge la necesidad de estos escenarios y cual es la utilidad de los mismos.
 
 \section{Robótica}
 \label{sec:intr_robotica}
@@ -85,7 +85,7 @@ Otra clasificación muy extendida de los robots es según su estructura. La estr
 		\label{fig:movil}
 	\end{figure}	
 
-	\item Androides. Son los tipos de Robots que intentan reproducir total o parcialmente la forma y el comportamiento cinemático del ser humano. Actualmente, los androides son todavía dispositivos muy poco evolucionados y sin utilidad práctica, y destinados, fundamentalmente, al estudio y experimentación. Uno de los aspectos más complejos de estos Robots, y sobre el que se centra la mayoría de los trabajos, es el de la locomoción bípeda. En este caso, el principal problema es controlar dinámica y coordinadamente en el tiempo real el proceso y mantener simultáneamente el equilibrio del Robot. Podemos ver el robot Nao\footnote{\url{http://aliverobots.com/nao/}} en la Figura \ref{fig:androide}, un ejemplo de robot androide de la empresa Robotrónica\footnote{\url{http://aliverobots.com/}}, una división de la empresa Juguetrónica\footnote{\url{https://www.juguetronica.com/}}. 
+	\item Androides. Son los tipos de Robots que intentan reproducir total o parcialmente la forma y el comportamiento cinemático del ser humano. Actualmente, los androides son todavía dispositivos muy poco evolucionados y sin utilidad práctica, y destinados, fundamentalmente, al estudio y experimentación. Uno de los aspectos más complejos de estos Robots, y sobre el que se centra la mayoría de los trabajos, es el de la locomoción bípeda. En este caso, el principal problema es controlar dinámica y coordinadamente en el tiempo real el proceso y mantener simultáneamente el equilibrio del Robot. Podemos ver el robot Nao\footnote{\url{https://www.ald.softbankrobotics.com/en/cool-robots/nao}} en la Figura \ref{fig:androide}, un ejemplo de robot androide de la empresa Aldebaran Robotics, con sede en París. 
 	\begin{figure}[h]
 		\centering\includegraphics[width=0.25\textwidth]{robotandroide.jpg}
 		\caption{Robot androide Nao.}
@@ -95,29 +95,28 @@ Otra clasificación muy extendida de los robots es según su estructura. La estr
 	\item Zoomórficos. Los Robots zoomórficos, que considerados en sentido no restrictivo podrían incluir también a los androides, constituyen una clase caracterizada principalmente por sus sistemas de locomoción que imitan a los diversos seres vivos. A pesar de la disparidad morfológica de sus posibles sistemas de locomoción es conveniente agrupar a los Robots zoomórficos en dos categorías principales: caminadores y no caminadores. El grupo de los Robots zoomórficos no caminadores está muy poco evolucionado. Los experimentos efectuados en Japón basados en segmentos cilíndricos biselados acoplados axialmente entre sí y dotados de un movimiento relativo de rotación. Los Robots zoomórficos caminadores multípedos son muy numerosos y están siendo objeto de experimentos en diversos laboratorios con vistas al desarrollo posterior de verdaderos vehículos terrenos, pilotados o autónomos, capaces de evolucionar en superficies muy accidentadas. Las aplicaciones de estos Robots serán interesantes en el campo de la exploración espacial y en el estudio de los volcanes. Podemos ver varios ejemplos de robots zoomórficos en la Figura \ref{fig:zoomorficos}.
 	\begin{figure}[h]
 		\centering
-		\subfigure[Robot perro]{\includegraphics[width=0.4\textwidth]{robotperro.jpg}}\hspace{0.04\textwidth}	
-		\subfigure[Robot araña]{\includegraphics[width=0.4\textwidth]{robotarana.png}}\vspace{0.03\textwidth}
-		\subfigure[Robot pez]{\includegraphics[width=0.4\textwidth]{robotpez.jpg}}\hspace{0.04\textwidth}
-		\subfigure[Robot serpiente]{\includegraphics[width=0.4\textwidth]{robotserpiente.png}}
+		\subfigure[Robot perro]{\includegraphics[width=0.35\textwidth]{robotperro.jpg}}\hspace{0.04\textwidth}	
+		\subfigure[Robot araña]{\includegraphics[width=0.35\textwidth]{robotarana.png}}\vspace{0.03\textwidth}
+		\subfigure[Robot pez]{\includegraphics[width=0.35\textwidth]{robotpez.jpg}}\hspace{0.04\textwidth}
+		\subfigure[Robot serpiente]{\includegraphics[width=0.35\textwidth]{robotserpiente.png}}
 		\caption[Diferentes ejemplos de robots zoomórficos]{Ejemplos de robots zoomórficos: un robot con forma de perro (a), uno con forma de araña (b), uno con forma de pez (c) y uno con forma de serpiente (d)} \label{fig:zoomorficos}
 	\end{figure}
 	
 	\item Híbridos.	Estos Robots corresponden a aquellos de difícil clasificación, cuya estructura se sitúa en combinación con alguna de las anteriores ya expuestas, bien sea por conjunción o por yuxtaposición. Por ejemplo, un dispositivo segmentado articulado y con ruedas, es al mismo tiempo, uno de los atributos de los Robots móviles y de los Robots zoomórficos. Podemos ver un ejemplo de robot híbrido en la Figura \ref{fig:hibrido}, en este caso uno de los muchos utilizados para desactivar o explosionar bombas de forma controlada por las fueras de seguridad y policía de numerosos países.
 	\begin{figure}[h]
-		\centering\includegraphics[width=0.35\textwidth]{robothibrido.jpg}
+		\centering\includegraphics[width=0.3\textwidth]{robothibrido.jpg}
 		\caption{Robot híbrido usado en la desactivación de bombas.}
 		\label{fig:hibrido}
 	\end{figure}
 \end{enumerate}
 
 
-\section{La robótica en la enseñanza}
+\section{Educación en robótica}
 \label{sec:intr_roboticaensenanza}
 
 El campo de la robótica está en constante expansión, y su popularidad aumenta rápidamente. Ya no solo vemos grandes avances en los robots industriales, como en cadenas de producción, envasado de alimentos o gestión de almacenes, sino que los robots domésticos están cobrando cada vez más importancia. El éxito de los robots aspiradora como Roomba de iRobot\footnote{\url{http://www.irobot.es/}}, la incorporación de aparcamiento automático en coches o incluso asistentes de conducción autónoma como el autopiloto de Tesla\footnote{\url{https://www.tesla.com/es_ES/}} o prototipos de Google o Apple, termostatos inteligentes como el Nest\footnote{\url{https://nest.com/thermostat/meet-nest-thermostat/}} de Google, o la inmensa variedad de drones del mercado ponen de manifiesto que ésta es una tendencia en auge a nivel global.
 
 Uno de los factores que permiten diseñar, construir y comercializar este tipo de robots asegurando una inteligencia y robustez ante situaciones reales es la programación que hay detrás de estos, su software. Usualmente este software tiene varias capas (drivers, middleware y aplicaciones) y presenta unos requisitos específicos dependiendo de las funciones del robot. En los últimos años se han logrado añadir en la fabricación de estos robots ordenadores personales o microprocesadores, principalmente de bajo coste, y sistemas operativos generalistas, lo que permite aumentar la complejidad de sus tareas y el uso de herramientas estándar de desarrollo.
-
 
 Este sector es un mercado al alza, que demanda científicos e ingenieros de robótica y visión artificial, pero dado que es un campo transversal los profesionales de este sector deben poseer sólidos conocimientos de programación, procesado de imágenes, calculo, álgebra lineal, métodos numéricos, electrónica y electricidad, etc. Esto hace que se puedan realizar aproximaciones desde diferentes puntos de vista. Uno de ellos, más tradicional, es desde las ingenierías eléctricas y electrónicas. La enseñanza desde estas áreas se centra en la construcción del robot, sus partes móviles y mecánicas, sus sensores, motores, su diseño electrónico, procesadores, etc. Otro acercamiento se realiza desde la Informática, poniendo más énfasis en la programación, dado que la inteligencia del robot una vez construido reside en su software.
 
@@ -172,4 +171,6 @@ Algunas de las prácticas desarrolladas son:
 	
 	\item \textit{Visión: reconstrucción 3D}. En esta práctica el alumno debe conseguir que un robot Pioneer (\textit{Figura \ref{fig:pioneer}}) reproduzca en 3D los elementos que se le presentan. Este robot está equipado con un par estéreo de cámaras. Para conseguir su objetivo, el alumno debe programar un algoritmo de reconstrucción 3D clásico de tres pasos: detección de puntos de interés en las dos imágenes, emparejamiento de píxeles homólogos entre ambas, y triangulación espacial para calcular el punto tridimensional que origina cada pareja de píxeles homólogos.
 \end{itemize}
+
+Nuestro objetivo con este trabajo es aumentar las posibilidades de esta plataforma, creando nuevos escenarios que aporten valor y funcionalidades nuevas a las prácticas ya existentes o desarrollando nuevas herramientas que permitan añadir prácticas más variadas a la colección.
 
