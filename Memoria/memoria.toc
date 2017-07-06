@@ -4,25 +4,29 @@
 \contentsline {subsection}{\numberline {1.1.1}Historia de la rob\IeC {\'o}tica}{6}{subsection.1.1.1}
 \contentsline {section}{\numberline {1.2}Educaci\IeC {\'o}n en rob\IeC {\'o}tica}{14}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Entorno docente con JdeRobot: TeachingRobotics}{16}{subsection.1.2.1}
-\contentsline {chapter}{\numberline {2}Plataforma de Desarrollo}{21}{chapter.2}
-\contentsline {section}{\numberline {2.1}GitHub}{21}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Git}{23}{subsection.2.1.1}
-\contentsline {section}{\numberline {2.2}Blender}{24}{section.2.2}
-\contentsline {section}{\numberline {2.3}Simulador Gazebo}{24}{section.2.3}
-\contentsline {section}{\numberline {2.4}JdeRobot}{25}{section.2.4}
-\contentsline {section}{\numberline {2.5}ROS}{26}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}MoveIt!}{27}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}rviz}{28}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}rqt}{28}{subsection.2.5.3}
-\contentsline {section}{\numberline {2.6}ARIAC}{28}{section.2.6}
-\contentsline {section}{\numberline {2.7}Qt}{30}{section.2.7}
-\contentsline {chapter}{\numberline {3}Pr\IeC {\'a}ctica M\IeC {\'o}naco}{31}{chapter.3}
-\contentsline {section}{\numberline {3.1}Manejo de Blender}{31}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Interfaz}{31}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}Circuito plano}{35}{section.3.2}
-\contentsline {section}{\numberline {3.3}Circuito con elevaciones}{40}{section.3.3}
-\contentsline {section}{\numberline {3.4}Mundos para Gazebo}{42}{section.3.4}
-\contentsline {chapter}{\numberline {4}Brazo rob\IeC {\'o}tico}{51}{chapter.4}
-\contentsline {section}{\numberline {4.1}Hablando ROS}{53}{section.4.1}
-\contentsline {section}{\numberline {4.2}Controlando el Brazo}{56}{section.4.2}
-\contentsline {chapter}{Bibliograf\'{\i }a}{63}{chapter*.41}
+\contentsline {chapter}{\numberline {2}Objetivos}{21}{chapter.2}
+\contentsline {section}{\numberline {2.1}Descripci\IeC {\'o}n del problema}{21}{section.2.1}
+\contentsline {section}{\numberline {2.2}Requisitos}{22}{section.2.2}
+\contentsline {section}{\numberline {2.3}Metodolog\IeC {\'\i }a}{22}{section.2.3}
+\contentsline {chapter}{\numberline {3}Plataforma de Desarrollo}{25}{chapter.3}
+\contentsline {section}{\numberline {3.1}GitHub}{25}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Git}{27}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}Blender}{28}{section.3.2}
+\contentsline {section}{\numberline {3.3}Simulador Gazebo}{28}{section.3.3}
+\contentsline {section}{\numberline {3.4}JdeRobot}{29}{section.3.4}
+\contentsline {section}{\numberline {3.5}ROS}{30}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}MoveIt!}{31}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}rviz}{32}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}rqt}{32}{subsection.3.5.3}
+\contentsline {section}{\numberline {3.6}ARIAC}{32}{section.3.6}
+\contentsline {section}{\numberline {3.7}Qt}{34}{section.3.7}
+\contentsline {chapter}{\numberline {4}Pr\IeC {\'a}ctica M\IeC {\'o}naco}{35}{chapter.4}
+\contentsline {section}{\numberline {4.1}Manejo de Blender}{35}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Interfaz}{35}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Circuito plano}{39}{section.4.2}
+\contentsline {section}{\numberline {4.3}Circuito con elevaciones}{44}{section.4.3}
+\contentsline {section}{\numberline {4.4}Mundos para Gazebo}{46}{section.4.4}
+\contentsline {chapter}{\numberline {5}Brazo rob\IeC {\'o}tico}{55}{chapter.5}
+\contentsline {section}{\numberline {5.1}Hablando ROS}{57}{section.5.1}
+\contentsline {section}{\numberline {5.2}Controlando el Brazo}{60}{section.5.2}
+\contentsline {chapter}{Bibliograf\'{\i }a}{67}{chapter*.42}
