@@ -6,13 +6,11 @@ En este proyecto se construirán escenarios para la enseñanza utilizando divers
 \section{Descripción del problema}
 \label{sec:obj_descripcionproblema}
 
-El objetivo principal de este trabajo consiste en ampliar la colección de prácticas de JdeRobot-Academy, enriqueciéndolas y aumentando el abanico de posibilidades que se ofrece al alumno. Para ello necesitamos entender el funcionamiento tanto de JdeRobot como de ROS y familiarizarnos con el manejo de programas de edición 3D. Este objetivo lo hemos dividido en tres principales:
+El objetivo principal de este trabajo consiste en ampliar la colección de prácticas de JdeRobot-Academy, enriqueciéndolas y aumentando el abanico de posibilidades que se ofrece al alumno. Para ello necesitamos entender el funcionamiento tanto de JdeRobot como de ROS y familiarizarnos con el manejo de programas de edición 3D. Este objetivo lo hemos dividido en dos principales que constituirán nuevas prácticas para el entorno docente:
 \begin{itemize}
-	\item Creación de mundo más realista para Gazebo: Crearemos un modelo 3D de un escenario real para realizar las prácticas, en este caso del circuito de Fórmula 1 de Mónaco. Elegimos éste por ser un circuito conocido, corto tanto en su longitud como en el área que ocupa, y por estar ubicado en un entorno urbano y montañoso, lo que hace que sea estrecho y con subidas y bajadas. Lo prepararemos para algún tipo específico de práctica, añadiendo barreras en los bordes de la pista o marcas en el asfalto, y lo construiremos de forma que sea sencillo realizar futuras modificaciones para otros tipos de prácticas.
+	\item Práctica en un circuito real: Crearemos un modelo 3D de un escenario real con elevaciones para realizar las prácticas de JdeRobot-Academy en las que se usa un Fórmula 1, aquella en la que ha de seguir una línea y aquella en la que ha de dar vueltas esquivando obstáculos. Elegimos el circuito de Fórmula 1 de Mónaco por ser un circuito conocido, corto tanto en su longitud como en el área que ocupa, y por estar ubicado en un entorno urbano y montañoso, lo que hace que sea estrecho y con subidas y bajadas. Lo prepararemos para estas dos prácticas específicas, añadiendo barreras en los bordes de la pista o marcas en el asfalto, y lo construiremos de forma que sea sencillo realizar futuras modificaciones para otros tipos de prácticas.
 	
-	\item Buscar un brazo robótico: Buscaremos un brazo robótico que funcione en Gazebo y bajo ROS o, si es posible, JdeRobot, y que cumpla con los requisitos impuestos. Estudiaremos además su construcción y su funcionamiento, y su comportamiento tanto de bajo como de alto nivel.
-	
-	\item Crear un controlador para el brazo robótico: Una vez encontrado un brazo adecuado y estudiado su funcionamiento, construiremos un controlador de bajo nivel que actúe directamente sobre las partes móviles del brazo, es decir, que mueva las articulaciones una a una. Crearemos una ventana con unos controles intuitivos para facilitar el manejo del robot.
+	\item Práctica con un brazo robótico: Buscaremos un brazo robótico que funcione en Gazebo y bajo ROS o, si es posible, JdeRobot, y que cumpla con los requisitos impuestos. Estudiaremos además su construcción, su funcionamiento y su comportamiento y construiremos un controlador de bajo nivel que actúe directamente sobre las partes móviles del brazo, es decir, que mueva las articulaciones una a una. Crearemos una ventana con unos controles intuitivos para facilitar el manejo del robot.
 \end{itemize}
 
 \section{Requisitos}
@@ -38,11 +36,11 @@ Usando este modelo, al final de cada iteración obtenemos un prototipo funcional
 
 \begin{figure}[hb]
 	\centering\includegraphics[width=0.7\textwidth]{espiral.jpg}
-	\caption{Modelo de civlo de vida en espiral.}
+	\caption{Modelo de ciclo de vida en espiral.}
 	\label{fig:espiral}
 \end{figure}
 
-En cada vuelta de la espiral se parte de los resultados obtenidos en la anterior y se aumenta la complejidad. Dentro de cada vuelta se siguen una serie de pasos o tarear que guían el desarrollo del proyecto en cada iteración, como muestra el esquema que podemos ver en la figura \ref{fig:espiral}, Los pasos son:
+En cada vuelta de la espiral se parte de los resultados obtenidos en la anterior y se aumenta la complejidad. Dentro de cada vuelta se siguen una serie de pasos o tareas que guían el desarrollo del proyecto en cada iteración, como muestra el esquema que podemos ver en la figura \ref{fig:espiral}, Los pasos son:
 \begin{enumerate}[1.]
 	\item Determinar objetivos, alternativas, restricciones: En este paso se definen los objetivos específicos que tendremos que cumplir en cada iteración teniendo en mente el resultado final del proceso. Además se diseña una planificación detallada de gestión y se identifican las posibles alternativas. 
 	
@@ -57,24 +55,6 @@ En cada vuelta de la espiral se parte de los resultados obtenidos en la anterior
 Las fases de desarrollo seguidas en el proyecto se corresponden con los pasos seguidos en los siguientes capítulos. Se han realizado reuniones semanales con el tutor para mantener un seguimiento y una progresión adecuada en el desarrollo del proyecto, alcanzando los objetivos marcados y estudiando diferentes alternativas para conseguirlos.
 
 Para tener constancia de los progresos y del desarrollo general del proyecto se ha utilizado un apartado en la propia página de JdeRobot, un MediaWiki\cite{mediawiki} donde ir documentando periódicamente los progresos, incluyendo fotos y vídeos de los logros conseguidos y de los problemas encontrados. Ha servido como referencia para que las reuniones con el tutor estén sincronizadas, y a modo de diario para mantener un registro de los progresos y de las dificultades encontradas. También se ha utilizado un repositorio en GitHub\cite{mirepo} donde se encuentran todos los archivos relacionados con el proyecto, desde test y tutoriales hasta el código fuente del resultado final, pasando por alternativas descartadas y pruebas fallidas.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

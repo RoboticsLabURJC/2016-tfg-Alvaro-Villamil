@@ -1,57 +1,10 @@
-\chapter{Infgraestructura Usada}
-\label{ch:PlataformaDesarrollo}
+\chapter{Infraestructura Usada}
+\label{ch:infraestructura}
 
 En este capıtulo vamos a describir con más detalle todo el software utilizado en la realización del proyecto: programas, plataformas, simuladores, etc. El sistema operativo elegido para desarrollar todo el proyecto ha sido Ubuntu 16.04. Ubuntu es un sistema operativo basado en Debian GNU/Linux y que se distribuye como software libre, el cual incluye su propio entorno de escritorio denominado Unity. El nombre de la distribución proviene del concepto zulú y xhosa de ubuntu, que significa “humanidad hacia otros” o “yo soy porque nosotros somos”. Debido a las similitudes entre los ideales de los proyectos GNU, Debian y en general el movimiento del software libre, y el movimiento sudafricano encabezado por el obispo Desmond Tutu \textit{Premio Nobel de la Paz en 1984} llamado Ubuntu, la compañía británica Canonical Ltd. decidió nombrarlo en honor a dicho movimiento. El eslogan de Ubuntu – “Linux para seres humanos” (en inglés “Linux for Human Beings”) – resume una de sus metas principales: hacer de Linux un sistema operativo más accesible y fácil de usar.
 
-\section{GitHub}
-\label{sec:plat_github}
-
-GitHub\cite{github} es una plataforma de desarrollo colaborativo de software para alojar proyectos utilizando el sistema de control de versiones Git (\textit{Sección \ref{subsec:plat_git}}). Utiliza el framework Ruby on Rails por GitHub, Inc. (anteriormente conocida como Logical Awesome). Aloja tu repositorio de código de forma pública (o privada creando una cuenta de pago) y te brinda herramientas muy útiles para el trabajo en equipo dentro de un proyecto. GitHub facilita toda la infraestructura para trabajar en equipos distribuidos a través de una interfaz web. Incluso si no trabajas en equipo, si tienes una copia de tu código fuente en GitHub, tienes un backup de todo el proyecto completo. Ese backup incluye no sólo el código que tienes ahora sino también de todo el historial de modificaciones que el código ha sufrido desde el primer día. Esta copia la puedes recuperar en cualquier momento y continuar trabajando desde cualquier ordenador.
-
-También permite contribuir a mejorar el software de los demás. Para poder alcanzar esta meta, GitHub provee de funcionalidades para hacer un \textit{fork} y solicitar \textit{pulls}. Realizar un \textit{fork} es simplemente clonar un repositorio ajeno (genera una copia en tu cuenta), y trabajar sobre el para eliminar algún bug, modificar cosas o añadir funcionalidades. Una vez realizadas tus modificaciones puedes enviar un \textit{pull} al dueño del proyecto, el cual podrá analizar los cambios que has realizado fácilmente, y si considera interesante tu contribución, combinarlo con el repositorio original.
-
-En la actualidad, GitHub es mucho más que un servicio de alojamiento de código. Además de éste, se ofrecen varias herramientas útiles para el trabajo en equipo. Entre ellas, caben destacar:
-\begin{itemize}
-	\item Una wiki para el mantenimiento de las distintas versiones de las páginas.
-	\item Un sistema de seguimiento de problemas que permiten a los miembros de tu equipo detallar un problema con tu software o una sugerencia que deseen hacer.
-	\item Una herramienta de revisión de código, donde se pueden añadir anotaciones en cualquier punto de un fichero y debatir sobre determinados cambios realizados en un commit específico.
-	\item Un visor de ramas donde se pueden comparar los progresos realizados en las distintas ramas de nuestro repositorio.
-\end{itemize}
-
-Para comenzar a usarlo sólo hay que crearse una cuenta gratuita y ya tendremos acceso a todas sus funcionalidades. Para crear un repositorio solo hay que seleccionar el botón “Create a New Repo”, de la barra de herramientas, habiendo entrado a GitHub con tu cuenta y rellenar los datos de nombre y descripción del repositorio.
-
-Para utilizarlo desde el ordenador, GitHub nos ofrece una serie de comandos para introducir en la terminal. Los más usados son:
-
-\begin{itemize}
-	\item git init: Con este comando indicamos que vamos a iniciar un proyecto en la carpeta actual, y que lo queremos sincronizar y gestionar mediante GitHub.
-	\item git add: Con este comando añadimos archivos a la siguiente versión o actualización del proyecto. Su hacemos \textit{git add --all} estamos indicando que queremos añadir todo dentro de la carpeta donde estamos: los archivos nuevos, los eliminados, los modificados, etc.
-	\item git commit: Usamos este comando para añadir un mensaje a la versión o actualización o para indicar los cambios hechos. Una forma de usarlo sería \textit{git commit -m “comentario”}
-	\item git pull: Este comando se usa para descargar la última versión del código del repositorio, por ejemplo: \textit{git pull origin master}
-	\item git push: Este comando se usa para subir el código al repositorio, por ejemplo: \textit{git push origin master}
-	\item git remote add origin: Este comando se usa para establecer cuál es el repositorio al que subir el código o del cual descargar la última versión, por ejemplo: \textit{git remote add origin -url del repositorio-}
-\end{itemize}
-
-Para colaborar en un proyecto ajeno simplemente basta con buscarlo dentro de los repositorios en su página web, y luego presionar el botón fork. Esto genera automaticamente una copia del mismo en tu perfil y te permite trabajar sobre esa copia, sin peligro para el autor de que hagas modificaciones en su código. Al terminar tus modificaciones, y hacer los \textit{push} que necesites, podrás presionar Pull Request para enviárselo al autor y que él decida si acepta las modificaciones.
-
-\subsection{Git}
-\label{subsec:plat_git}
-
-Git\cite{git} es un software de control de versiones diseñado por Linus Torvalds pensando en la eficiencia y la confiabilidad del mantenimiento de versiones de aplicaciones cuando estas tienen un gran número de archivos de código fuente. Se trata de un sistema distribuido de control de código fuente o SCM \textit{(Source Code Management)}. Un SCM es una herramienta que nos resuelve una serie de problemas, como saber qué líneas de código han cambiado de una versión a otra, volver a una versión anterior de forma sencilla o saber quién ha cambiado qué partes del código entre otros. En este caso, Git nos aporta herramientas para:
-
-\begin{itemize}
-	\item Auditoría del código: saber quién ha tocado qué y cuándo
-	\item Control sobre cómo ha cambiado nuestro proyecto con el paso del tiempo
-	\item Volver hacia atrás de una forma rápida
-	\item Control de versiones a través de etiquetas: versión 1.0, versión 1.0.1, versión 1.1, etc. Sabremos exactamente que había en cada una de ellas y las diferencias entre cualquiera de ellas dos
-	\item Seguridad: todas las estructuras internas de datos están firmadas con SHA1. No se puede cambiar el código sin que nos enteremos
-	\item Merging y branching extremadamente eficientes
-	\item Mejora nuestra capacidad de trabajar en equipo
-\end{itemize}
-
-
-
 \section{Blender}
-\label{sec:plat_blender}
+\label{sec:inf_blender}
 
 Blender\cite{blender} es un software libre y gratuito de creación en 3D. Está diseñado para realizar tareas como modelado, iluminación, renderizado, animación y creación de gráficos tridimensionales, edición de vídeo y escultura y pintura digital. En Blender, además, se pueden desarrollar vídeo juegos ya que posee un motor de juegos interno. Actualmente es compatible con todas las versiones de Windows, Mac OS X, GNU/Linux (Incluyendo Android), Solaris, FreeBSD e IRIX. Su interfaz utiliza OpenGL\footnote{\url{https://www.opengl.org/}} (\textit{Open Graphics Library}) para proporcionar una experiencia consistente y de calidad.
 
@@ -61,24 +14,32 @@ Se eligió este programa para realizar la edición 3D de mundos para Gazebo fren
 
 
 \section{Simulador Gazebo}
-\label{sec:plat_gazebo}
+\label{sec:inf_gazebo}
 
 Gazebo\cite{gazebo} es un simulador 3D de robots para interiores y exteriores, con un motor de físicas y cinemáticas muy potente. Dispone de un conjunto de plugins que facilita la integración con ROS, lo cual agiliza el desarrollo de código y permite la simulación de algoritmos antes de implementarlos en el robot físico, lo cual se puede lograr sin realizar apenas cambios en el código. Además está mantenido por una comunidad activa y la OSRF\footnote{\url{http://www.osrfoundation.org/}} (\textit{Open Source Robotics Foundation}), la cual también da soporte a ROS, y fué elegido para realizar el DARPA Robotics Challenge\footnote{\url{http://www.theroboticschallenge.org/}} entre 2012 y 2015.
 
 Cabe destacar que Gazebo se compone principalmente de un cliente y un servidor. El servidor es el encargado de realizar los calculos y la generación de los datos de los sensores, y puede ser usado sin necesidad de una interfaz gráfica, por ejemplo en un servidor remoto. El cliente proporciona una interfaz grágica basada en QT que incluye la visualización de la simulación y una serie de controles de multitud de propiedades. Esta configuración permite lanzar multiples clientes sobre un servidor, consiguiendo multiples interfaces de la misma simulación
 
 \section{JdeRobot}
-\label{sec:plat_jderobot}
+\label{sec:inf_jderobot}
 
 JdeRobot\cite{jderobot} es una suite de desarrollo de software de robótica, domótica y sistemas de visión computerizados cuya última versión, la 5.5, es la usada en este proyecto y permite la integración con ROS Kinetic. Proporciona un entorno distribuido donde las aplicaciones se forman mediante una colección de componentes asíncronos. Estos componentes utilizan interfaces ICE\footnote{\url{http://www.zeroc.com/}} para comunicarse, lo que permite lanzarlos desde distintos equipos y que estén escritos en diferentes lenguajes, como C++, Python o Java.
 
-JdeRobot simplifica el acceso a elementos de hardware, siendo tan simple com realizar una llamada a una función. También permite que los sensores o actuadores con los que se comunica sean reales o simulados, conectados mediante la red tanto dentro de la misma máquina como en una red local o de forma remota mediante internet. Actualmente se han desarrollado drivers para una multitud de dispositivos, como por ejemplo sensores RGB como Kinect o cámaras USB o IP, vehículos como Kobuki o Pioneer, drones como el ArDrone de Parrot, etc.
+JdeRobot simplifica el acceso a elementos de hardware, siendo tan simple como realizar una llamada a una función. También permite que los sensores o actuadores con los que se comunica sean reales o simulados, conectados mediante la red tanto dentro de la misma máquina como en una red local o de forma remota mediante internet. Actualmente se han desarrollado drivers para una multitud de dispositivos, como por ejemplo sensores RGB como Kinect o cámaras USB o IP, vehículos como Kobuki o Pioneer, drones como el ArDrone de Parrot, etc.
+
+Como podemos ver en la figura \ref{fig:esquemapracticas03}, los componentes programados dentro de JdeRobot se comunican con los robots mediante interfaces ICE, como el componente del círculo superior de la figura. En el circulo izquierdo podemos ver cómo cada interfaz ICE se comunica con un elemento del robot, como la cámara, los sensores de posición o los motores. En este caso son plugins pertenecientes a un robot simulado en Gazebo, que permite estudiar el comportamiento en entornos controlados. Como vemos en el círculo de la derecha, los mismos interfaces ICE se comunican con el elemento equivalente de este robot, que en este caso es un robot real y los elementos son los drivers de los sensores y actuadores reales. De esta manera, el mismo componente JdeRobot sirve para teleoperar un drone ArDrone Parot simulado en el ordenador y uno real en el exterior.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.75\textwidth]{esquemapracticas03.png}
+	\caption{Esquema del funcionamiento de JdeRobot.} \label{fig:esquemapracticas03}
+\end{figure}
 
 Es un software libre, licenciado como GPL y LGPL que se sirve de software como Gazebo, ROS, OpenGL, QT... que se usa tanto para docencia como para investigación en la URJC y ha formado parte del \textit{Google Summer of Code 2015}\footnote{\url{https://summerofcode.withgoogle.com/organizations/6493465572540416/}}, programa donde Google premia a los estudiantes al completar un proyecto de programación de software libre durante un verano.
 
 
 \section{ROS}
-\label{sec:plat_ros}
+\label{sec:inf_ros}
 
 El Sistema Operativo de Robots, ROS\cite{ros} (\textit{Robot Operating System}) es un entorno de trabajo flexible donde desarrollar software para robots. Es una colección de herramientas y librerías que buscan simplificar la tarea de crear comportamientos robustos y complejos en una amplia variedad de plataformas robóticas. 
 
@@ -107,7 +68,7 @@ Para entender mejor cómo funciona ROS podemos pensar en un sistema de grafos en
 \end{itemize}
 
 \subsection{MoveIt!}
-\label{subsec:plat_moveit}
+\label{subsec:inf_moveit}
 
 MoveIt!\cite{moveit}  es un software de código abierto para ROS (Robot Operating System) que es el estado de la técnica de software para la manipulación móvil. De hecho, podríamos afirmar que se está convirtiendo en un estándar de facto en el campo de la robótica móvil, ya que hoy en día más de 65 robots utilizan este software.
 
@@ -115,14 +76,14 @@ Incluye diversas utilidades que aceleran el trabajo con brazos robóticos, y sig
 
 
 \subsection{rviz}
-\label{subsec:plat_rviz}
+\label{subsec:inf_rviz}
 
 Rviz\cite{rviz} es una herramienta de visualización en 3D llamada que posibilita que  prácticamente cualquier plataforma robótica pueda ser representada en imagen 3D, respondiendo en tiempo real a lo que le ocurre en el mundo real. Se puede usar para mostrar lecturas de sensores y obtener información de estado de ROS.
 
 Usado en conjunto con MoveIt! permite mostrar el brazo en su estado actual, la colocación del brazo en una posición objetivo, y la visualización del camino pensado por MoveIt! y del movimiento real del brazo siguiendo dicho camino.
 
 \subsection{rqt}
-\label{subsec:plat_rqt}
+\label{subsec:inf_rqt}
 
 Rqt\cite{rqt} es un software de ROS que implementa varias herramientas de GUI (\textit{Graphical User Interface}) en forma de plugins, permitiendo cargarlas unificadas como una ventana en la pantalla facilitando trabajo al usuario. Simplemente con un comando en la consola, \textit{rqt} muestra una ventana donde elegir cualqier plugin disponible en el sistema en ese momento.
 
@@ -130,7 +91,7 @@ Contiene una herramienta que ha resultado muy útil para la realización de este
 
 
 \section{ARIAC}
-\label{sec:plat_ariac}
+\label{sec:inf_ariac}
 
 ARIAC\cite{ariac} (\textit{Agile Robotics for Industrial Automation Competition}) es una competición pionera cuyo objetivo es probar la agilidad de los sistemas robóticos industriales. Realizada por primera vez en Junio de 2017, nace de un esfuerzo conjunto entre la Conferencia de Automatización en Ciencia e Ingeniería del IEEE o CASE (\textit{Conference on Automation Science and Engineering}) y el NIST (\textit{National Institute of Standards and Technology}). Se sirve de Gazebo como plataforma de simulación y de un conjunto propio de modelos, plugins y scripts para simular un brazo robótico en un entorno dinámico, todo ello elaborado con la ayuda de la OSRF (\textit{Open Source Robotics Foundation}). Tiene el objetivo de aumentar la productividad y la autonomía de los robots industriales, entendiendo como agilidad la cosecución de manera automática de identificación de fallos y recuperación de los mismos, automatización para disminuir la reprogramación ante cambios en la producción, interacción con el entorno incluso en áreas no previstas inicialmente, y la capacidad de \textit{plug and play}, es decir, de introducir robots de otros fabricantes sin la necesidad de reprogramarlos.
 
@@ -146,19 +107,13 @@ En este proyecto nos servimos del entorno y del propio brazo robótico para desa
 
 
 \section{Qt}
-\label{sec:plat_qt}
+\label{sec:inf_qt}
 
 Qt\cite{qt} es un framework multiplataforma orientado a objetos ampliamente usado para desarrollar programas (software) que utilicen interfaz gráfica de usuario, así como también diferentes tipos de herramientas para la línea de comandos y consolas para servidores que no necesitan una interfaz gráfica de usuario.
 
 Qt es desarrollada como un software libre y de código abierto a través de Qt Project, donde participa tanto la comunidad, como desarrolladores de Nokia, Digia y otras empresas. Qt de distribuye bajo los términos de licencias como GNU Lesser General Public License. 
 
 Utiliza el lenguaje de programación C++ de forma nativa, aunque se pueden utilizar otros lenguajes de programación como Python añadiéndolos a través de bindings. Funciona en las principales plataformas y tiene un amplio apoyo. El API de la biblioteca cuenta con métodos para acceder a bases de datos mediante SQL, así como uso de XML, gestión de hilos, soporte de red, una API multiplataforma unificada para la manipulación de archivos y una multitud de otros métodos para el manejo de ficheros, además de estructuras de datos tradicionales.
-
-
-
-
-
-
 
 
 
