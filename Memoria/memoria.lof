@@ -1,53 +1,46 @@
 \select@language {spanish}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Pato con aparato digestivo de Jacques de Vaucanson.\relax }}{6}{figure.caption.3}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Robot de Unimation usado por Ford en 1961.\relax }}{7}{figure.caption.4}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Los primeros robots espaciales, el Mars 3 y el Viking I}}{8}{figure.caption.5}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mars 3}}}{8}{figure.caption.5}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Viking I}}}{8}{figure.caption.5}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Dos ingenieros de la Nasa posan con tres generaciones de Mars Rovers.\relax }}{9}{figure.caption.6}
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Robot poliarticulado de la empresa Sepro.\relax }}{11}{figure.caption.7}
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Robot androide.\relax }}{11}{figure.caption.8}
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Robot androide Nao.\relax }}{12}{figure.caption.9}
-\contentsline {figure}{\numberline {1.8}{\ignorespaces Diferentes ejemplos de robots zoom\IeC {\'o}rficos}}{13}{figure.caption.10}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Robot perro}}}{13}{figure.caption.10}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Robot ara\IeC {\~n}a}}}{13}{figure.caption.10}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Robot pez}}}{13}{figure.caption.10}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Robot serpiente}}}{13}{figure.caption.10}
-\contentsline {figure}{\numberline {1.9}{\ignorespaces Robot h\IeC {\'\i }brido usado en la desactivaci\IeC {\'o}n de bombas.\relax }}{14}{figure.caption.11}
-\contentsline {figure}{\numberline {1.10}{\ignorespaces Robot ArDrone en Gazebo.\relax }}{18}{figure.caption.12}
-\contentsline {figure}{\numberline {1.11}{\ignorespaces Robot kobuki en Gazebo.\relax }}{18}{figure.caption.13}
-\contentsline {figure}{\numberline {1.12}{\ignorespaces Robot Pioneer en Gazebo.\relax }}{19}{figure.caption.14}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Robot de Unimation usado por Ford en 1961.\relax }}{3}{figure.caption.6}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Los primeros robots espaciales, el Mars 3 y el Viking I}}{4}{figure.caption.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mars 3}}}{4}{figure.caption.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Viking I}}}{4}{figure.caption.7}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Esquema b\IeC {\'a}sico del funcionamiento de un robot.\relax }}{5}{figure.caption.8}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Robot ArDrone en Gazebo persiguiendo a otro ArDrone dentro de una pr\IeC {\'a}ctica.\relax }}{11}{figure.caption.9}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Robot kobuki en Gazebo.\relax }}{12}{figure.caption.10}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Robot de F\IeC {\'o}rmula 1 en un circuito en Gazebo.\relax }}{12}{figure.caption.11}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Robot taxi en una ciudad en Gazebo.\relax }}{13}{figure.caption.12}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Robot Pioneer en Gazebo frente al conjunto de objetos a escanear.\relax }}{13}{figure.caption.13}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Modelo de civlo de vida en espiral.\relax }}{23}{figure.caption.15}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Modelo de civlo de vida en espiral.\relax }}{17}{figure.caption.14}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Escenario de la competici\IeC {\'o}n ARIAC.\relax }}{33}{figure.caption.16}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Escenario de la competici\IeC {\'o}n ARIAC.\relax }}{27}{figure.caption.15}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Interfaz de Blender.\relax }}{36}{figure.caption.17}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Detalle de Manipuladores de transformaciones en 3D.\relax }}{36}{figure.caption.18}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Detalle del cursor de Blender.\relax }}{37}{figure.caption.19}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Ventana de propiedades.\relax }}{38}{figure.caption.20}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Trazado del circuito de M\IeC {\'o}naco usado como plantilla\relax }}{40}{figure.caption.21}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Detalle de curva Bezier.\relax }}{40}{figure.caption.22}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Trazado del circuito de M\IeC {\'o}naco superpuesto a la plantilla.\relax }}{41}{figure.caption.23}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Segmento del circuito.\relax }}{42}{figure.caption.24}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Circuito (s\IeC {\'o}lo el trazado).\relax }}{42}{figure.caption.25}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Circuito plano.\relax }}{43}{figure.caption.26}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Diferentes vistas del circuito de F1 de M\IeC {\'o}naco plano\relax }}{44}{figure.caption.27}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Fondo para el circuito con elevaciones.\relax }}{45}{figure.caption.28}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Circuito con elevaciones.\relax }}{46}{figure.caption.29}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Diferentes vistas del circuito de F1 de M\IeC {\'o}naco con elevaciones\relax }}{47}{figure.caption.30}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Circuitos con una l\IeC {\'\i }nea roja}}{48}{figure.caption.31}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {M\IeC {\'o}naco plano}}}{48}{figure.caption.31}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {M\IeC {\'o}naco con elevaciones}}}{48}{figure.caption.31}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Desplegable para exportar ficheros desde Blender.\relax }}{48}{figure.caption.32}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Opciones de exportaci\IeC {\'o}n de Collada.\relax }}{49}{figure.caption.33}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Coches recorriendo el circuito de M\IeC {\'o}naco.\relax }}{53}{figure.caption.34}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Interfaz de Blender.\relax }}{30}{figure.caption.16}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Detalle de Manipuladores de transformaciones en 3D.\relax }}{30}{figure.caption.17}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Detalle del cursor de Blender.\relax }}{31}{figure.caption.18}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Ventana de propiedades.\relax }}{33}{figure.caption.19}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Trazado del circuito de M\IeC {\'o}naco usado como plantilla\relax }}{34}{figure.caption.20}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Detalle de curva Bezier.\relax }}{34}{figure.caption.21}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Trazado del circuito de M\IeC {\'o}naco superpuesto a la plantilla.\relax }}{35}{figure.caption.22}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Segmento del circuito.\relax }}{36}{figure.caption.23}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Circuito (s\IeC {\'o}lo el trazado).\relax }}{36}{figure.caption.24}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Circuito plano.\relax }}{37}{figure.caption.25}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Diferentes vistas del circuito de F1 de M\IeC {\'o}naco plano\relax }}{38}{figure.caption.26}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Fondo para el circuito con elevaciones.\relax }}{39}{figure.caption.27}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Circuito con elevaciones.\relax }}{40}{figure.caption.28}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Diferentes vistas del circuito de F1 de M\IeC {\'o}naco con elevaciones\relax }}{41}{figure.caption.29}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Circuitos con una l\IeC {\'\i }nea roja}}{42}{figure.caption.30}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {M\IeC {\'o}naco plano}}}{42}{figure.caption.30}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {M\IeC {\'o}naco con elevaciones}}}{42}{figure.caption.30}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Desplegable para exportar ficheros desde Blender.\relax }}{42}{figure.caption.31}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Opciones de exportaci\IeC {\'o}n de Collada.\relax }}{43}{figure.caption.32}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Coches recorriendo el circuito de M\IeC {\'o}naco.\relax }}{47}{figure.caption.33}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Robot PR2.\relax }}{56}{figure.caption.35}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Robot kuka.\relax }}{56}{figure.caption.36}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Robot ur10.\relax }}{57}{figure.caption.37}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Grafo de los \textit {nodes} y \textit {topics} de ARIAC.\relax }}{58}{figure.caption.38}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Grafo de los \textit {nodes} y \textit {topics} de ARIAC.\relax }}{59}{figure.caption.39}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Detalle de las articulaciones del brazo.\relax }}{62}{figure.caption.40}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Interfaz gr\IeC {\'a}fica del controlador del brazo.\relax }}{65}{figure.caption.41}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Robot PR2.\relax }}{50}{figure.caption.34}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Robot kuka.\relax }}{50}{figure.caption.35}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Robot ur10.\relax }}{51}{figure.caption.36}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Grafo de los \textit {nodes} y \textit {topics} de ARIAC.\relax }}{52}{figure.caption.37}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Grafo de los \textit {nodes} y \textit {topics} de ARIAC.\relax }}{53}{figure.caption.38}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Detalle de las articulaciones del brazo.\relax }}{56}{figure.caption.39}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Interfaz gr\IeC {\'a}fica del controlador del brazo.\relax }}{59}{figure.caption.40}
+\addvspace {10\p@ }

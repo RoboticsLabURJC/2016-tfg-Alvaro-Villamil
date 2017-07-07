@@ -60,26 +60,32 @@
 }
 
 \begin{document}
-	
-	
-	
-	
-	
-	
+
+\include{portada}
+\newpage
+$\ $
+\thispagestyle{empty} % para que no se numere esta pagina
+
+
 % Para que salga la bibliografia en el indice
 \let\OLDthebibliography=\thebibliography
 \def\thebibliography#1{\OLDthebibliography{#1}%
 	\addcontentsline{toc}{chapter}{\bibname}}
 
+
+\include{agradecimientos}
+\thispagestyle{empty} % para que no se numere esta pagina
+\include{resumen}
+
 \tableofcontents
 \listoffigures
-	
-	
+
 \include{1-introduccion}
 \include{2-objetivos}
 \include{3-plataforma}
 \include{4-Monaco}
 \include{5-Brazo}
+\include{6-conclusiones}
 
 
 
@@ -106,6 +112,7 @@
 \bibitem{qt} Página oficial de Qt: \url{https://www.qt.io/es/}
 \bibitem{mediawiki} Página de MediaWiki del proyecto: \url{http://jderobot.org/Avillamil-tfg}
 \bibitem{mirepo} Página del repositorio del proyecto: \url{https://github.com/RoboticsURJC-students/2016-tfg-Alvaro-Villamil}
+\bibitem{libroblanco}\textit{Libro Blanco de la Robótica: De la investigación al desarrollo tecnológico y aplicaciones futuras}. Editado por CEA - GTRob con subvención del MEC.
 \end{thebibliography} 
 	
 
