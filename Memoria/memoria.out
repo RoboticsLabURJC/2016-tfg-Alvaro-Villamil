@@ -27,8 +27,9 @@
 \BOOKMARK [1][-]{section.4.5}{Mundos para Gazebo}{chapter.4}% 27
 \BOOKMARK [0][-]{chapter.5}{Brazo rob\363tico}{}% 28
 \BOOKMARK [1][-]{section.5.1}{Hablando ROS}{chapter.5}% 29
-\BOOKMARK [1][-]{section.5.2}{Controlando el Brazo}{chapter.5}% 30
-\BOOKMARK [0][-]{chapter.6}{Conclusiones y trabajos futuros}{}% 31
-\BOOKMARK [1][-]{section.6.1}{Conclusiones}{chapter.6}% 32
-\BOOKMARK [1][-]{section.6.2}{Trabajos futuros}{chapter.6}% 33
-\BOOKMARK [0][-]{chapter*.44}{Bibliograf\355a}{}% 34
+\BOOKMARK [1][-]{section.5.2}{Construyendo el teleoperador}{chapter.5}% 30
+\BOOKMARK [1][-]{section.5.3}{MoveIt}{chapter.5}% 31
+\BOOKMARK [0][-]{chapter.6}{Conclusiones y trabajos futuros}{}% 32
+\BOOKMARK [1][-]{section.6.1}{Conclusiones}{chapter.6}% 33
+\BOOKMARK [1][-]{section.6.2}{Trabajos futuros}{chapter.6}% 34
+\BOOKMARK [0][-]{chapter*.45}{Bibliograf\355a}{}% 35

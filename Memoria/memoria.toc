@@ -28,8 +28,9 @@
 \contentsline {section}{\numberline {4.5}Mundos para Gazebo}{42}{section.4.5}
 \contentsline {chapter}{\numberline {5}Brazo rob\IeC {\'o}tico}{51}{chapter.5}
 \contentsline {section}{\numberline {5.1}Hablando ROS}{53}{section.5.1}
-\contentsline {section}{\numberline {5.2}Controlando el Brazo}{56}{section.5.2}
-\contentsline {chapter}{\numberline {6}Conclusiones y trabajos futuros}{63}{chapter.6}
-\contentsline {section}{\numberline {6.1}Conclusiones}{63}{section.6.1}
-\contentsline {section}{\numberline {6.2}Trabajos futuros}{64}{section.6.2}
-\contentsline {chapter}{Bibliograf\'{\i }a}{65}{chapter*.44}
+\contentsline {section}{\numberline {5.2}Construyendo el teleoperador}{56}{section.5.2}
+\contentsline {section}{\numberline {5.3}MoveIt}{68}{section.5.3}
+\contentsline {chapter}{\numberline {6}Conclusiones y trabajos futuros}{69}{chapter.6}
+\contentsline {section}{\numberline {6.1}Conclusiones}{69}{section.6.1}
+\contentsline {section}{\numberline {6.2}Trabajos futuros}{70}{section.6.2}
+\contentsline {chapter}{Bibliograf\'{\i }a}{71}{chapter*.45}

@@ -44,8 +44,9 @@
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Robot PR2.\relax }}{52}{figure.caption.37}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Robot kuka.\relax }}{52}{figure.caption.38}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Robot ur10.\relax }}{53}{figure.caption.39}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Grafo de los \textit {nodes} y \textit {topics} de ARIAC.\relax }}{54}{figure.caption.40}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Esquema de los componentes de ARIAC centr\IeC {\'a}ndonos en el brazo.\relax }}{54}{figure.caption.40}
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Grafo de los \textit {nodes} y \textit {topics} de ARIAC.\relax }}{55}{figure.caption.41}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Detalle de las articulaciones del brazo.\relax }}{58}{figure.caption.42}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Interfaz gr\IeC {\'a}fica del controlador del brazo.\relax }}{61}{figure.caption.43}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Grafo de los \textit {nodes} y \textit {topics} de ARIAC.\relax }}{56}{figure.caption.42}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Detalle de las articulaciones del brazo.\relax }}{59}{figure.caption.43}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Interfaz gr\IeC {\'a}fica del controlador del brazo.\relax }}{62}{figure.caption.44}
 \addvspace {10\p@ }
