@@ -3,14 +3,32 @@
 
 Una vez explicado el contexto, los objetivos y las herramientas usadas en el proyecto, en este capítulo vamos ver en detalle la construcción de un mundo para JdeRobot, en concreto el circuito de Fórmula 1 de Mónaco.
 
+\section{Prácticas con circuito}
+\label{sec:pm_practicas}
 
+Las prácticas del entorno JdeRobot-Academy están diseñadas de forma que tanto el mundo como el robot están correctamente montados y configurados, y la aplicación que controla al robot está parcialmente completa. El alumno no necesita realizar modificaciones a estos elementos, pero debe completar el código de la aplicación para realizar las tareas propuestas en la práctica. En la figura \ref{fig:graficof1} podemos ver la relación entre los componentes de estas prácticas, así como el espacio destinado al trabajo del alumno. Marcado con una flecha roja esta Gazebo, para señalar las partes modificadas con este trabajo. No cambiamos nada ni del coche ni de la aplicación cambiamos el mundo de Gazebo para lograr que la misma práctica se situe en otro escenario.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{graficof1.png}
+	\caption{Esquema de los componentes de las prácticas con Fórmula 1.} \label{fig:graficof1}
+\end{figure}
 
-********************************
-meter sección las prácticas de navegación y la otra de f1
-meter esquema de gacebo-ICE-app del estudiante
-*********************************
+Actualmente el entorno JdeRobot-Academy presenta dos practicas basadas en circuitos de Fórmula 1:
+\begin{itemize}
+	\item Práctica de navegación local autónoma: En esta práctica el Fórmula 1 dispone de unos sensores que le permiten detectar obstáculos. El la figura \ref{fig:vff} podemos apreciar el funcionamiento del sensor comparando la información que recibe con la vista real de la simulación. En esta práctica el alumno ha de rellenar el código con elementos de control visual, que le permitan identificar los obstáculos, y con algoritmos de navegación local como el VFF (visual force field), logrando dar vueltas al circuito esquivando los obstáculo presentes.
+	
+	\item Práctica de sigue-línea: En esta práctica el Fórmula 1 dispone de una cámara con la que captar imágenes del circuito. En este caso el circuito dispone de una línea roja, y el coche ha de seguir esa línea para completar las vueltas. En esta práctica el alumno ha de completar el código con algoritmos de procesamiento de imagen, como filtros de color o de formas, y con elementos de control como controladores PID para que el robot siga la línea.
+\end{itemize}
+	
+\begin{figure}[h]
+	\centering
+	\subfigure[Vista del simulador]{\includegraphics[width=0.47\textwidth]{vff-gazebo.png}}
+	\subfigure[vista del sensor]{\includegraphics[width=0.25\textwidth]{vff-gui.png}}
+	\caption[Vistas de la práctica de navegación local del F1]{Vistas de la realización de la práctica, tanto lo que muestra Gazebo (a) como una representación de lo que recibe el sensor (b).} \label{fig:vff}
+\end{figure}
 
+Nuestro objetivo es construir el circuito de Mónaco de forma que se pueda utilizar en ambas prácticas, creando para ello mundos de Gazebo que se acoplen al esquema de funcionamiento de estas prácticas, como muestra la flecha de la figura \ref{fig:graficof1}.
 
 \section{Manejo de Blender}
 \label{sec:pm_manejodeblender}
@@ -91,13 +109,13 @@ Debajo de ésta, marcada en color Verde, se encuentra la ventana de Propiedades,
 
 Una vez presentadas las opciones básicas de Blender y cómo desenvolverse entre ellas con un mínimo de soltura pasaremos a desarrollar el proceso de creación del circuito de Mónaco. En este proyecto comenzamos creando el trazado del circuito  sin elevaciones, para coger soltura en el manejo del programa y explorar las diferentes opciones antes de realizar tareas más complejas.
 
-Comenzamos eliminando el cubo que aparece por defecto, desplegando la ventana de propiedades del menú principal y buscando el apartado de “Background Images”. Activamos la casilla y buscamos la imagen que deseamos poner de fondo, en este caso la imagen de la figura  \ref{fig:circuitomonaco}. Al hacer click en el botón “Add Image” podremos seleccionar la imagen que queremos ver de fondo, así como el eje en el que la queramos ver. Esta herramienta es especialmente útil ya que  nos permite ver una superposición de la imagen del trazado al usar la vista cenital, que corresponde con la tecla “7” del teclado numérico, pero en cualquier otro ángulo no se verá, con lo que facilita enormemente la tarea de escalado y modelado del circuito.
-
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.5\textwidth]{CircuitoMonaco.png}
 	\caption{Trazado del circuito de Mónaco usado como plantilla} \label{fig:circuitomonaco}
 \end{figure}
+
+Comenzamos eliminando el cubo que aparece por defecto, desplegando la ventana de propiedades del menú principal y buscando el apartado de “Background Images”. Activamos la casilla y buscamos la imagen que deseamos poner de fondo, en este caso la imagen de la figura  \ref{fig:circuitomonaco}. Al hacer click en el botón “Add Image” podremos seleccionar la imagen que queremos ver de fondo, así como el eje en el que la queramos ver. Esta herramienta es especialmente útil ya que  nos permite ver una superposición de la imagen del trazado al usar la vista cenital, que corresponde con la tecla “7” del teclado numérico, pero en cualquier otro ángulo no se verá, con lo que facilita enormemente la tarea de escalado y modelado del circuito.
 
 A continuación añadimos una curva “Bezier” (\textit{Figura \ref{fig:interfazblender05}}), hacemos esto desde el menú superior en \textit{Add}, \textit{Curve}, \textit{Bezier}. Esto creará un nuevo objeto, que podemos renombrar en la ventana de Objetos para facilitar el acceso y la selección posteriormente, cuando tengamos mas objetos en la escena. Este tipo de curvas, como se puede apreciar en la figura \ref{fig:interfazblender05}, son unas curvas com muchos elementos que nos permiten moldearlas a nuestro gusto. En cada extremo del tramo se componen de una recta con tres puntos. el central que establece el inicio del trazo de la curva, y los otros dos que establecen el giro de la curva y lo pronunciado que és. Cuanto más cerca estén del punto central más cerrado será el ángulo de giro, y cuanto más alejados más suave la curva descrita.
 
@@ -168,13 +186,13 @@ Haciendo click en el botón de Modo Edición accedemos a otro modo, en este caso
 
 A continuación creamos de nuevo, siguiendo los mismos pasos, la curva Bezier que servirá de trazado. Creamos ahora un plano, que pintamos de un color llamativo, y extendemos a lo largo de la curva bezier, consiguiendo un trazado de referencia para acabar de dar los últimos detalles a la rejilla. Tanto a la curva como a este plano le aplicamos como modificador la rejilla, consiguiendo darles altura y pudiendo ver el recorrido real del circuito con las elevaciones modeladas. Ahora modelamos la rejilla teniendo en cuenta el recorrido del circuito y su situación a orillas del mar, por lo que tenemos mucho cuidado de mantener plana toda la parte baja y del mar y aplicamos las elevaciones en las demás partes. Una vez modelado texturizamos de forma análoga a como hicimos anteriormente. Una vez modelado y texturizado el plano, eliminamos el trazado de referencia y obtenemos el suelo sobre el que descansará el circuito (\textit{Figura \ref{fig:monacoelev00}}).
 
+Ahora repetiremos todos los pasos de creación del trazado (creamos el segmento, lo texturizamos, lo extendemos a lo largo de la curva) y además le aplicamos la rejilla como modificador. Si hemos realizado bien el paso anterior con el trazado de referencia, el trazado final debería descansar sobre la caja realizada y acoplarse perfectamente al terreno, de no ser así retocamos nuevamente la rejilla con las herramientas de escultura. 
+
 \begin{figure}[hb]
 	\centering
 	\includegraphics[width=0.9\textwidth]{MonacoElev05.png}
 	\caption{Circuito con elevaciones.} \label{fig:monacoelev05}
 \end{figure}
-
-Ahora repetiremos todos los pasos de creación del trazado (creamos el segmento, lo texturizamos, lo extendemos a lo largo de la curva) y además le aplicamos la rejilla como modificador. Si hemos realizado bien el paso anterior con el trazado de referencia, el trazado final debería descansar sobre la caja realizada y acoplarse perfectamente al terreno, de no ser así retocamos nuevamente la rejilla con las herramientas de escultura. 
 
 Una vez completado este paso podemos dar por finalizado el circuito (\textit{Figura \ref{fig:monacoelev05}}). En la Figura \ref{fig:monacoelevvistas} se pueden ver detalles del circuito donde se aprecian mejor las elevaciones del terreno.
 

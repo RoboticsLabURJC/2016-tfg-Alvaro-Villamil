@@ -20,15 +20,16 @@
 \contentsline {section}{\numberline {3.5}ARIAC}{27}{section.3.5}
 \contentsline {section}{\numberline {3.6}Qt}{28}{section.3.6}
 \contentsline {chapter}{\numberline {4}Pr\IeC {\'a}ctica M\IeC {\'o}naco}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}Manejo de Blender}{29}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Interfaz}{29}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}Circuito plano}{33}{section.4.2}
-\contentsline {section}{\numberline {4.3}Circuito con elevaciones}{38}{section.4.3}
-\contentsline {section}{\numberline {4.4}Mundos para Gazebo}{40}{section.4.4}
-\contentsline {chapter}{\numberline {5}Brazo rob\IeC {\'o}tico}{49}{chapter.5}
-\contentsline {section}{\numberline {5.1}Hablando ROS}{51}{section.5.1}
-\contentsline {section}{\numberline {5.2}Controlando el Brazo}{54}{section.5.2}
-\contentsline {chapter}{\numberline {6}Conclusiones y trabajos futuros}{61}{chapter.6}
-\contentsline {section}{\numberline {6.1}Conclusiones}{61}{section.6.1}
-\contentsline {section}{\numberline {6.2}Trabajos futuros}{62}{section.6.2}
-\contentsline {chapter}{Bibliograf\'{\i }a}{63}{chapter*.42}
+\contentsline {section}{\numberline {4.1}Pr\IeC {\'a}cticas con circuito}{29}{section.4.1}
+\contentsline {section}{\numberline {4.2}Manejo de Blender}{31}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Interfaz}{31}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Circuito plano}{35}{section.4.3}
+\contentsline {section}{\numberline {4.4}Circuito con elevaciones}{39}{section.4.4}
+\contentsline {section}{\numberline {4.5}Mundos para Gazebo}{42}{section.4.5}
+\contentsline {chapter}{\numberline {5}Brazo rob\IeC {\'o}tico}{51}{chapter.5}
+\contentsline {section}{\numberline {5.1}Hablando ROS}{53}{section.5.1}
+\contentsline {section}{\numberline {5.2}Controlando el Brazo}{56}{section.5.2}
+\contentsline {chapter}{\numberline {6}Conclusiones y trabajos futuros}{63}{chapter.6}
+\contentsline {section}{\numberline {6.1}Conclusiones}{63}{section.6.1}
+\contentsline {section}{\numberline {6.2}Trabajos futuros}{64}{section.6.2}
+\contentsline {chapter}{Bibliograf\'{\i }a}{65}{chapter*.44}
