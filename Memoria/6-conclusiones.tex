@@ -1,12 +1,21 @@
 \chapter{Conclusiones y trabajos futuros}
 \label{ch:Conclusiones}
 
-En este proyecto se construirán escenarios para la enseñanza utilizando diversas tecnologías. Para poder saber cual es el marco de desarrollo y donde se engloban los conceptos utilizados vamos a introducir algunos términos que servirán como contexto y que nos permitirán entender mejor de dónde surge la necesidad de estos escenarios y cual es la utilidad de los mismos.
+En los capítulos anteriores hemos desarrollado la descripción del problema planteado y las soluciones encontradas, así como las elecciones de diseño y los resultados obtenidos. En este capítulo realizaremos un análisis de las conclusiones una vez finalizado el proyecto y de las líneas de trabajo que se han abierto con este trabajo.
 
 \section{Conclusiones}
 \label{sec:cn_conclusiones}
 
-bla bla
+Tras observar el trabajo realizado podemos ver que hemos alcanzado los objetivos propuestos en el capítulo \ref{sec:obj_descripcionproblema}, consiguiendo aportar a las prácticas disponibles para el entorno JdeRobot-Academy mayor variedad y complejidad.
+
+En el caso de la primera práctica, se ha creado con éxito un mundo de Gazebo con elevaciones para dar más realismo a varias prácticas existentes. Mientras se cumplía este objetivo se han creado en total cuatro mundos, uno de ellos plano, otro plano con una línea roja, otro con elevaciones con línea roja y otro con elevaciones sin línea roja. Todos ellos son utilizables y están listos para la realización de prácticas.
+
+En el caso de la segunda práctica hemos encontrado un mundo para Gazebo en el cual se ubica un brazo robótico funcional, y se han creado los componentes software necesarios para desarrollar un teleoperador funcional de ese brazo. Cumplimos, por tanto, el objetivo propuesto de construir un teleoperador para un brazo robótico, además de facilitar el desarrollo de prácticas al proporcionar un mundo donde ya está instalado el brazo.
+
+Para realizar este trabajo se han cumplido los requisitos marcados en el capítulo \ref{sec:obj_requisitos}. El desarrollo se ha realizado bajo la arquitectura de JdeRobot en su versión 5.5, Gazebo 7 y ROS Kinetic. Los componentes software del brazo se han programado utilizando Python, y el resto de componentes tanto del mundo como del modelo 3D en sus respectivos formatos. Los mundos creados han replicado la estructura de los ya existentes y se han incorporado al repositorio oficial de JdeRobot. El controlador es de bajo nivel y funciona directamente sobre el robot.
+
+Durante la realización de este trabajo se han adquirido una gran cantidad de conocimientos, tanto por necesidad para completar los objetivos como por curiosidad para expandir las posiblidades de desarrollo. El uso del programa de edición 3D Blender ha sido amplio y complejo, pero imprescindible para crear los mundos propuestos. Así mismo se ha profundizado en las características de Gazebo y sus compatibilidades con archivos de diferentes formatos como Collada, así como los formatos de dichos archivos. También ha sido imprescindible el estudio de JdeRobot y la distribución del código y los ficheros que lo forman para poder realizar aportes significativos a este entorno. Hemos aprendido mucho sobre ROS y Python al realizar el brazo, sobre todo del funcionamiento de ROS y sus librerías de compatibilidad con Python.
+
 
 \section{Trabajos futuros}
 \label{sec:cn_trabajosfuturos}
@@ -22,4 +31,14 @@ bla bla
 
 
 
+
+
+
 Una de las introducciones es aprender herramientas heterogéneas  blablabla
+
+
+
+
+
+
+

@@ -29,5 +29,5 @@
 \contentsline {section}{\numberline {5.2}Controlando el Brazo}{52}{section.5.2}
 \contentsline {chapter}{\numberline {6}Conclusiones y trabajos futuros}{59}{chapter.6}
 \contentsline {section}{\numberline {6.1}Conclusiones}{59}{section.6.1}
-\contentsline {section}{\numberline {6.2}Trabajos futuros}{59}{section.6.2}
+\contentsline {section}{\numberline {6.2}Trabajos futuros}{60}{section.6.2}
 \contentsline {chapter}{Bibliograf\'{\i }a}{61}{chapter*.42}
