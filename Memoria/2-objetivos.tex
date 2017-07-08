@@ -1,30 +1,29 @@
 \chapter{Objetivos}
 \label{ch:Objetivos}
 
-En este proyecto se construirán escenarios para la enseñanza utilizando diversas tecnologías. Para poder saber cual es el marco de desarrollo y donde se engloban los conceptos utilizados vamos a introducir algunos términos que servirán como contexto y que nos permitirán entender mejor de dónde surge la necesidad de estos escenarios y cual es la utilidad de los mismos.
+Una vez presentado el contexto de este TFG, fijamos ahora los objetivos concretos que se han abordado. También se describe la metodología de trabajo seguida y la planificación temporal.
 
 \section{Descripción del problema}
 \label{sec:obj_descripcionproblema}
 
-El objetivo principal de este trabajo consiste en ampliar la colección de prácticas de JdeRobot-Academy, enriqueciéndolas y aumentando el abanico de posibilidades que se ofrece al alumno. Para ello necesitamos entender el funcionamiento tanto de JdeRobot como de ROS y familiarizarnos con el manejo de programas de edición 3D. Este objetivo lo hemos dividido en dos principales que constituirán nuevas prácticas para el entorno docente:
+El objetivo principal de este trabajo consiste en mejorar y ampliar la colección de prácticas de JdeRobot-Academy, enriqueciéndolas y aumentando el abanico de posibilidades que se ofrece al alumno. Para ello necesitamos entender el funcionamiento tanto de JdeRobot como de ROS y familiarizarnos con el manejo de programas de edición 3D. Este objetivo lo hemos dividido en dos principales que constituirán nuevas prácticas para el entorno docente:
 \begin{itemize}
-	\item Práctica en un circuito real: Crearemos un modelo 3D de un escenario real con elevaciones para realizar las prácticas de JdeRobot-Academy en las que se usa un Fórmula 1, aquella en la que ha de seguir una línea y aquella en la que ha de dar vueltas esquivando obstáculos. Elegimos el circuito de Fórmula 1 de Mónaco por ser un circuito conocido, corto tanto en su longitud como en el área que ocupa, y por estar ubicado en un entorno urbano y montañoso, lo que hace que sea estrecho y con subidas y bajadas. Lo prepararemos para estas dos prácticas específicas, añadiendo barreras en los bordes de la pista o marcas en el asfalto, y lo construiremos de forma que sea sencillo realizar futuras modificaciones para otros tipos de prácticas.
+	\item Mejorar la infraestructura en Gazebo de las prácticas de JdeRobot-Academy que usan coches de carreras: Crearemos un modelo 3D de un escenario real con elevaciones para realizar las prácticas de JdeRobot-Academy en las que se usa un Fórmula 1, aquella en la que ha de seguir una línea y aquella en la que ha de dar vueltas esquivando obstáculos. Elegimos el circuito de Fórmula 1 de Mónaco por ser un circuito conocido, corto tanto en su longitud como en el área que ocupa, y por estar ubicado en un entorno urbano y montañoso, lo que hace que sea estrecho y con subidas y bajadas. Lo prepararemos para estas dos prácticas específicas, añadiendo barreras en los bordes de la pista o marcas en el asfalto, y lo construiremos de forma que sea sencillo realizar futuras modificaciones para otros tipos de prácticas.
 	
-	\item Práctica con un brazo robótico: Buscaremos un brazo robótico que funcione en Gazebo y bajo ROS o, si es posible, JdeRobot, y que cumpla con los requisitos impuestos. Estudiaremos además su construcción, su funcionamiento y su comportamiento y construiremos un controlador de bajo nivel que actúe directamente sobre las partes móviles del brazo, es decir, que mueva las articulaciones una a una. Crearemos una ventana con unos controles intuitivos para facilitar el manejo del robot.
+	\item Diseñar y programar un teleoperador de un brazo robótico en Gazebo: Buscaremos un brazo robótico que funcione en Gazebo y bajo ROS. Analizaremos su construcción y su funcionamiento y construiremos un controlador de bajo nivel que actúe directamente sobre las partes móviles del brazo, es decir, que mueva las articulaciones una a una. Para ello estudiaremos la interfaz de manejo que ofrece el entorno ROS para estos robots articulados. Crearemos una ventana con unos controles intuitivos para facilitar el manejo del robot.
 \end{itemize}
 
-\section{Requisitos}
-\label{sec:obj_requisitos}
- Para alcanzar los objetivos marcados, nuestro proyecto deberá cumplir unos requisitos:
+\subsection{Requisitos}
+\label{subsec:obj_requisitos}
+ Además de alcanzar los objetivos marcados, las soluciones alcanzadas deberán cumplir estos requisitos:
 \begin{itemize}
-	\item El desarrollo de este proyecto se hará bajo la arquitectura de JdeRobot en su última versión, la 5.5, así como de Gazebo 7 y de ROS Kinetic. Los componentes software se programarán utilizando principalmente Python, y en aquellos casos que no sea posible, utilizando el lenguaje principal de la plataforma o del tipo de archivo necesario.
+	\item El desarrollo de este proyecto funcionará para la versión 5.5 del entorno JdeRobot, así como bajo Gazebo 7 y ROS Kinetic. Los componentes software se programarán utilizando principalmente Python, y en aquellos casos que no sea posible, utilizando el lenguaje principal de la plataforma o del tipo de archivo necesario.
 	
-	\item Los mundos creados se harán replicando el esquema de los ya existentes y se incorporarán al repositorio oficial de JdeRobot, por lo que debe ser posible utilizarlos junto con la plataforma de forma eficiente.
+	\item El coste computacional de los mundos 3D creados para Gazebo deberá estar acotado, en la medida de lo posible, para que sea usable desde ordenadores normales, habituales entre los alumnos o en los laboratorios. 
 	
-	\item El controlador debe ser de bajo nivel, esto es, no se apoyará en software de terceros ni plugins ni \textit{middleware}, debe funcionar directamente sobre el robot.
+	\item Los mundos creados se incorporarán al repositorio oficial de JdeRobot, por lo que debe ser posible utilizarlos junto con la plataforma de forma eficiente y estar afinados para su uso por terceros.
+
 \end{itemize}
-
-
 
 \section{Metodología}
 \label{sec:obj_metodologia}
@@ -52,16 +51,32 @@ En cada vuelta de la espiral se parte de los resultados obtenidos en la anterior
 	
 \end{enumerate}
 
-Las fases de desarrollo seguidas en el proyecto se corresponden con los pasos seguidos en los siguientes capítulos. Se han realizado reuniones semanales con el tutor para mantener un seguimiento y una progresión adecuada en el desarrollo del proyecto, alcanzando los objetivos marcados y estudiando diferentes alternativas para conseguirlos.
+Se han realizado reuniones semanales con el tutor para mantener un seguimiento y una progresión adecuada en el desarrollo del proyecto, alcanzando los objetivos marcados y estudiando diferentes alternativas para conseguirlos.
 
 Para tener constancia de los progresos y del desarrollo general del proyecto se ha utilizado un apartado en la propia página de JdeRobot, un MediaWiki\cite{mediawiki} donde ir documentando periódicamente los progresos, incluyendo fotos y vídeos de los logros conseguidos y de los problemas encontrados. Ha servido como referencia para que las reuniones con el tutor estén sincronizadas, y a modo de diario para mantener un registro de los progresos y de las dificultades encontradas. También se ha utilizado un repositorio en GitHub\cite{mirepo} donde se encuentran todos los archivos relacionados con el proyecto, desde test y tutoriales hasta el código fuente del resultado final, pasando por alternativas descartadas y pruebas fallidas.
 
+\section{Planificación temporal}
+\label{sec:obj_planificaciontemporal}
 
+Las fases de desarrollo seguidas en el proyecto se corresponden con los pasos seguidos en los siguientes capítulos. Las principales son:
 
-
-
-
-
+\begin{itemize}
+	\item Estudio del entorno JdeRobot:
+	En esta primera fase nos centraremos en entender el funcionamiento del entorno JdeRobot y de integrarnos en el grupo de robótica. Estudiaremos los diversos componentes que forman el entorno y qué papel desempeña cada uno, centrándonos en los mundos de Gazebo y los plugins de control de los robots ya que son los elementos que mán en profundidad desarrollaremos en nuestro proyecto. Para ello recurrimos a los múltiples ejemplos facilitados y a la lista de correo del grupo de robótica, la cuál resultó ser de una ayuda inestimable para solucionar los problemas surgidos en estos primeros compases del proyecto.
+	
+	\item Desarrollo del circuito realista de Fórmula 1:
+	En esta segunda fase nos familiarizamos con el manejo de Blender, una herramienta potente pero muy diferente a los editores habituales de texto o de imágenes. Recurrimos a diversos tutoriales encontrados en su página centrándonos en el modelado de objetos 3D, ya que características como la animación, la simulación de fluidos o el desarrollo de videojuegos no son necesarias en este proyecto. Nos familiarizamos con el tratamiento de imagen para las texturas, buscando formas de conseguirlas y de editarlas para aplicarlas al circuito. También fue necesaria una investigación sobre las características topológicas del circuito para darle mayor realismo, tanto en la configuración del trazado como en las elevaciones del terreno.
+	
+	\item Estudio de ROS y ARIAC:
+	Al igual que con el entorno de JdeRobot, necesitamos estudiar el funcionamiento de ROS para comprenderlo y aplicarlo en la realización del teleoperador. Encontramos en su extensa documentación y tutoriales toda la información que necesitamos. También estudiamos los componentes que forman ARIAC para comprender su funcionamiento y cómo usar ROS para manejar el brazo. A través de sus tutoriales vemos que ofrece la posibilidad de utilizar planificadores de movimiento como MoveIt, que forman parte de los complementos de ROS, por lo que indagamos más en ellos.
+	
+	\item Desarrollo del teleoperador:
+	Cuando ya hemos adwuirido los conocimientos sobre ROS y ARIAC necesarios comenzamos el desarrollo del teleoperador. Para ello repasamos el lenguaje Python y comenzamos dando pequeños pasos para afianzar los conocimientos sobre ROS y relacionarlos con el mundo de ARIAC y el brazo que contiene. Al finalizar realizamos pruebas para comprobar que el funcionamiento es el adecuado y se comporta como esperábamos.
+	
+	\item Documentación del proyecto:
+	Para finalizar, una vez alcanzados los objetivos planteados comenzamos con la escritura de la memoria. Nos apoyamos en el MediaWiki que hemos escrito a medida que realizábamos progresos en el trabajo para recordar los pasos seguidos y las fuentes consultadas.
+	
+\end{itemize}
 
 
 

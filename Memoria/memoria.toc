@@ -6,28 +6,29 @@
 \contentsline {section}{\numberline {1.3}Entorno docente JdeRobot-Academy }{9}{section.1.3}
 \contentsline {chapter}{\numberline {2}Objetivos}{15}{chapter.2}
 \contentsline {section}{\numberline {2.1}Descripci\IeC {\'o}n del problema}{15}{section.2.1}
-\contentsline {section}{\numberline {2.2}Requisitos}{16}{section.2.2}
-\contentsline {section}{\numberline {2.3}Metodolog\IeC {\'\i }a}{16}{section.2.3}
-\contentsline {chapter}{\numberline {3}Infraestructura Usada}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}Blender}{19}{section.3.1}
-\contentsline {section}{\numberline {3.2}Simulador Gazebo}{20}{section.3.2}
-\contentsline {section}{\numberline {3.3}JdeRobot}{20}{section.3.3}
-\contentsline {section}{\numberline {3.4}ROS}{21}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}MoveIt!}{24}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}rviz}{24}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}rqt}{24}{subsection.3.4.3}
-\contentsline {section}{\numberline {3.5}ARIAC}{25}{section.3.5}
-\contentsline {section}{\numberline {3.6}Qt}{26}{section.3.6}
-\contentsline {chapter}{\numberline {4}Pr\IeC {\'a}ctica M\IeC {\'o}naco}{27}{chapter.4}
-\contentsline {section}{\numberline {4.1}Manejo de Blender}{27}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Interfaz}{27}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}Circuito plano}{31}{section.4.2}
-\contentsline {section}{\numberline {4.3}Circuito con elevaciones}{36}{section.4.3}
-\contentsline {section}{\numberline {4.4}Mundos para Gazebo}{38}{section.4.4}
-\contentsline {chapter}{\numberline {5}Brazo rob\IeC {\'o}tico}{47}{chapter.5}
-\contentsline {section}{\numberline {5.1}Hablando ROS}{49}{section.5.1}
-\contentsline {section}{\numberline {5.2}Controlando el Brazo}{52}{section.5.2}
-\contentsline {chapter}{\numberline {6}Conclusiones y trabajos futuros}{59}{chapter.6}
-\contentsline {section}{\numberline {6.1}Conclusiones}{59}{section.6.1}
-\contentsline {section}{\numberline {6.2}Trabajos futuros}{60}{section.6.2}
-\contentsline {chapter}{Bibliograf\'{\i }a}{61}{chapter*.42}
+\contentsline {subsection}{\numberline {2.1.1}Requisitos}{16}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Metodolog\IeC {\'\i }a}{16}{section.2.2}
+\contentsline {section}{\numberline {2.3}Planificaci\IeC {\'o}n temporal}{18}{section.2.3}
+\contentsline {chapter}{\numberline {3}Infraestructura Usada}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}Blender}{21}{section.3.1}
+\contentsline {section}{\numberline {3.2}Simulador Gazebo}{22}{section.3.2}
+\contentsline {section}{\numberline {3.3}JdeRobot}{22}{section.3.3}
+\contentsline {section}{\numberline {3.4}ROS}{23}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}MoveIt!}{26}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}rviz}{26}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}rqt}{26}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}ARIAC}{27}{section.3.5}
+\contentsline {section}{\numberline {3.6}Qt}{28}{section.3.6}
+\contentsline {chapter}{\numberline {4}Pr\IeC {\'a}ctica M\IeC {\'o}naco}{29}{chapter.4}
+\contentsline {section}{\numberline {4.1}Manejo de Blender}{29}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Interfaz}{29}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Circuito plano}{33}{section.4.2}
+\contentsline {section}{\numberline {4.3}Circuito con elevaciones}{38}{section.4.3}
+\contentsline {section}{\numberline {4.4}Mundos para Gazebo}{40}{section.4.4}
+\contentsline {chapter}{\numberline {5}Brazo rob\IeC {\'o}tico}{49}{chapter.5}
+\contentsline {section}{\numberline {5.1}Hablando ROS}{51}{section.5.1}
+\contentsline {section}{\numberline {5.2}Controlando el Brazo}{54}{section.5.2}
+\contentsline {chapter}{\numberline {6}Conclusiones y trabajos futuros}{61}{chapter.6}
+\contentsline {section}{\numberline {6.1}Conclusiones}{61}{section.6.1}
+\contentsline {section}{\numberline {6.2}Trabajos futuros}{62}{section.6.2}
+\contentsline {chapter}{Bibliograf\'{\i }a}{63}{chapter*.42}
