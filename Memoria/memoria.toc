@@ -31,8 +31,8 @@
 \contentsline {section}{\numberline {5.2}Hablando ROS con un brazo rob\IeC {\'o}tico ARIAC}{56}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Nodos y topics}{56}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Nodos, \textit {topics} y mensajes de un brazo rob\IeC {\'o}tico ARIAC}{57}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Teleoperador de un brazo robotizado}{63}{section.5.3}
-\contentsline {section}{\numberline {5.4}Manejo del brazo a trav\IeC {\'e}s del planificador MoveIt}{73}{section.5.4}
+\contentsline {section}{\numberline {5.3}Teleoperador de un brazo robotizado}{64}{section.5.3}
+\contentsline {section}{\numberline {5.4}Manejo del brazo a trav\IeC {\'e}s del planificador MoveIt}{71}{section.5.4}
 \contentsline {chapter}{\numberline {6}Conclusiones}{79}{chapter.6}
 \contentsline {section}{\numberline {6.1}Aportaciones}{79}{section.6.1}
 \contentsline {section}{\numberline {6.2}Trabajos futuros}{80}{section.6.2}

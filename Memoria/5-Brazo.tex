@@ -140,7 +140,8 @@ En la Figura \ref{fig:brazoarticulaciones} podemos situar visualmente las articu
 Los siguientes campos del mensaje son \textit{arrays} de \textit{floats} (números) de posiciones, velocidades y esfuerzos. Dan información de la posición de cada articulación, la velocidad a la que se mueven, y el esfuerzo o fuerza que poseen en el momento de envío del mensaje, por lo que son arrays de ocho posiciones y en cada una está la información relativa a la articulación en la posición homóloga en el array de nombres. A nosotros nos interesa el primer \textit{array} para conocer la posición inicial de las articulaciones.
 
 Para ver mejor la estructura del mensaje lanzamos el mundo de ARIAC y ejecutamos el comando de terminal \textit{rostopic echo /ariac/joint\_states}, obteniendo en texto en la terminal la estructura de datos de este mensaje:
-
+\\
+\\
 \begin{lstlisting}
 ---
 header: 
@@ -398,19 +399,19 @@ En la Figura \ref{fig:mando} podemos ver la apariencia final del controlador del
 
 \begin{figure}[]
 	\centering
-	\subfigure[elbow\_joint]{\includegraphics[width=0.445\textwidth]{brazopos1.png}}\hspace{0.07\textwidth}	
-	\subfigure[linear\_arm\_actuator\_joint]{\includegraphics[width=0.433\textwidth]{brazopos2.png}}
-	\subfigure[shoulder\_lift\_joint]{\includegraphics[width=0.434\textwidth]{brazopos3.png}}\hspace{0.07\textwidth}
-	\subfigure[shoulder\_pan\_joint]{\includegraphics[width=0.44\textwidth]{brazopos4.png}}
-	\caption[Ilustración de los grados de libertad del brazo]{Posiciones de las articulaciones del brazo después de: mover el codo (a); desplazarlo en el carril (b); mover el hombro (c); girar el hombro (d).} \label{fig:posicionesbrazo1}
+	\subfigure[elbow\_joint.]{\includegraphics[width=0.445\textwidth]{brazopos1.png}}\hspace{0.07\textwidth}	
+	\subfigure[linear\_arm\_actuator\_joint.]{\includegraphics[width=0.433\textwidth]{brazopos2.png}}
+	\subfigure[shoulder\_lift\_joint.]{\includegraphics[width=0.434\textwidth]{brazopos3.png}}\hspace{0.07\textwidth}
+	\subfigure[shoulder\_pan\_joint.]{\includegraphics[width=0.44\textwidth]{brazopos4.png}}
+	\caption[Ilustración de los grados de libertad del brazo.]{Posiciones de las articulaciones del brazo después de: mover el codo (a); desplazarlo en el carril (b); mover el hombro (c); girar el hombro (d).} \label{fig:posicionesbrazo1}
 \end{figure}
 
 \begin{figure}[]
 	\centering
-	\subfigure[wrist\_1\_joint]{\includegraphics[width=0.85\textwidth]{brazopos5.png}}
-	\subfigure[wrist\_2\_joint]{\includegraphics[width=0.85\textwidth]{brazopos6.png}}
-	\subfigure[wrist\_3\_joint]{\includegraphics[width=0.85\textwidth]{brazopos7.png}}
-	\caption[Ilustración de los grados de libertad de la muñeca]{Posiciones de las articulaciones de la muñeca después de: girarla en vertical (a); girarla en horizontal (b); girar la mano (c).} \label{fig:posicionesbrazo2}
+	\subfigure[wrist\_1\_joint.]{\includegraphics[width=0.85\textwidth]{brazopos5.png}}
+	\subfigure[wrist\_2\_joint.]{\includegraphics[width=0.85\textwidth]{brazopos6.png}}
+	\subfigure[wrist\_3\_joint.]{\includegraphics[width=0.85\textwidth]{brazopos7.png}}
+	\caption[Ilustración de los grados de libertad de la muñeca.]{Posiciones de las articulaciones de la muñeca después de: girarla en vertical (a); girarla en horizontal (b); girar la mano (c).} \label{fig:posicionesbrazo2}
 \end{figure}
 
 Para ilustrar mejor los movimientos del brazo hemos realizado capturas de pantalla en las que se ilustran los grados de libertad del brazo. Se puede ver también el teleoperador, con el deslizador responsable del movimiento de la articulación resaltado. Si nos fijamos en el valor del deslizador que controla esa articulación veremos que es diferente, y se corresponde con la posición del brazo de la imagen. Dado que son siete grados de libertad en total, los hemos repartido en dos figuras al final de éste capítulo. 

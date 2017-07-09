@@ -23,9 +23,9 @@ Actualmente el entorno JdeRobot-Academy presenta dos prácticas basadas en circu
 	
 \begin{figure}[h]
 	\centering
-	\subfigure[Vista del simulador]{\includegraphics[width=0.47\textwidth]{vff-gazebo.png}}
-	\subfigure[vista del sensor]{\includegraphics[width=0.25\textwidth]{vff-gui.png}}
-	\caption[Vistas de la práctica de navegación local del F1]{Vistas de la realización de la práctica, tanto lo que muestra Gazebo (a) como una representación de lo que recibe el sensor (b).} \label{fig:vff}
+	\subfigure[Vista del simulador.]{\includegraphics[width=0.47\textwidth]{vff-gazebo.png}}
+	\subfigure[vista del sensor.]{\includegraphics[width=0.25\textwidth]{vff-gui.png}}
+	\caption[Vistas de la práctica de navegación local del F1.]{Vistas de la realización de la práctica, tanto lo que muestra Gazebo (a) como una representación de lo que recibe el sensor (b).} \label{fig:vff}
 \end{figure}
 
 Nuestro objetivo es reconstruir el circuito de Mónaco de forma que se pueda utilizar en ambas prácticas, creando para ello mundos de Gazebo que se acoplen al esquema de funcionamiento de estas prácticas, como muestra la flecha de la figura \ref{fig:graficof1}.
@@ -202,16 +202,16 @@ Una vez completado este paso podemos dar por finalizado el circuito (\textit{Fig
 	\subfigure{\includegraphics[width=0.495\textwidth]{MonacoElev02.png}}
 	\subfigure{\includegraphics[width=0.495\textwidth]{MonacoElev03.png}}
 	\subfigure{\includegraphics[width=0.495\textwidth]{MonacoElev04.png}}
-	\caption{Diferentes vistas del circuito de F1 de Mónaco con elevaciones} \label{fig:monacoelevvistas}
+	\caption{Diferentes vistas del circuito de F1 de Mónaco con elevaciones.} \label{fig:monacoelevvistas}
 \end{figure}
 
 Dado el carácter práctico de este escenario, y dado que ya existen prácticas desarrolladas con fines similares, procedemos a crear una variante del circuito, tanto el plano como el elevado, con una línea roja en el centro de su recorrido. Dicha línea servirá para realizar la práctica de control visual en la que es necesaria una referencia clara de un color determinado, siendo el rojo un color claramente diferente de cualquier componente del circuito como el asfalto o las vallas. Como podemos ver en la Figura \ref{fig:monacolinea} el circuito es idéntico en ambos casos salvo por la linea roja en el medio del asfalto. Para realizar esta modificación de la manera más eficiente y práctica realizamos unos pocos cambios al modelo original. Primero guardamos la escena con un nombre diferente para diferenciarlos. Después editamos la textura usada para crear el material del asfalto con un programa como GIMP\footnote{Siglas de “GNU Image Manipulation Program”, gratuito y de código abierto. \url{https://www.gimp.org/}} y le dibujamos esa línea roja. Después, en el nuevo fichero de Blender cambiamos, tanto en la textura como en el material asociado al asfalto, la imagen de fuente por la editada. Una vez hecho esto en ambos circuitos conseguimos esta variante más orientada a prácticas específicas. 
 
 \begin{figure}[]
 	\centering
-	\subfigure[Mónaco plano]{\includegraphics[width=0.49\textwidth]{monacolinea.png}}
-	\subfigure[Mónaco con elevaciones]{\includegraphics[width=0.5\textwidth]{monacoelevlinea.png}}
-	\caption[Circuitos con una línea roja]{Circuitos de mónaco editados para contener una línea roja en su trazado, tanto el plano (a) como el que contiene elevaciones (b)} \label{fig:monacolinea}
+	\subfigure[Mónaco plano.]{\includegraphics[width=0.49\textwidth]{monacolinea.png}}
+	\subfigure[Mónaco con elevaciones.]{\includegraphics[width=0.5\textwidth]{monacoelevlinea.png}}
+	\caption[Circuitos con una línea roja.]{Circuitos de mónaco editados para contener una línea roja en su trazado, tanto el plano (a) como el que contiene elevaciones (b).} \label{fig:monacolinea}
 \end{figure}
 
 \section{Mundos para Gazebo}
@@ -299,6 +299,9 @@ De este fichero, de extensión .config, SDF extrae información como el nombre d
 A continuación estructuramos los ficheros para que mantengan coherencia con el resto de modelos de JdeRobot. De tal forma creamos una carpeta con el nombre del modelo, en este caso \textit{monaco}, y dentro de ella situamos los archivos \textit{model.config} y \textit{model.sdf} y una carpeta que llamamos \textit{meshes}. Dentro de esta carpeta guardamos el archivo \textit{CircuitoMonaco.dae} y todas las texturas que necesita nuestro modelo, tal y como las exportó Blender.
 
 El siguiente paso es crear el fichero \textit{monaco.world}, el cual pasaremos como argumento a Gazebo al lanzarlo para que cargue nuestro mundo. Para decirle a Gazebo que queremos cargar nuestro circuito creamos el campo \textit{include} de las líneas 7 a 10. De esta manera le decimos que cargue el modelo \textit{monaco} y lo coloque en una posición en el mundo. También creamos un sol estándar de Gazebo en otro campo \textit{include}. Al probar a lanzar Gazebo con esta configuración vemos que la escena queda muy oscura y decidimos añadir dos \textit{light}, dos luces direccionales que además aportarán sombras y dinamismo al mundo. Para no crear una carga excesiva de trabajo de simulación hacemos que ambas luces sean idénticas, potenciando el efecto sin crear varias sombras ni reflejos innecesarios. El contenido final de dicho fichero es éste:
+\\
+\\
+\\
 \lstset{language=xml}
 \begin{lstlisting}
 <?xml version="1.0"?>
