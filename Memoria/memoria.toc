@@ -19,13 +19,13 @@
 \contentsline {subsection}{\numberline {3.4.3}rqt}{26}{subsection.3.4.3}
 \contentsline {section}{\numberline {3.5}ARIAC}{27}{section.3.5}
 \contentsline {section}{\numberline {3.6}Qt}{28}{section.3.6}
-\contentsline {chapter}{\numberline {4}Pr\IeC {\'a}ctica M\IeC {\'o}naco}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}Pr\IeC {\'a}cticas con circuito}{29}{section.4.1}
-\contentsline {section}{\numberline {4.2}Manejo de Blender}{31}{section.4.2}
+\contentsline {chapter}{\numberline {4}Circuito de carreras de F\IeC {\'o}rmula 1}{29}{chapter.4}
+\contentsline {section}{\numberline {4.1}Pr\IeC {\'a}cticas con circuito en JdeRobot-Academy}{29}{section.4.1}
+\contentsline {section}{\numberline {4.2}Manejo de Blender}{30}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Interfaz}{31}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}Circuito plano}{35}{section.4.3}
-\contentsline {section}{\numberline {4.4}Circuito con elevaciones}{39}{section.4.4}
-\contentsline {section}{\numberline {4.5}Mundos para Gazebo}{42}{section.4.5}
+\contentsline {section}{\numberline {4.3}Creaci\IeC {\'o}n de un circuito plano}{35}{section.4.3}
+\contentsline {section}{\numberline {4.4}Creaci\IeC {\'o}n del circuito con elevaciones}{40}{section.4.4}
+\contentsline {section}{\numberline {4.5}Mundos para Gazebo}{43}{section.4.5}
 \contentsline {chapter}{\numberline {5}Brazo rob\IeC {\'o}tico}{51}{chapter.5}
 \contentsline {section}{\numberline {5.1}Hablando ROS}{53}{section.5.1}
 \contentsline {section}{\numberline {5.2}Construyendo el teleoperador}{56}{section.5.2}
