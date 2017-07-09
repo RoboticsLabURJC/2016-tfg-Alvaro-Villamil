@@ -42,15 +42,15 @@
 \contentsline {figure}{\numberline {4.20}{\ignorespaces Coches recorriendo el circuito de M\IeC {\'o}naco.\relax }}{50}{figure.caption.36}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Robot PR2.\relax }}{52}{figure.caption.37}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Robot kuka.\relax }}{52}{figure.caption.38}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Robot ur10.\relax }}{53}{figure.caption.39}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Esquema de los componentes de ARIAC centr\IeC {\'a}ndonos en el brazo.\relax }}{54}{figure.caption.40}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Robot kuka.\relax }}{53}{figure.caption.38}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Robot ur10.\relax }}{54}{figure.caption.39}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Esquema de los componentes de ARIAC centr\IeC {\'a}ndonos en el brazo.\relax }}{55}{figure.caption.40}
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Grafo de los \textit {nodes} y \textit {topics} de ARIAC.\relax }}{55}{figure.caption.41}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Grafo de los \textit {nodes} y \textit {topics} de ARIAC.\relax }}{56}{figure.caption.42}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Grafo de los \textit {nodes} y \textit {topics} de ARIAC.\relax }}{57}{figure.caption.42}
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Detalle de las articulaciones del brazo.\relax }}{59}{figure.caption.43}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Interfaz gr\IeC {\'a}fica del controlador del brazo.\relax }}{62}{figure.caption.44}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Herramienta rViz mostrando la trayectoria del brazo.\relax }}{68}{figure.caption.45}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Grafo con la relaci\IeC {\'o}n de nodos y topic de ARIAC, el brazo, MoveIt y rViz.\relax }}{69}{figure.caption.46}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Grafo \IeC {\textquotedblleft }simplificado\IeC {\textquotedblright } con la relaci\IeC {\'o}n de nodos y topic de ARIAC, el brazo, MoveIt y rViz.\relax }}{70}{figure.caption.47}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Lista de mensajes, servicios y acciones que componen la interfaz de MoveIt.\relax }}{71}{figure.caption.48}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Interfaz gr\IeC {\'a}fica del controlador del brazo.\relax }}{63}{figure.caption.44}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Herramienta rViz mostrando la trayectoria del brazo.\relax }}{69}{figure.caption.45}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Grafo con la relaci\IeC {\'o}n de nodos y topic de ARIAC, el brazo, MoveIt y rViz.\relax }}{70}{figure.caption.46}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Grafo \IeC {\textquotedblleft }simplificado\IeC {\textquotedblright } con la relaci\IeC {\'o}n de nodos y topic de ARIAC, el brazo, MoveIt y rViz.\relax }}{71}{figure.caption.47}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Lista de mensajes, servicios y acciones que componen la interfaz de MoveIt.\relax }}{72}{figure.caption.48}
 \addvspace {10\p@ }
