@@ -1,31 +1,32 @@
-\chapter{Conclusiones y trabajos futuros}
+\chapter{Conclusiones}
 \label{ch:Conclusiones}
 
-En los capítulos anteriores hemos desarrollado la descripción del problema planteado y las soluciones encontradas, así como las elecciones de diseño y los resultados obtenidos. En este capítulo realizaremos un análisis de las conclusiones una vez finalizado el proyecto y de las líneas de trabajo que se han abierto con este trabajo.
+En los capítulos anteriores hemos descrito del problema planteado y las soluciones construidas, así como las elecciones de diseño y los resultados. Para terminar, en este capítulo analizamos de las conclusiones principales y los aportes una vez finalizado el proyecto y las líneas de trabajo que se han abierto con este trabajo.
 
-\section{Conclusiones}
-\label{sec:cn_conclusiones}
+\section{Aportaciones}
+\label{sec:cn_aportaciones}
 
 Tras observar el trabajo realizado podemos ver que hemos alcanzado los objetivos propuestos en el capítulo \ref{sec:obj_descripcionproblema}, consiguiendo aportar a las prácticas disponibles para el entorno JdeRobot-Academy mayor variedad y complejidad.
 
-En el caso de la primera práctica, se ha creado con éxito un mundo de Gazebo con elevaciones para dar más realismo a varias prácticas existentes. Mientras se cumplía este objetivo se han creado en total cuatro mundos, uno de ellos plano, otro plano con una línea roja, otro con elevaciones con línea roja y otro con elevaciones sin línea roja. Todos ellos son utilizables y están listos para la realización de prácticas.
+En el caso del primer subobjetivo, se ha creado con éxito un mundo de Gazebo con elevaciones para dar más realismo y atractivo a dos prácticas existentes que manejas coches de Fórmula 1. Para cumplir este objetivo se han creado en total cuatro mundos, uno de ellos plano, otro plano con una línea roja, otro con elevaciones con línea roja y otro con elevaciones sin línea roja. Todos ellos son utilizables y están listos para la realización de prácticas con los coches.
 
-En el caso de la segunda práctica hemos encontrado un mundo para Gazebo en el cual se ubica un brazo robótico funcional, y se han creado los componentes software necesarios para desarrollar un teleoperador funcional de ese brazo. Cumplimos, por tanto, el objetivo propuesto de construir un teleoperador para un brazo robótico, además de facilitar el desarrollo de prácticas al proporcionar un mundo donde ya está instalado el brazo.
+En el caso del segundo subobjetivo hemos encontrado un mundo para Gazebo en el cual se ubica un brazo robótico funcional, y se han creado los componentes software necesarios para desarrollar un teleoperador funcional de ese brazo. Cumplimos, por tanto, la tarea propuesta de construir un teleoperador para un brazo robótico, además de facilitar el desarrollo de nuevas prácticas al proporcionar un mundo donde ya está instalado el brazo.
 
-Para realizar este trabajo se han cumplido los requisitos marcados en el capítulo \ref{subsec:obj_requisitos}. El desarrollo se ha realizado bajo la arquitectura de JdeRobot en su versión 5.5, Gazebo 7 y ROS Kinetic. Los componentes software del brazo se han programado utilizando Python, y el resto de componentes tanto del mundo como del modelo 3D en sus respectivos formatos. Los mundos creados han replicado la estructura de los ya existentes y se han incorporado al repositorio oficial de JdeRobot. El controlador es de bajo nivel y funciona directamente sobre el robot.
+Además, las soluciones alcanzadas cumplen los requisitos marcados en el capítulo \ref{subsec:obj_requisitos}. El desarrollo se ha realizado bajo la arquitectura de JdeRobot en su versión 5.5, Gazebo 7 y ROS Kinetic. Los componentes software del brazo se han programado utilizando Python, y el resto de componentes tanto del mundo como del modelo 3D en sus respectivos formatos. Los mundos creados han replicado la estructura de los ya existentes y se han incorporado al repositorio oficial de JdeRobot.
 
-Durante la realización de este trabajo se han adquirido una gran cantidad de conocimientos, tanto por necesidad para completar los objetivos como por curiosidad para expandir las posibilidades de desarrollo. El uso del programa de edición 3D Blender ha sido amplio y complejo, pero imprescindible para crear los mundos propuestos. Así mismo se ha profundizado en las características de Gazebo y sus compatibilidades con archivos de diferentes formatos como Collada, así como los formatos de dichos archivos. También ha sido imprescindible el estudio de JdeRobot y la distribución del código y los ficheros que lo forman para poder realizar aportes significativos a este entorno. Hemos aprendido mucho sobre ROS y Python al realizar el brazo, sobre todo del funcionamiento de ROS y sus librerías de compatibilidad con Python.
+Durante la realización de este trabajo se han adquirido una gran cantidad de conocimientos, tanto por necesidad para completar los objetivos como por curiosidad para expandir las posibilidades de desarrollo. El uso del programa de edición 3D Blender ha sido amplio y complejo, pero imprescindible para crear los mundos propuestos. Así mismo, se ha profundizado en las características de Gazebo y sus compatibilidades con archivos de diferentes formatos como Collada, así como los formatos de dichos archivos. También ha sido imprescindible el estudio de JdeRobot y la distribución del código y los ficheros que lo forman para poder realizar aportes significativos a este entorno. Hemos aprendido igualmente mucho sobre ROS y su funcionamiento con Python al realizar el teleoperador del brazo.
 
 
 \section{Trabajos futuros}
 \label{sec:cn_trabajosfuturos}
 
-Este proyecto sirve de base para futuros trabajos de ampliación y mejora en las prácticas de JdeRobot-Academy. Utilizando los mundos y componentes creados en este trabajo se pueden implementar nuevas funcionalidades en las prácticas o crear nuevos retos para los alumnos. Algunas de las posibles líneas que desarrollar en futuros trabajos se plantean a continuación.
+Este proyecto sirve de base para futuros trabajos de ampliación y mejora en las prácticas de JdeRobot-Academy. Utilizando los mundos y componentes creados en este trabajo se pueden implementar nuevas funcionalidades en las prácticas o crear nuevos retos para los alumnos. Tres posibles líneas que desarrollar en futuros trabajos se plantean a continuación.
 
-Como complemento a los mundos creados para las prácticas de navegación local y autónoma con el Fórmula 1 se podría mejorar el diseño del modelo del coche. 
+Primero, como complemento a los mundos creados para las prácticas de navegación local y autónoma con el Fórmula 1 se podría mejorar el diseño del modelo del coche. 
 
-Partiendo del teleoperador del brazo robótico se pueden seguir varias líneas de investigación. Una de ellas sería el uso de planificadores de movimiento como MoveIt y la creación de teleoperadores o plugins basados en ellos, de forma que se amplíe la funcionalidad del brazo y las posibilidades académicas que ofrece en las prácticas. 
+Segundo, partiendo del teleoperador del brazo robótico se pueden seguir varias líneas de investigación. Una de ellas sería el uso de planificadores de movimiento articulado como MoveIt y la creación de teleoperadores o plugins basados en ellos, de forma que se amplíe la funcionalidad del brazo y las posibilidades académicas que ofrece. 
 
-Otra línea dentro del mismo marco podría ser la incorporación al brazo de algún sensor o cámara para añadir al teleoperador una visión no sólo del mundo sino desde el brazo. Una tercera línea de desarrollo sería explorar las posibilidades del mundo de ARIAC, como por ejemplo generar piezas que el brazo pueda colocar en las bandejas o usar las cámaras y sensores incorporados en el mundo. De esta forma se abre un abanico de prácticas en las que explorar las posibilidades del brazo y del teleoperador.
+Y tercero, otra línea dentro del mismo marco podría ser el desarrollo de una práctica \textit{pick\&place}. Con la incorporación al brazo de algún sensor o cámara se podría añadir al teleoperador una visión no sólo del mundo sino desde el brazo. Ampliando las posibilidades del mundo de ARIAC, se podrían generar piezas que el brazo pueda colocar en las bandejas o usar las cámaras y sensores incorporados en el mundo. De esta forma se abre un abanico de prácticas en las que explorar las posibilidades del brazo y del teleoperador.
+
 
 
