@@ -29,9 +29,9 @@
 \BOOKMARK [1][-]{section.5.1}{Brazos rob\363ticos existentes en el entorno ROS}{chapter.5}% 29
 \BOOKMARK [1][-]{section.5.2}{Hablando ROS con un brazo rob\363tico ARIAC}{chapter.5}% 30
 \BOOKMARK [2][-]{subsection.5.2.1}{Nodos y topics}{section.5.2}% 31
-\BOOKMARK [2][-]{subsection.5.2.2}{ROS messages}{section.5.2}% 32
+\BOOKMARK [2][-]{subsection.5.2.2}{Nodos, topics y mensajes de un brazo rob\363tico ARIAC}{section.5.2}% 32
 \BOOKMARK [1][-]{section.5.3}{Teleoperador de un brazo robotizado}{chapter.5}% 33
-\BOOKMARK [2][-]{subsection.5.3.1}{MoveIt}{section.5.3}% 34
+\BOOKMARK [1][-]{section.5.4}{Manejo del brazo a trav\351s del planificador MoveIt}{chapter.5}% 34
 \BOOKMARK [0][-]{chapter.6}{Conclusiones}{}% 35
 \BOOKMARK [1][-]{section.6.1}{Aportaciones}{chapter.6}% 36
 \BOOKMARK [1][-]{section.6.2}{Trabajos futuros}{chapter.6}% 37

@@ -1,7 +1,7 @@
 \chapter{Brazo robótico}
 \label{ch:BrazoRobotico}
 
-En este capítulo vamos a estudiar el comportamiento y la estructura de un brazo robótico para luego crear un controlador de bajo nivel, un teleoperador para él. Esta práctica supone la primera incursión en JdeRobot en el ámbito de los brazos robóticos y prepara el terreno para posteriores prácticas de planificación de movimientos con este tipo de robots.
+En este capítulo vamos a estudiar el comportamiento y la estructura de un brazo robótico para luego crear un controlador de bajo nivel, un teleoperador, para él. Esta práctica supone la primera incursión en JdeRobot en el ámbito de los brazos robóticos y prepara el terreno para posteriores prácticas de planificación de movimientos articulados con este tipo de robots.
 
 \section{Brazos robóticos existentes en el entorno ROS}
 \label{sec:br_brazosexistentes}
@@ -58,6 +58,9 @@ Los \textit{ROS messages} contienen la información que los nodos se envían med
 
 Una vez conocemos los elementos de comunicación probamos cómo se produce, creando un nodo \textit{publisher} y otro \textit{subscriber} y haciendo que hablen entre sí. Mediante los diferentes comandos de terminal que proporciona ROS comprobamos el correcto funcionamiento de los mismos. 
 
+\subsection{Nodos, \textit{topics} y mensajes de un brazo robótico ARIAC}
+\label{subsec:br_nododstopicsymensajes}
+
 \begin{figure}[ht]
 	\centering\includegraphics[width=1\textwidth]{Brazo10a.png}
 	\caption{Grafo de los \textit{nodes} y \textit{topics} de ARIAC.}
@@ -76,9 +79,6 @@ Aunque ya nos da una idea muy clara de la organización de los nodos y \textit{t
 
 En esa figura podemos diferenciar varios bloques importantes. En el centro del grafo se sitúan los \textit{topics} y nodos referentes al mundo ARIAC, A su izquierda se encuentra el nodo principal de Gazebo. Encima de éste y a la derecha del bloque ariac hay varios grupos que sirven de apoyo para el entorno: \textit{fake\_joint\_calibration}, \textit{robot\_state\_publisher} y \textit{relay\_joint\_states}.
 Debajo de ariac se encuentra el topic“/clock”, que sirve de referencia para todos los elementos de la simulación. A la derecha de éste está el nodo de \textit{rqt} que nos permite obtener esta imagen. En la parte derecha del grafo hay diversos nodos y \textit{topics} de \textit{rosout}. Se trata de la consola de \textit{log} de ROS, donde se anotan los sucesos o errores de los diferentes procesos ejecutados.
-
-\subsection{ROS messages}
-\label{subsec:br_rosmessages}
 
 Una vez tenemos este esquema en la cabeza acudimos tanto al código de ARIAC como a su documentación para ver qué hace cada nodo y cada topic, qué partes controlan el brazo y cómo podemos comunicarnos con ellas. De esta forma descubrimos dos \textit{topics} clave para poder controlar el brazo:
 \begin{itemize}
@@ -396,24 +396,41 @@ A la hora de crear el controlador agrupando todos los elementos, podemos organiz
 
 En la Figura \ref{fig:mando} podemos ver la apariencia final del controlador del brazo con el que completamos nuestro objetivo inicial, así como la posción inicial del brazo al cargar el mundo de ARIAC. 
 
+\begin{figure}[]
+	\centering
+	\subfigure[elbow\_joint]{\includegraphics[width=0.445\textwidth]{brazopos1.png}}\hspace{0.07\textwidth}	
+	\subfigure[linear\_arm\_actuator\_joint]{\includegraphics[width=0.433\textwidth]{brazopos2.png}}
+	\subfigure[shoulder\_lift\_joint]{\includegraphics[width=0.434\textwidth]{brazopos3.png}}\hspace{0.07\textwidth}
+	\subfigure[shoulder\_pan\_joint]{\includegraphics[width=0.44\textwidth]{brazopos4.png}}
+	\caption[Ilustración de los grados de libertad del brazo]{Posiciones de las articulaciones del brazo después de: mover el codo (a); desplazarlo en el carril (b); mover el hombro (c); girar el hombro (d).} \label{fig:posicionesbrazo1}
+\end{figure}
+
+\begin{figure}[]
+	\centering
+	\subfigure[wrist\_1\_joint]{\includegraphics[width=0.85\textwidth]{brazopos5.png}}
+	\subfigure[wrist\_2\_joint]{\includegraphics[width=0.85\textwidth]{brazopos6.png}}
+	\subfigure[wrist\_3\_joint]{\includegraphics[width=0.85\textwidth]{brazopos7.png}}
+	\caption[Ilustración de los grados de libertad de la muñeca]{Posiciones de las articulaciones de la muñeca después de: girarla en vertical (a); girarla en horizontal (b); girar la mano (c).} \label{fig:posicionesbrazo2}
+\end{figure}
+
 Para ilustrar mejor los movimientos del brazo hemos realizado capturas de pantalla en las que se ilustran los grados de libertad del brazo. Se puede ver también el teleoperador, con el deslizador responsable del movimiento de la articulación resaltado. Si nos fijamos en el valor del deslizador que controla esa articulación veremos que es diferente, y se corresponde con la posición del brazo de la imagen. Dado que son siete grados de libertad en total, los hemos repartido en dos figuras al final de éste capítulo. 
 
 En la figura \ref{fig:posicionesbrazo1} podemos ver los movimientos de las articulaciones del brazo, sin la muñeca, partiendo de la posición inicial de la figura \ref{fig:mando}. El na primera imagen mostramos el movimiento del codo. En la segunda desplazamos el brazo hasta el final del carril. En la tercera movemos el hombro, y recolocamos el codo para no colisionar con otros elementos del escenario. En la última giramos el hombro.
 
 En la figura \ref{fig:posicionesbrazo2} podemos ver los movimientos de las articulaciones de la muñeca. En la primera imagen vemos como se ha inclinado hacia delante al mover la primera articulación. Al mover la segunda conseguimos girarla, como muestra la segunda imagen. En la tercera giramos la mano. Se puede apreciar por la muesca lateral que tiene el brazo cerca del disco de su extremo, que de la segunda a la tercera imagen se desplaza debido a este giro.
 
-\subsection{MoveIt}
-\label{subsec:br_moveit}
+\section{Manejo del brazo a través del planificador MoveIt}
+\label{sec:br_moveit}
 
-Al indagar y realizar pruebas sobre el funcionamiento de ARIAC y de ROS para satisfacer nuestra creciente curiosidad, vemos que existen herramientas que facilitan el control del brazo planificando movimientos. Una de ellas es MoveIt!, que se encarga de calcular trayectorias para facilitar los movimientos, lo que podríamos llamar un controlador de alto nivel. Esto lo hace conociendo el punto de partida del robot y recibiendo el punto de destino o un conjunto de puntos que le sirven de puntos de ruta a través de los cuales calcula la trayectoria. Es una herramienta compleja, ya que debe coordinar todas las articulaciones para que se desplacen hasta el punto final de una forma eficiente y sin chocar entre si. 
+Al indagar y realizar pruebas sobre el funcionamiento de ARIAC y de ROS, vemos que existen herramientas que facilitan el control del brazo planificando movimientos. Una de ellas es MoveIt!, que se encarga de calcular trayectorias para facilitar los movimientos, lo que podríamos llamar un controlador de alto nivel. Esto lo hace conociendo el punto de partida del robot y recibiendo el punto de destino o un conjunto de puntos que le sirven de puntos de ruta a través de los cuales calcula la trayectoria. Es una herramienta compleja, ya que debe coordinar todas las articulaciones para que se desplacen hasta el punto final de una forma eficiente y sin chocar entre si. 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Brazo04.png}
+	\includegraphics[width=1\textwidth]{Brazo04.png}
 	\caption{Herramienta rViz mostrando la trayectoria del brazo.} \label{fig:rviz}
 \end{figure}
 
-Se sirve de herramientas como rViz para visualizar el robot, el punto de destino y la trayectoria como podemos ver en la figura \ref{fig:rviz}. En esta imagen podemos ver el brazo en su posición actual, al igual que se encuentra en Gazebo, y dos siluetas, una verde y otra naranja. La silueta verde identifica la posición de inicio, mientras que la naranja la posición final. En la “mano” del robot podemos ver una bola rodeada de flechas y circunferencias de colores. Esa bola es el punto de referencia que MoveIt utiliza para calcular la trayectoria. Simplemente movemos esa bola por el espacio y la silueta se moverá para posicionar el brazo de forma que la bola esté donde nosotros queremos. Las flechas y círculos de colores son ayudas para mover y rotar la bola en torno a los ejes cartesianos. 
+Se sirve de herramientas como rViz para visualizar el robot, el punto de destino y la trayectoria, como podemos ver en la figura \ref{fig:rviz}. En esta imagen podemos ver el brazo en su posición actual, al igual que se encuentra en Gazebo, y dos siluetas, una verde y otra naranja. La silueta verde identifica la posición de inicio, mientras que la naranja la posición final. En la “mano” del robot podemos ver una bola rodeada de flechas y circunferencias de colores. Esa bola es el punto de referencia que MoveIt utiliza para calcular la trayectoria. Simplemente movemos esa bola por el espacio y la silueta se moverá para posicionar el brazo de forma que la bola esté donde nosotros queremos. Las flechas y círculos de colores son ayudas para mover y rotar la bola en torno a los ejes cartesianos. 
 
 Una vez alcanzada la posición final que queremos, MoveIt podrá planificar (y ejecutar si así lo deseamos) los movimientos necesarios para que el brazo alcance esa posición, sin que tengamos que preocuparnos por nada más.
 
@@ -444,23 +461,7 @@ A pesar del atractivo de esta herramienta y de sus posibilidades académicas des
 \end{figure}
 
 
-\begin{figure}[p]
-	\centering
-	\subfigure[elbow\_joint]{\includegraphics[width=0.465\textwidth]{brazopos1.png}}\hspace{0.07\textwidth}	
-	\subfigure[linear\_arm\_actuator\_joint]{\includegraphics[width=0.45\textwidth]{brazopos2.png}}
-	\subfigure[shoulder\_lift\_joint]{\includegraphics[width=0.45\textwidth]{brazopos3.png}}\hspace{0.07\textwidth}
-	\subfigure[shoulder\_pan\_joint]{\includegraphics[width=0.457\textwidth]{brazopos4.png}}
-	\caption[Ilustración de los grados de libertad del brazo]{Posiciones de las articulaciones del brazo después de: mover el codo (a); desplazarlo en el carril (b); mover el hombro (c); girar el hombro (d).} \label{fig:posicionesbrazo1}
-\end{figure}
 
-
-\begin{figure}[p]
-	\centering
-	\subfigure[wrist\_1\_joint]{\includegraphics[width=0.85\textwidth]{brazopos5.png}}
-	\subfigure[wrist\_2\_joint]{\includegraphics[width=0.85\textwidth]{brazopos6.png}}
-	\subfigure[wrist\_3\_joint]{\includegraphics[width=0.85\textwidth]{brazopos7.png}}
-	\caption[Ilustración de los grados de libertad de la muñeca]{Posiciones de las articulaciones de la muñeca después de: girarla en vertical (a); girarla en horizontal (b); girar la mano (c).} \label{fig:posicionesbrazo2}
-\end{figure}
 
 
 

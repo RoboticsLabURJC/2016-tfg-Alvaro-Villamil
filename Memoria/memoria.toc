@@ -30,10 +30,10 @@
 \contentsline {section}{\numberline {5.1}Brazos rob\IeC {\'o}ticos existentes en el entorno ROS}{53}{section.5.1}
 \contentsline {section}{\numberline {5.2}Hablando ROS con un brazo rob\IeC {\'o}tico ARIAC}{56}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Nodos y topics}{56}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}ROS messages}{59}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.2}Nodos, \textit {topics} y mensajes de un brazo rob\IeC {\'o}tico ARIAC}{57}{subsection.5.2.2}
 \contentsline {section}{\numberline {5.3}Teleoperador de un brazo robotizado}{63}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}MoveIt}{71}{subsection.5.3.1}
-\contentsline {chapter}{\numberline {6}Conclusiones}{77}{chapter.6}
-\contentsline {section}{\numberline {6.1}Aportaciones}{77}{section.6.1}
-\contentsline {section}{\numberline {6.2}Trabajos futuros}{78}{section.6.2}
-\contentsline {chapter}{Bibliograf\'{\i }a}{79}{chapter*.51}
+\contentsline {section}{\numberline {5.4}Manejo del brazo a trav\IeC {\'e}s del planificador MoveIt}{73}{section.5.4}
+\contentsline {chapter}{\numberline {6}Conclusiones}{79}{chapter.6}
+\contentsline {section}{\numberline {6.1}Aportaciones}{79}{section.6.1}
+\contentsline {section}{\numberline {6.2}Trabajos futuros}{80}{section.6.2}
+\contentsline {chapter}{Bibliograf\'{\i }a}{81}{chapter*.51}
