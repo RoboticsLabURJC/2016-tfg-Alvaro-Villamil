@@ -286,14 +286,14 @@ A la hora de crear el controlador agrupando todos los elementos, podemos organiz
 	\begin{lstlisting}	
 	def closeEvent(self, event):
 	self.ros_manager.stop()
-	event.accept() # let the window close
+	event.accept()
 	\end{lstlisting}
 
 	\item \textit{threadGUI.py}: Este fichero crea un hilo de ejecución para los elementos de la interfaz gráfica. Dado que este elemento es común a todas las ventanas creadas con Qt, usamos el proporcionado en los tutoriales. Básicamente es un bucle en el que cada cierto tiempo actualiza todos los elementos de la ventana con los valores que hayan cambiado. 
 	
 	\item \textit{ros.py}: En este fichero se encuentra el código relativo a ROS, el que gestiona el envío y recepción de mensajes. Aquí creamos el nodo, nos subscribimos al brazo, publicamos en él, gestionamos los cambios de posición de los deslizadores de la ventana y controlamos el cierre ordenado del nodo ROS. A continuación mostramos parte del código, resumiendo las partes repetitivas.
 	
-	Con esta función se crean los parámetros iniciales del objeto que se comunicará con Ros. Primero se conecta con el topic de ROS donde publicará los mensajes para mover el brazo. Define el array con los nombres de las articulaciones y con las posiciones que enviará en los mensajes. Éste array de posiciones es muy importante, ya que en él se escriben los valores de posicion cada vez que se mueve un deslizador en la ventana, y de aquí se recogen cada vez que se envían al brazo. Después crea un \textit{lock} o candado para evitar errores de concurrencia. Al haber varios hilos en ejecución, se puede dar el caso de que una función quiera escribir en un dato al mismo tiempo que otra quiere cogerlo, produciendo un error. Al “dar” el candado a una sola función, sólo esa puede tocar ese dato, las demás deben esperar a que acabe, evitando estos errores. Por último, llama a la función \textit{start}:
+	Con esta función se crean los parámetros iniciales del objeto que se comunicará con Ros. Primero se conecta con el topic de ROS donde publicará los mensajes para mover el brazo. Define el array con los nombres de las articulaciones y con las posiciones que enviará en los mensajes. Éste array de posiciones es muy importante, ya que en él se escriben los valores de posición cada vez que se mueve un deslizador en la ventana, y de aquí se recogen cada vez que se envían al brazo. Después crea un \textit{lock} o candado para evitar errores de concurrencia. Al haber varios hilos en ejecución, se puede dar el caso de que una función quiera escribir en un dato al mismo tiempo que otra quiere cogerlo, produciendo un error. Al “dar” el candado a una sola función, sólo esa puede tocar ese dato, las demás deben esperar a que acabe, evitando estos errores. Por último, llama a la función \textit{start}:
 	\begin{lstlisting}
 	def __init__(self):
 		self.pub = rospy.Publisher("/ariac/arm/command", JointTrajectory, queue_size=10)
@@ -351,7 +351,7 @@ A la hora de crear el controlador agrupando todos los elementos, podemos organiz
 			self.pub.publish(msg)
 	\end{lstlisting}
 	
-	La siguiente función es la responsable de que al mover un deslizador en la ventana se pueda enviar ese valor al brazo. Aunque sólo se muestra la de una articulación, las demás siguen el mismo esquema. Simplemente escribe el nuevo valor en el array de posiciones, que se enviará al construir el mensaje que moverá al brazo:
+	La siguiente función es la responsable de que al mover un deslizador en la ventana se pueda enviar ese valor al brazo. Aunque sólo se muestra la de una articulación, las demás siguen el mismo esquema. Simplemente escribe el nuevo valor en el array de posiciones y llama a la función que envía el mensaje:
 	\begin{lstlisting}
 	def move_elbow(self, pos):
 		self.lock.acquire()
@@ -382,12 +382,49 @@ A la hora de crear el controlador agrupando todos los elementos, podemos organiz
 
 \end{itemize}
 
-En la Figura \ref{fig:mando} podemos ver la apariencia final del controlador del brazo.
+En la Figura \ref{fig:mando} podemos ver la apariencia final del controlador del brazo con el que completamos nuestro objetivo inicial.
 
 
-\section{MoveIt}
-\label{sec:br_moveit}
+\subsection{MoveIt}
+\label{subsec:br_moveit}
 
+Al indagar y realizar pruebas sobre el funcionamiento de ARIAC y de ROS para satisfacer nuestra creciente curiosidad, vemos que existen herramientas que facilitan el control del brazo planificando movimientos. Una de ellas es MoveIt!, que se encarga de calcular trayectorias para facilitar los movimientos, lo que podríamos llamar un controlador de alto nivel. Esto lo hace conociendo el punto de partida del robot y recibiendo el punto de destino o un conjunto de puntos que le sirven de puntos de ruta a través de los cuales calcula la trayectoria. Es una herramienta compleja, ya que debe coordinar todas las articulaciones para que se desplacen hasta el punto final de una forma eficiente y sin chocar entre si. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Brazo04.png}
+	\caption{Herramienta rViz mostrando la trayectoria del brazo.} \label{fig:rviz}
+\end{figure}
+
+Se sirve de herramientas como rViz para visualizar el robot, el punto de destino y la trayectoria como podemos ver en la figura \ref{fig:rviz}. En esta imagen podemos ver el brazo en su posición actual, al igual que se encuentra en Gazebo, y dos siluetas, una verde y otra naranja. La silueta verde identifica la posición de inicio, mientras que la naranja la posición final. En la “mano” del robot podemos ver una bola rodeada de flechas y circunferencias de colores. Esa bola es el punto de referencia que MoveIt utiliza para calcular la trayectoria. Simplemente movemos esa bola por el espacio y la silueta se moverá para posicionar el brazo de forma que la bola esté donde nosotros queremos. Las flechas y círculos de colores son ayudas para mover y rotar la bola en torno a los ejes cartesianos. 
+
+Una vez alcanzada la posición final que queremos, MoveIt podrá planificas (y ejecutar si así lo deseamos) los movimientos necesarios para que el brazo alcance esa posición, sin que tengamos que preocuparnos por nada más.
+
+Para conocer mejor el funcionamiento de esta herramienta utilizamos \textit{rqt} al igual que hicimos para estudiar el funcionamiento de ARIAC, y obtenemos el grafo de la figura \ref{fig:moveitgraph1}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{moveitgraph01.png}
+	\caption{Grafo con la relación de nodos y topic de ARIAC, el brazo, MoveIt y rViz.} \label{fig:moveitgraph1}
+\end{figure}
+
+Como se puede apreciar es inmensamente grande, así que usamos las opciones de \textit{rqt} para agrupar nodos y topics e intentar reducir su extensión, obteniendo la imagen de la figura \ref{fig:moveitgraph2}. Sigue siendo un esquema enorme, lo cual nos da una idea de la complejidad de esta herramienta.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{moveitgraph02.png}
+	\caption{Grafo “simplificado” con la relación de nodos y topic de ARIAC, el brazo, MoveIt y rViz.} \label{fig:moveitgraph2}
+\end{figure}
+
+Si acudimos a la documentación oficial nos encontramos con una página\footnote{\url{http://wiki.ros.org/moveit_msgs}} que muestra cómo interactuar con MoveIt. Es una interfaz muy detallada compuesta por mensajes, servicios y acciones de ROS. En la figura \ref{fig:moveitmsgs} se muestra una captura de pantalla de dicha página, con todos los elementos de la interfaz. Como podemos ver es una cantidad enorme de mensajes, cada uno con su propio tipo de estructura, que hace muy complejo y largo trabajar con esta herramienta.
+
+A pesar del atractivo de esta herramienta y de sus posibilidades académicas descartamos seguir investigando en esta dirección, ya que consideramos que es una herramienta que debería de utilizarse una vez que las prácticas con el brazo robótico estén más maduras y permitan una mayor interacción con el alumno.
+
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=0.7\textwidth]{moveitmsgs.png}
+	\caption{Lista de mensajes, servicios y acciones que componen la interfaz de MoveIt.} \label{fig:moveitmsgs}
+\end{figure}
 
 
 

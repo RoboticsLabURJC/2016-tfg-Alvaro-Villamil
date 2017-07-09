@@ -49,4 +49,8 @@
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Grafo de los \textit {nodes} y \textit {topics} de ARIAC.\relax }}{56}{figure.caption.42}
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Detalle de las articulaciones del brazo.\relax }}{59}{figure.caption.43}
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Interfaz gr\IeC {\'a}fica del controlador del brazo.\relax }}{62}{figure.caption.44}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Herramienta rViz mostrando la trayectoria del brazo.\relax }}{68}{figure.caption.45}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Grafo con la relaci\IeC {\'o}n de nodos y topic de ARIAC, el brazo, MoveIt y rViz.\relax }}{69}{figure.caption.46}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Grafo \IeC {\textquotedblleft }simplificado\IeC {\textquotedblright } con la relaci\IeC {\'o}n de nodos y topic de ARIAC, el brazo, MoveIt y rViz.\relax }}{70}{figure.caption.47}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Lista de mensajes, servicios y acciones que componen la interfaz de MoveIt.\relax }}{71}{figure.caption.48}
 \addvspace {10\p@ }

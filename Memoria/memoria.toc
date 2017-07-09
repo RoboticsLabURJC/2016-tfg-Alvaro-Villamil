@@ -29,8 +29,8 @@
 \contentsline {chapter}{\numberline {5}Brazo rob\IeC {\'o}tico}{51}{chapter.5}
 \contentsline {section}{\numberline {5.1}Hablando ROS}{53}{section.5.1}
 \contentsline {section}{\numberline {5.2}Construyendo el teleoperador}{56}{section.5.2}
-\contentsline {section}{\numberline {5.3}MoveIt}{68}{section.5.3}
-\contentsline {chapter}{\numberline {6}Conclusiones y trabajos futuros}{69}{chapter.6}
-\contentsline {section}{\numberline {6.1}Conclusiones}{69}{section.6.1}
-\contentsline {section}{\numberline {6.2}Trabajos futuros}{70}{section.6.2}
-\contentsline {chapter}{Bibliograf\'{\i }a}{71}{chapter*.45}
+\contentsline {subsection}{\numberline {5.2.1}MoveIt}{68}{subsection.5.2.1}
+\contentsline {chapter}{\numberline {6}Conclusiones y trabajos futuros}{73}{chapter.6}
+\contentsline {section}{\numberline {6.1}Conclusiones}{73}{section.6.1}
+\contentsline {section}{\numberline {6.2}Trabajos futuros}{74}{section.6.2}
+\contentsline {chapter}{Bibliograf\'{\i }a}{75}{chapter*.49}
