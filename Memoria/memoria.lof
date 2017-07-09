@@ -23,8 +23,8 @@
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Interfaz de Blender.\relax }}{32}{figure.caption.19}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Detalle de Manipuladores de transformaciones en 3D.\relax }}{32}{figure.caption.20}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Detalle del cursor de Blender.\relax }}{32}{figure.caption.21}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Ventana de propiedades.\relax }}{34}{figure.caption.22}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Trazado del circuito de M\IeC {\'o}naco usado como plantilla\relax }}{36}{figure.caption.23}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Ventana de propiedades.\relax }}{35}{figure.caption.22}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Trazado del circuito de M\IeC {\'o}naco usado como plantilla.\relax }}{36}{figure.caption.23}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Detalle de curva Bezier.\relax }}{37}{figure.caption.24}
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Trazado del circuito de M\IeC {\'o}naco superpuesto a la plantilla.\relax }}{38}{figure.caption.25}
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Segmento del circuito.\relax }}{39}{figure.caption.26}
@@ -41,25 +41,25 @@
 \contentsline {figure}{\numberline {4.19}{\ignorespaces Opciones de exportaci\IeC {\'o}n de Collada.\relax }}{46}{figure.caption.35}
 \contentsline {figure}{\numberline {4.20}{\ignorespaces Coches recorriendo el circuito de M\IeC {\'o}naco.\relax }}{50}{figure.caption.36}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Robot PR2.\relax }}{52}{figure.caption.37}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Robot kuka.\relax }}{53}{figure.caption.38}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Robot ur10.\relax }}{54}{figure.caption.39}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Esquema de los componentes de ARIAC centr\IeC {\'a}ndonos en el brazo.\relax }}{55}{figure.caption.40}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Grafo de los \textit {nodes} y \textit {topics} de ARIAC.\relax }}{55}{figure.caption.41}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Grafo de los \textit {nodes} y \textit {topics} de ARIAC.\relax }}{57}{figure.caption.42}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Detalle de las articulaciones del brazo.\relax }}{59}{figure.caption.43}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Interfaz gr\IeC {\'a}fica del controlador del brazo y brazo en la posici\IeC {\'o}n inicial.\relax }}{62}{figure.caption.44}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Herramienta rViz mostrando la trayectoria del brazo.\relax }}{70}{figure.caption.45}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Grafo con la relaci\IeC {\'o}n de nodos y topic de ARIAC, el brazo, MoveIt y rViz.\relax }}{71}{figure.caption.46}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Grafo \IeC {\textquotedblleft }simplificado\IeC {\textquotedblright } con la relaci\IeC {\'o}n de nodos y topic de ARIAC, el brazo, MoveIt y rViz.\relax }}{72}{figure.caption.47}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Lista de mensajes, servicios y acciones que componen la interfaz de MoveIt.\relax }}{73}{figure.caption.48}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Ilustraci\IeC {\'o}n de los grados de libertad del brazo}}{74}{figure.caption.49}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {elbow\_joint}}}{74}{figure.caption.49}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {linear\_arm\_actuator\_joint}}}{74}{figure.caption.49}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {shoulder\_lift\_joint}}}{74}{figure.caption.49}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {shoulder\_pan\_joint}}}{74}{figure.caption.49}
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Ilustraci\IeC {\'o}n de los grados de libertad de la mu\IeC {\~n}eca}}{75}{figure.caption.50}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {wrist\_1\_joint}}}{75}{figure.caption.50}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wrist\_2\_joint}}}{75}{figure.caption.50}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {wrist\_3\_joint}}}{75}{figure.caption.50}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Robot PR2.\relax }}{54}{figure.caption.37}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Robot kuka.\relax }}{54}{figure.caption.38}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Robot ur10.\relax }}{55}{figure.caption.39}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Esquema de los componentes de ARIAC centr\IeC {\'a}ndonos en el brazo.\relax }}{56}{figure.caption.40}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Grafo de los \textit {nodes} y \textit {topics} de ARIAC.\relax }}{58}{figure.caption.41}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Grafo de los \textit {nodes} y \textit {topics} de ARIAC.\relax }}{58}{figure.caption.42}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Detalle de las articulaciones del brazo.\relax }}{61}{figure.caption.43}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Interfaz gr\IeC {\'a}fica del controlador del brazo y brazo en la posici\IeC {\'o}n inicial.\relax }}{64}{figure.caption.44}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Herramienta rViz mostrando la trayectoria del brazo.\relax }}{72}{figure.caption.45}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Grafo con la relaci\IeC {\'o}n de nodos y topic de ARIAC, el brazo, MoveIt y rViz.\relax }}{73}{figure.caption.46}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Grafo \IeC {\textquotedblleft }simplificado\IeC {\textquotedblright } con la relaci\IeC {\'o}n de nodos y topic de ARIAC, el brazo, MoveIt y rViz.\relax }}{73}{figure.caption.47}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Lista de mensajes, servicios y acciones que componen la interfaz de MoveIt.\relax }}{74}{figure.caption.48}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Ilustraci\IeC {\'o}n de los grados de libertad del brazo}}{75}{figure.caption.49}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {elbow\_joint}}}{75}{figure.caption.49}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {linear\_arm\_actuator\_joint}}}{75}{figure.caption.49}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {shoulder\_lift\_joint}}}{75}{figure.caption.49}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {shoulder\_pan\_joint}}}{75}{figure.caption.49}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Ilustraci\IeC {\'o}n de los grados de libertad de la mu\IeC {\~n}eca}}{76}{figure.caption.50}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {wrist\_1\_joint}}}{76}{figure.caption.50}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wrist\_2\_joint}}}{76}{figure.caption.50}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {wrist\_3\_joint}}}{76}{figure.caption.50}
 \addvspace {10\p@ }

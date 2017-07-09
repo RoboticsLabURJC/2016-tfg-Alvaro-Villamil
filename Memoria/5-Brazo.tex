@@ -16,7 +16,7 @@ Dado que el objetivo no es crear un brazo, sino trabajar sobre uno ya diseñado,
 	\end{figure}
 	\item kuka: La empresa Kuka\footnote{\url{https://www.kuka.com/}} fabrica diversos brazos mecánicos y robots industriales. Hay varios modelos disponibles para su uso con Gazebo y ROS, y todos tienen en común el brazo que monta el robot de la Figura \ref{fig:kuka}, aunque la plataforma donde se apoya el brazo puede ser diferente o no estar. En su página de ROS\footnote{\url{http://wiki.ros.org/kuka}} vemos que soporta las versiones de Indigo y Kinetic, pero mediante la instalación del paquete externo ROS-Industrial\footnote{\url{http://wiki.ros.org/Industrial}}.
 	\begin{figure}[h]
-		\centering\includegraphics[width=0.55\textwidth]{kuka.jpg}
+		\centering\includegraphics[width=0.50\textwidth]{kuka.jpg}
 		\caption{Robot kuka.}
 		\label{fig:kuka}
 	\end{figure}
@@ -52,30 +52,30 @@ Los \textit{nodes} son los procesos ejecutables, en nuestro caso escritos en Pyt
 
 Los \textit{topics} son \textit{buses} diferenciables mediante los cuales los nodos intercambian \textit{ROS messages} o mensajes. Normalmente los \textit{topics} y los nodos no se preocupan del destinatario de los mensajes. Los nodos se subscriben a los \textit{topics}, y pueden publicar información en el \textit{topic} haciendo \textit{publish} o recibir información del \textit{topic} haciendo \textit{subscribe}. Por ejemplo un sensor de temperatura o de proximidad publica, mientras que un algoritmo de toma de decisiones o de procesado de datos se subscribe. Son canales de comunicación unidireccionales. Utilizan \textquotedblleft tipado fuerte\textquotedblright  mediante el tipo de \textit{ROS message} que transmiten, de forma que un tipo de mensaje erróneo no se puede transmitir por el \textit{topic} y no producirá fallos en otros nodos. ROS facilita comandos de terminal como \textit{rostopic list} y \textit{rostopic echo /topic\_name}. El primero muestra una lista con los \textit{topics} activos, y el segundo permite ver el flujo de mensajes a través del \textit{topic} deseado. Ambos son una ayuda inestimable para entender, y más tarde replicar, la comunicación con el brazo.
 
-\begin{figure}[]
-	\centering\includegraphics[width=1\textwidth]{Brazo10a.png}
-	\caption{Grafo de los \textit{nodes} y \textit{topics} de ARIAC.}
-	\label{fig:ariacgraph1}
-\end{figure}
-
 Los \textit{servicios} son canales bidireccionales de comunicación entre nodos. Esto quiere decir que cuando se envía un mensaje, el nodo destino debe enviar otro de respuesta, o la comunicación no tiene éxito. Las \textit{acciones} son un método de comunicación mas directo, como si de una llamada a procedimiento se tratase. Ninguno de estos medios son usados para enviar órdenes al brazo, por lo que no profundizamos en ellos.
 
 Los \textit{ROS messages} contienen la información que los nodos se envían mediante los \textit{topics}. Se trata de estructuras de datos con campos fijos, que soportan tanto tipos de datos primitivos (enteros, \textit{floats}, \textit{boleanos}, etc) como arrays de estos tipos de datos. Estas estructuras están predefinidas en la mayoría de casos comunes, pero se pueden definir nuevas usando archivos en formato .msg donde se especifique la estructura de datos del mensaje
 
 Una vez conocemos los elementos de comunicación probamos cómo se produce, creando un nodo \textit{publisher} y otro \textit{subscriber} y haciendo que hablen entre sí. Mediante los diferentes comandos de terminal que proporciona ROS comprobamos el correcto funcionamiento de los mismos. 
 
+\begin{figure}[ht]
+	\centering\includegraphics[width=1\textwidth]{Brazo10a.png}
+	\caption{Grafo de los \textit{nodes} y \textit{topics} de ARIAC.}
+	\label{fig:ariacgraph1}
+\end{figure}
+
 Una vez entendemos el funcionamiento de ROS lanzamos el mundo de ARIAC. A través de los comandos visualizamos la lista de nodos y \textit{topics} disponibles. Nos servimos de una herramienta de ROS para obtener un grafo con la relación entre todos ellos y tener una idea clara del funcionamiento y la relación entre los elementos del brazo. Para ellos ejecutamos en la terminal \textit{rosrun rqt\_graph rqt\_graph} y obtenemos la Figura \ref{fig:ariacgraph1}. En dicha figura, los elementos redondos son nodos y los cuadrados son \textit{topics}, y las flechas establecen la relación entre ellos. Si la flecha apunta hacia un \textit{node} desde un \textit{topic} quiere decir que el nodo está subscrito a ese \textit{topic}. Si por el contrario la flecha va desde un \textit{node} a un \textit{topic} quiere decir que el nodo publica en ese \textit{topic}.
 
-Aunque ya nos da una idea muy clara de la organización de los nodos y \textit{topics}, la herramienta \textit{rqt\_graph} nos permite agruparlos por nombres. Dado que hay varios \textit{topics} cuyo nombre es \textquotedblleft /ariac/nombre\textquotedblright , \textit{rqt} incluye a todos los que tienen ese formato en el nombre en la caja ARIAC. De esta forma la caja ariac hace referencia a todos los nodos y \textit{topics} que comparten el nombre ariac.
-
-\begin{figure}[h]
+\begin{figure}[hb]
 	\centering\includegraphics[width=1\textwidth]{Brazo10.png}
 	\caption{Grafo de los \textit{nodes} y \textit{topics} de ARIAC.}
 	\label{fig:ariacgraph2}
 \end{figure}
 
+Aunque ya nos da una idea muy clara de la organización de los nodos y \textit{topics}, la herramienta \textit{rqt\_graph} nos permite agruparlos por nombres. Dado que hay varios \textit{topics} cuyo nombre es “/ariac/nombre”, \textit{rqt} incluye a todos los que tienen ese formato en el nombre en la caja ARIAC. De esta forma la caja ariac hace referencia a todos los nodos y \textit{topics} que comparten el nombre ariac. Si hacemos esto obtenemos el grafo de la figura \ref{fig:ariacgraph2}.
+
 En esa figura podemos diferenciar varios bloques importantes. En el centro del grafo se sitúan los \textit{topics} y nodos referentes al mundo ARIAC, A su izquierda se encuentra el nodo principal de Gazebo. Encima de éste y a la derecha del bloque ariac hay varios grupos que sirven de apoyo para el entorno: \textit{fake\_joint\_calibration}, \textit{robot\_state\_publisher} y \textit{relay\_joint\_states}.
-Debajo de ariac se encuentra el topic \textquotedblleft /clock\textquotedblright  , que sirve de referencia para todos los elementos de la simulación. A la derecha de éste está el nodo de \textit{rqt} que nos permite obtener esta imagen. En la parte derecha del grafo hay diversos nodos y \textit{topics} de \textit{rosout}. Se trata de la consola de \textit{log} de ROS, donde se anotan los sucesos o errores de los diferentes procesos ejecutados.
+Debajo de ariac se encuentra el topic“/clock”, que sirve de referencia para todos los elementos de la simulación. A la derecha de éste está el nodo de \textit{rqt} que nos permite obtener esta imagen. En la parte derecha del grafo hay diversos nodos y \textit{topics} de \textit{rosout}. Se trata de la consola de \textit{log} de ROS, donde se anotan los sucesos o errores de los diferentes procesos ejecutados.
 
 \subsection{ROS messages}
 \label{subsec:br_rosmessages}
