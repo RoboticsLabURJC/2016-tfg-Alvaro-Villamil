@@ -203,8 +203,8 @@ A continuación hacemos que el nodo publique en el \textit{topic /ariac/arm/comm
 Una vez realizadas estas tareas pasamos a desarrollar la interfaz gráfica que nos permita controlar el brazo visualmente. Nos servimos de Qt para desarrollar la interfaz visual. Creamos unos deslizadores para cambiar los valores de posición de cada articulación por separado, consiguiendo de una forma heurística saber dónde están los límites de cada articulación y cuál es su posición respecto al total de su movimiento. También creamos unas etiquetas que muestran el valor numérico de la posición del deslizador, así como unas etiquetas con el nombre de la articulación que controla cada uno. 
 
 \begin{figure}[]
-	\centering\includegraphics[width=0.7\textwidth]{mando.png}
-	\caption{Interfaz gráfica del controlador del brazo.}
+	\centering\includegraphics[width=0.9\textwidth]{mando.png}
+	\caption{Interfaz gráfica del controlador del brazo y brazo en la posición inicial.}
 	\label{fig:mando}
 \end{figure}
 
@@ -394,8 +394,13 @@ A la hora de crear el controlador agrupando todos los elementos, podemos organiz
 
 \end{itemize}
 
-En la Figura \ref{fig:mando} podemos ver la apariencia final del controlador del brazo con el que completamos nuestro objetivo inicial.
+En la Figura \ref{fig:mando} podemos ver la apariencia final del controlador del brazo con el que completamos nuestro objetivo inicial, así como la posción inicial del brazo al cargar el mundo de ARIAC. 
 
+Para ilustrar mejor los movimientos del brazo hemos realizado capturas de pantalla en las que se ilustran los grados de libertad del brazo. Se puede ver también el teleoperador, con el deslizador responsable del movimiento de la articulación resaltado. Si nos fijamos en el valor del deslizador que controla esa articulación veremos que es diferente, y se corresponde con la posición del brazo de la imagen. Dado que son siete grados de libertad en total, los hemos repartido en dos figuras al final de éste capítulo. 
+
+En la figura \ref{fig:posicionesbrazo1} podemos ver los movimientos de las articulaciones del brazo, sin la muñeca, partiendo de la posición inicial de la figura \ref{fig:mando}. El na primera imagen mostramos el movimiento del codo. En la segunda desplazamos el brazo hasta el final del carril. En la tercera movemos el hombro, y recolocamos el codo para no colisionar con otros elementos del escenario. En la última giramos el hombro.
+
+En la figura \ref{fig:posicionesbrazo2} podemos ver los movimientos de las articulaciones de la muñeca. En la primera imagen vemos como se ha inclinado hacia delante al mover la primera articulación. Al mover la segunda conseguimos girarla, como muestra la segunda imagen. En la tercera giramos la mano. Se puede apreciar por la muesca lateral que tiene el brazo cerca del disco de su extremo, que de la segunda a la tercera imagen se desplaza debido a este giro.
 
 \subsection{MoveIt}
 \label{subsec:br_moveit}
@@ -410,7 +415,7 @@ Al indagar y realizar pruebas sobre el funcionamiento de ARIAC y de ROS para sat
 
 Se sirve de herramientas como rViz para visualizar el robot, el punto de destino y la trayectoria como podemos ver en la figura \ref{fig:rviz}. En esta imagen podemos ver el brazo en su posición actual, al igual que se encuentra en Gazebo, y dos siluetas, una verde y otra naranja. La silueta verde identifica la posición de inicio, mientras que la naranja la posición final. En la “mano” del robot podemos ver una bola rodeada de flechas y circunferencias de colores. Esa bola es el punto de referencia que MoveIt utiliza para calcular la trayectoria. Simplemente movemos esa bola por el espacio y la silueta se moverá para posicionar el brazo de forma que la bola esté donde nosotros queremos. Las flechas y círculos de colores son ayudas para mover y rotar la bola en torno a los ejes cartesianos. 
 
-Una vez alcanzada la posición final que queremos, MoveIt podrá planificas (y ejecutar si así lo deseamos) los movimientos necesarios para que el brazo alcance esa posición, sin que tengamos que preocuparnos por nada más.
+Una vez alcanzada la posición final que queremos, MoveIt podrá planificar (y ejecutar si así lo deseamos) los movimientos necesarios para que el brazo alcance esa posición, sin que tengamos que preocuparnos por nada más.
 
 Para conocer mejor el funcionamiento de esta herramienta utilizamos \textit{rqt} al igual que hicimos para estudiar el funcionamiento de ARIAC, y obtenemos el grafo de la figura \ref{fig:moveitgraph1}.
 
@@ -432,16 +437,30 @@ Si acudimos a la documentación oficial nos encontramos con una página\footnote
 
 A pesar del atractivo de esta herramienta y de sus posibilidades académicas descartamos seguir investigando en esta dirección, ya que consideramos que es una herramienta que debería de utilizarse una vez que las prácticas con el brazo robótico estén más maduras y permitan una mayor interacción con el alumno.
 
-\begin{figure}[p]
+\begin{figure}[h]
 	\centering
-	\includegraphics[width=0.7\textwidth]{moveitmsgs.png}
+	\includegraphics[width=0.85\textwidth]{moveitmsgs.png}
 	\caption{Lista de mensajes, servicios y acciones que componen la interfaz de MoveIt.} \label{fig:moveitmsgs}
 \end{figure}
 
 
+\begin{figure}[p]
+	\centering
+	\subfigure[elbow\_joint]{\includegraphics[width=0.465\textwidth]{brazopos1.png}}\hspace{0.07\textwidth}	
+	\subfigure[linear\_arm\_actuator\_joint]{\includegraphics[width=0.45\textwidth]{brazopos2.png}}
+	\subfigure[shoulder\_lift\_joint]{\includegraphics[width=0.45\textwidth]{brazopos3.png}}\hspace{0.07\textwidth}
+	\subfigure[shoulder\_pan\_joint]{\includegraphics[width=0.457\textwidth]{brazopos4.png}}
+	\caption[Ilustración de los grados de libertad del brazo]{Posiciones de las articulaciones del brazo después de: mover el codo (a); desplazarlo en el carril (b); mover el hombro (c); girar el hombro (d).} \label{fig:posicionesbrazo1}
+\end{figure}
 
 
-
+\begin{figure}[p]
+	\centering
+	\subfigure[wrist\_1\_joint]{\includegraphics[width=0.85\textwidth]{brazopos5.png}}
+	\subfigure[wrist\_2\_joint]{\includegraphics[width=0.85\textwidth]{brazopos6.png}}
+	\subfigure[wrist\_3\_joint]{\includegraphics[width=0.85\textwidth]{brazopos7.png}}
+	\caption[Ilustración de los grados de libertad de la muñeca]{Posiciones de las articulaciones de la muñeca después de: girarla en vertical (a); girarla en horizontal (b); girar la mano (c).} \label{fig:posicionesbrazo2}
+\end{figure}
 
 
 

@@ -30,7 +30,7 @@
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Segmento del circuito.\relax }}{39}{figure.caption.26}
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Circuito (s\IeC {\'o}lo el trazado).\relax }}{39}{figure.caption.27}
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Circuito plano.\relax }}{40}{figure.caption.28}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Diferentes vistas del circuito de F1 de M\IeC {\'o}naco plano\relax }}{41}{figure.caption.29}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Diferentes vistas del circuito de F1 de M\IeC {\'o}naco plano.\relax }}{41}{figure.caption.29}
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Fondo para el circuito con elevaciones.\relax }}{42}{figure.caption.30}
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Circuito con elevaciones.\relax }}{42}{figure.caption.31}
 \contentsline {figure}{\numberline {4.16}{\ignorespaces Diferentes vistas del circuito de F1 de M\IeC {\'o}naco con elevaciones\relax }}{43}{figure.caption.32}
@@ -48,9 +48,18 @@
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Grafo de los \textit {nodes} y \textit {topics} de ARIAC.\relax }}{55}{figure.caption.41}
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Grafo de los \textit {nodes} y \textit {topics} de ARIAC.\relax }}{57}{figure.caption.42}
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Detalle de las articulaciones del brazo.\relax }}{59}{figure.caption.43}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Interfaz gr\IeC {\'a}fica del controlador del brazo.\relax }}{63}{figure.caption.44}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Herramienta rViz mostrando la trayectoria del brazo.\relax }}{69}{figure.caption.45}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Grafo con la relaci\IeC {\'o}n de nodos y topic de ARIAC, el brazo, MoveIt y rViz.\relax }}{70}{figure.caption.46}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Grafo \IeC {\textquotedblleft }simplificado\IeC {\textquotedblright } con la relaci\IeC {\'o}n de nodos y topic de ARIAC, el brazo, MoveIt y rViz.\relax }}{71}{figure.caption.47}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Lista de mensajes, servicios y acciones que componen la interfaz de MoveIt.\relax }}{72}{figure.caption.48}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Interfaz gr\IeC {\'a}fica del controlador del brazo y brazo en la posici\IeC {\'o}n inicial.\relax }}{62}{figure.caption.44}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Herramienta rViz mostrando la trayectoria del brazo.\relax }}{70}{figure.caption.45}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Grafo con la relaci\IeC {\'o}n de nodos y topic de ARIAC, el brazo, MoveIt y rViz.\relax }}{71}{figure.caption.46}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Grafo \IeC {\textquotedblleft }simplificado\IeC {\textquotedblright } con la relaci\IeC {\'o}n de nodos y topic de ARIAC, el brazo, MoveIt y rViz.\relax }}{72}{figure.caption.47}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Lista de mensajes, servicios y acciones que componen la interfaz de MoveIt.\relax }}{73}{figure.caption.48}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Ilustraci\IeC {\'o}n de los grados de libertad del brazo}}{74}{figure.caption.49}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {elbow\_joint}}}{74}{figure.caption.49}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {linear\_arm\_actuator\_joint}}}{74}{figure.caption.49}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {shoulder\_lift\_joint}}}{74}{figure.caption.49}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {shoulder\_pan\_joint}}}{74}{figure.caption.49}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Ilustraci\IeC {\'o}n de los grados de libertad de la mu\IeC {\~n}eca}}{75}{figure.caption.50}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {wrist\_1\_joint}}}{75}{figure.caption.50}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wrist\_2\_joint}}}{75}{figure.caption.50}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {wrist\_3\_joint}}}{75}{figure.caption.50}
 \addvspace {10\p@ }
