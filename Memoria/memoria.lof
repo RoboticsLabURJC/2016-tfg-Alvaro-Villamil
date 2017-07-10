@@ -49,15 +49,15 @@
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Grafo de los \textit {nodes} y \textit {topics} de ARIAC.\relax }}{58}{figure.caption.42}
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Detalle de las articulaciones del brazo.\relax }}{61}{figure.caption.43}
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Interfaz gr\IeC {\'a}fica del controlador del brazo y brazo en la posici\IeC {\'o}n inicial.\relax }}{64}{figure.caption.44}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Ilustraci\IeC {\'o}n de los grados de libertad del brazo.}}{72}{figure.caption.45}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {elbow\_joint.}}}{72}{figure.caption.45}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {linear\_arm\_actuator\_joint.}}}{72}{figure.caption.45}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {shoulder\_lift\_joint.}}}{72}{figure.caption.45}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {shoulder\_pan\_joint.}}}{72}{figure.caption.45}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Ilustraci\IeC {\'o}n de los grados de libertad de la mu\IeC {\~n}eca.}}{73}{figure.caption.46}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {wrist\_1\_joint.}}}{73}{figure.caption.46}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wrist\_2\_joint.}}}{73}{figure.caption.46}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {wrist\_3\_joint.}}}{73}{figure.caption.46}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Ilustraci\IeC {\'o}n de los grados de libertad del brazo.}}{71}{figure.caption.45}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {elbow\_joint.}}}{71}{figure.caption.45}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {linear\_arm\_actuator\_joint.}}}{71}{figure.caption.45}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {shoulder\_lift\_joint.}}}{71}{figure.caption.45}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {shoulder\_pan\_joint.}}}{71}{figure.caption.45}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Ilustraci\IeC {\'o}n de los grados de libertad de la mu\IeC {\~n}eca.}}{72}{figure.caption.46}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {wrist\_1\_joint.}}}{72}{figure.caption.46}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wrist\_2\_joint.}}}{72}{figure.caption.46}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {wrist\_3\_joint.}}}{72}{figure.caption.46}
 \contentsline {figure}{\numberline {5.11}{\ignorespaces Herramienta rViz mostrando la trayectoria del brazo.\relax }}{74}{figure.caption.47}
 \contentsline {figure}{\numberline {5.12}{\ignorespaces Grafo con la relaci\IeC {\'o}n de nodos y topic de ARIAC, el brazo, MoveIt y rViz.\relax }}{75}{figure.caption.48}
 \contentsline {figure}{\numberline {5.13}{\ignorespaces Grafo \IeC {\textquotedblleft }simplificado\IeC {\textquotedblright } con la relaci\IeC {\'o}n de nodos y topic de ARIAC, el brazo, MoveIt y rViz.\relax }}{76}{figure.caption.49}
