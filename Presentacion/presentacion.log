@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.6.6)  12 JUL 2017 15:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.6.6)  12 JUL 2017 20:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -972,22 +972,22 @@ LaTeX Info: Redefining \% on input line 23.
 )
 \openout1 = `presentacion.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Info: Redefining \. on input line 32.
-LaTeX Info: Redefining \% on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Info: Redefining \. on input line 33.
+LaTeX Info: Redefining \% on input line 33.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1018,7 +1018,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box41
-Package hyperref Info: Link coloring OFF on input line 32.
+Package hyperref Info: Link coloring OFF on input line 33.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1028,9 +1028,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count180
 )
-LaTeX Info: Redefining \ref on input line 32.
-LaTeX Info: Redefining \pageref on input line 32.
-LaTeX Info: Redefining \nameref on input line 32.
+LaTeX Info: Redefining \ref on input line 33.
+LaTeX Info: Redefining \pageref on input line 33.
+LaTeX Info: Redefining \nameref on input line 33.
 
 (./presentacion.out) (./presentacion.out)
 \@outlinefile=\write5
@@ -1042,45 +1042,45 @@ LaTeX Info: Redefining \nameref on input line 32.
 File: template/logo-urjc.jpg Graphic file (type jpg)
 
 <use template/logo-urjc.jpg>
-Package pdftex.def Info: template/logo-urjc.jpg used on input line 34.
+Package pdftex.def Info: template/logo-urjc.jpg used on input line 35.
 (pdftex.def)             Requested size: 139.12904pt x 54.06006pt.
  <template/gsyc2.jpg, id=5, 236.885pt x 124.465pt>
 File: template/gsyc2.jpg Graphic file (type jpg)
 
 <use template/gsyc2.jpg>
-Package pdftex.def Info: template/gsyc2.jpg used on input line 34.
+Package pdftex.def Info: template/gsyc2.jpg used on input line 35.
 (pdftex.def)             Requested size: 64.98273pt x 34.14322pt.
 
 <template/peloto.png, id=6, 107.40125pt x 135.50626pt>
 File: template/peloto.png Graphic file (type png)
 
 <use template/peloto.png>
-Package pdftex.def Info: template/peloto.png used on input line 34.
+Package pdftex.def Info: template/peloto.png used on input line 35.
 (pdftex.def)             Requested size: 31.57164pt x 39.83368pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 35.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 35.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 35.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 35.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 35.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 35.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 35.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 35.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 35.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 35.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 35.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 35.
  [0
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1094,493 +1094,1025 @@ Non-PDF special ignored!
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./template/logo-urjc.jpg> 
 <./template/gsyc2.jpg> <./template/peloto.png>]
 
-Package xcolor Warning: Incompatible color definition on input line 38.
+Package xcolor Warning: Incompatible color definition on input line 39.
 
 File: template/gsyc2.jpg Graphic file (type jpg)
 <use template/gsyc2.jpg>
-Package pdftex.def Info: template/gsyc2.jpg used on input line 47.
+Package pdftex.def Info: template/gsyc2.jpg used on input line 48.
 (pdftex.def)             Requested size: 37.90598pt x 19.91684pt.
 File: template/peloto.png Graphic file (type png)
  <use template/peloto.png>
-Package pdftex.def Info: template/peloto.png used on input line 47.
+Package pdftex.def Info: template/peloto.png used on input line 48.
 (pdftex.def)             Requested size: 15.785pt x 19.91684pt.
 
 Overfull \vbox (0.14795pt too high) has occurred while \output is active []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 47.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <5> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 48.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 48.
  [1
 
 ]
 
-Package xcolor Warning: Incompatible color definition on input line 51.
-
-
-LaTeX Font Warning: Font shape `OT1/cmss/bx/sl' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 52.
-
-
 Package xcolor Warning: Incompatible color definition on input line 52.
 
 
-Overfull \hbox (8.08449pt too wide) in paragraph at lines 54--55
+LaTeX Font Warning: Font shape `OT1/cmss/bx/sl' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 53.
+
+
+Package xcolor Warning: Incompatible color definition on input line 53.
+
+
+Overfull \hbox (8.08449pt too wide) in paragraph at lines 55--56
 []\OT1/cmss/m/n/10 Secundaria: Asig-na-tu-ra de Tec-no-log^^S^^Pa; NXT, We-Do, 
 Scratch, JdeRobot-
  []
 
 File: template/gsyc2.jpg Graphic file (type jpg)
 <use template/gsyc2.jpg>
-Package pdftex.def Info: template/gsyc2.jpg used on input line 58.
+Package pdftex.def Info: template/gsyc2.jpg used on input line 59.
 (pdftex.def)             Requested size: 37.90598pt x 19.91684pt.
 File: template/peloto.png Graphic file (type png)
  <use template/peloto.png>
-Package pdftex.def Info: template/peloto.png used on input line 58.
+Package pdftex.def Info: template/peloto.png used on input line 59.
 (pdftex.def)             Requested size: 15.785pt x 19.91684pt.
 
 Overfull \vbox (0.14795pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 59.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 59.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 59.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 59.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 59.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 59.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 59.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 59.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 59.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 59.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 59.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 59.
 
 [2
 
 ]
 
-Package xcolor Warning: Incompatible color definition on input line 62.
+Package xcolor Warning: Incompatible color definition on input line 63.
 
 <./img/esquemapracticas02.png, id=31, 692.5875pt x 890.32625pt>
 File: ./img/esquemapracticas02.png Graphic file (type png)
 
 <use ./img/esquemapracticas02.png>
-Package pdftex.def Info: ./img/esquemapracticas02.png used on input line 74.
+Package pdftex.def Info: ./img/esquemapracticas02.png used on input line 75.
 (pdftex.def)             Requested size: 97.4545pt x 125.26974pt.
 
-Overfull \hbox (2.2222pt too wide) in paragraph at lines 63--78
-[] []
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 64--79
+$[]$ $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--78
+Underfull \hbox (badness 10000) in paragraph at lines 64--79
 
  []
 
 File: template/gsyc2.jpg Graphic file (type jpg)
 <use template/gsyc2.jpg>
-Package pdftex.def Info: template/gsyc2.jpg used on input line 78.
+Package pdftex.def Info: template/gsyc2.jpg used on input line 79.
 (pdftex.def)             Requested size: 37.90598pt x 19.91684pt.
 File: template/peloto.png Graphic file (type png)
  <use template/peloto.png>
-Package pdftex.def Info: template/peloto.png used on input line 78.
+Package pdftex.def Info: template/peloto.png used on input line 79.
 (pdftex.def)             Requested size: 15.785pt x 19.91684pt.
 
 Overfull \vbox (0.14795pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 78.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 78.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 78.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 78.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 78.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 78.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 78.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 78.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 78.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 78.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 78.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 78.
+(babel)             in language  on input line 79.
 
 [3
 
  <./img/esquemapracticas02.png>]
 
-Package xcolor Warning: Incompatible color definition on input line 81.
+Package xcolor Warning: Incompatible color definition on input line 82.
 
 <./img/vff-gazebo.png, id=36, 501.37312pt x 322.95656pt>
 File: ./img/vff-gazebo.png Graphic file (type png)
 
 <use ./img/vff-gazebo.png>
-Package pdftex.def Info: ./img/vff-gazebo.png used on input line 88.
+Package pdftex.def Info: ./img/vff-gazebo.png used on input line 90.
 (pdftex.def)             Requested size: 167.50279pt x 107.89667pt.
 
 <./img/vff-gui.png, id=37, 205.5178pt x 243.91125pt>
 File: ./img/vff-gui.png Graphic file (type png)
  <use ./img/vff-gui.png>
-Package pdftex.def Info: ./img/vff-gui.png used on input line 91.
+Package pdftex.def Info: ./img/vff-gui.png used on input line 93.
 (pdftex.def)             Requested size: 76.1372pt x 90.36111pt.
 File: template/gsyc2.jpg Graphic file (type jpg)
 
 <use template/gsyc2.jpg>
-Package pdftex.def Info: template/gsyc2.jpg used on input line 93.
+Package pdftex.def Info: template/gsyc2.jpg used on input line 96.
 (pdftex.def)             Requested size: 37.90598pt x 19.91684pt.
 File: template/peloto.png Graphic file (type png)
  <use template/peloto.png>
-Package pdftex.def Info: template/peloto.png used on input line 93.
+Package pdftex.def Info: template/peloto.png used on input line 96.
 (pdftex.def)             Requested size: 15.785pt x 19.91684pt.
 
 Overfull \vbox (0.14795pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 96.
 
 [4
 
  <./img/vff-gazebo.png> <./img/vff-gui.png>]
 
-Package xcolor Warning: Incompatible color definition on input line 96.
+Package xcolor Warning: Incompatible color definition on input line 99.
 
 <./img/followline-world.png, id=44, 687.56876pt x 461.725pt>
 File: ./img/followline-world.png Graphic file (type png)
 
 <use ./img/followline-world.png>
-Package pdftex.def Info: ./img/followline-world.png used on input line 103.
+Package pdftex.def Info: ./img/followline-world.png used on input line 106.
 (pdftex.def)             Requested size: 143.13832pt x 96.11966pt.
 
 <./img/kobukiMontmelo.png, id=45, 298.11375pt x 177.66376pt>
 File: ./img/kobukiMontmelo.png Graphic file (type png)
 
 <use ./img/kobukiMontmelo.png>
-Package pdftex.def Info: ./img/kobukiMontmelo.png used on input line 106.
+Package pdftex.def Info: ./img/kobukiMontmelo.png used on input line 109.
 (pdftex.def)             Requested size: 161.4105pt x 96.19453pt.
 
-Overfull \hbox (2.2222pt too wide) in paragraph at lines 102--108
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 105--111
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--108
+Underfull \hbox (badness 10000) in paragraph at lines 105--111
 
  []
 
 File: template/gsyc2.jpg Graphic file (type jpg)
 <use template/gsyc2.jpg>
-Package pdftex.def Info: template/gsyc2.jpg used on input line 108.
+Package pdftex.def Info: template/gsyc2.jpg used on input line 111.
 (pdftex.def)             Requested size: 37.90598pt x 19.91684pt.
 File: template/peloto.png Graphic file (type png)
  <use template/peloto.png>
-Package pdftex.def Info: template/peloto.png used on input line 108.
+Package pdftex.def Info: template/peloto.png used on input line 111.
 (pdftex.def)             Requested size: 15.785pt x 19.91684pt.
 
 Overfull \vbox (0.14795pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 111.
 
 [5
 
  <./img/followline-world.png> <./img/kobukiMontmelo.png>]
 
-Package xcolor Warning: Incompatible color definition on input line 112.
+Package xcolor Warning: Incompatible color definition on input line 115.
 
 File: template/gsyc2.jpg Graphic file (type jpg)
 <use template/gsyc2.jpg>
-Package pdftex.def Info: template/gsyc2.jpg used on input line 118.
+Package pdftex.def Info: template/gsyc2.jpg used on input line 121.
 (pdftex.def)             Requested size: 37.90598pt x 19.91684pt.
 File: template/peloto.png Graphic file (type png)
  <use template/peloto.png>
-Package pdftex.def Info: template/peloto.png used on input line 118.
+Package pdftex.def Info: template/peloto.png used on input line 121.
 (pdftex.def)             Requested size: 15.785pt x 19.91684pt.
 
 Overfull \vbox (0.14795pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 121.
 
 [6
 
 ]
 
-Package xcolor Warning: Incompatible color definition on input line 123.
+Package xcolor Warning: Incompatible color definition on input line 126.
 
 
-Package xcolor Warning: Incompatible color definition on input line 124.
+Package xcolor Warning: Incompatible color definition on input line 127.
 
 <./img/InterfazBlender01.png, id=55, 1593.955pt x 808.01875pt>
 File: ./img/InterfazBlender01.png Graphic file (type png)
 
 <use ./img/InterfazBlender01.png>
-Package pdftex.def Info: ./img/InterfazBlender01.png used on input line 130.
+Package pdftex.def Info: ./img/InterfazBlender01.png used on input line 133.
 (pdftex.def)             Requested size: 182.73116pt x 92.63046pt.
 File: template/gsyc2.jpg Graphic file (type jpg)
  <use template/gsyc2.jpg>
-Package pdftex.def Info: template/gsyc2.jpg used on input line 133.
+Package pdftex.def Info: template/gsyc2.jpg used on input line 136.
 (pdftex.def)             Requested size: 37.90598pt x 19.91684pt.
 File: template/peloto.png Graphic file (type png)
 
 <use template/peloto.png>
-Package pdftex.def Info: template/peloto.png used on input line 133.
+Package pdftex.def Info: template/peloto.png used on input line 136.
 (pdftex.def)             Requested size: 15.785pt x 19.91684pt.
 
 Overfull \vbox (0.14795pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 136.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 136.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 136.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 136.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 136.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 136.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 136.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 136.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 136.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 136.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 136.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 136.
 
 [7
 
  <./img/InterfazBlender01.png (PNG copy)>]
 
-Package xcolor Warning: Incompatible color definition on input line 136.
+Package xcolor Warning: Incompatible color definition on input line 139.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 139.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 142.
 
 
 <./img/ros.png, id=60, 1686.3pt x 1053.9375pt>
 File: ./img/ros.png Graphic file (type png)
  <use ./img/ros.png>
-Package pdftex.def Info: ./img/ros.png used on input line 143.
+Package pdftex.def Info: ./img/ros.png used on input line 146.
 (pdftex.def)             Requested size: 182.73116pt x 114.19664pt.
 File: template/gsyc2.jpg Graphic file (type jpg)
 
 <use template/gsyc2.jpg>
-Package pdftex.def Info: template/gsyc2.jpg used on input line 146.
+Package pdftex.def Info: template/gsyc2.jpg used on input line 149.
 (pdftex.def)             Requested size: 37.90598pt x 19.91684pt.
 File: template/peloto.png Graphic file (type png)
  <use template/peloto.png>
-Package pdftex.def Info: template/peloto.png used on input line 146.
+Package pdftex.def Info: template/peloto.png used on input line 149.
 (pdftex.def)             Requested size: 15.785pt x 19.91684pt.
 
 Overfull \vbox (0.14795pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 149.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 149.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 149.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 149.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 149.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 149.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 149.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 149.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 149.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 149.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 149.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 149.
 
 [8
 
  <./img/ros.png>]
 
-Package xcolor Warning: Incompatible color definition on input line 149.
+Package xcolor Warning: Incompatible color definition on input line 152.
 
 <./img/ariac01.png, id=66, 997.7275pt x 548.0475pt>
 File: ./img/ariac01.png Graphic file (type png)
  <use ./img/ariac01.png>
-Package pdftex.def Info: ./img/ariac01.png used on input line 154.
+Package pdftex.def Info: ./img/ariac01.png used on input line 157.
 (pdftex.def)             Requested size: 182.73116pt x 100.36696pt.
 File: template/gsyc2.jpg Graphic file (type jpg)
 
 <use template/gsyc2.jpg>
-Package pdftex.def Info: template/gsyc2.jpg used on input line 158.
+Package pdftex.def Info: template/gsyc2.jpg used on input line 160.
 (pdftex.def)             Requested size: 37.90598pt x 19.91684pt.
 File: template/peloto.png Graphic file (type png)
  <use template/peloto.png>
-Package pdftex.def Info: template/peloto.png used on input line 158.
+Package pdftex.def Info: template/peloto.png used on input line 160.
 (pdftex.def)             Requested size: 15.785pt x 19.91684pt.
 
 Overfull \vbox (0.14795pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 158.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 158.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 158.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 158.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 158.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 158.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 158.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 158.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 158.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 158.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 158.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 158.
+(babel)             in language  on input line 160.
 
 [9
 
  <./img/ariac01.png>]
 
+Package xcolor Warning: Incompatible color definition on input line 165.
+
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 169
+.
+LaTeX Font Info:    No file OMScmss.fd. on input line 169.
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 169.
+
+File: template/gsyc2.jpg Graphic file (type jpg)
+<use template/gsyc2.jpg>
+Package pdftex.def Info: template/gsyc2.jpg used on input line 174.
+(pdftex.def)             Requested size: 37.90598pt x 19.91684pt.
+File: template/peloto.png Graphic file (type png)
+ <use template/peloto.png>
+Package pdftex.def Info: template/peloto.png used on input line 174.
+(pdftex.def)             Requested size: 15.785pt x 19.91684pt.
+
+Overfull \vbox (0.14795pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 174.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 174.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 174.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 174.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 174.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 174.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 174.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 174.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 174.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 174.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 174.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 174.
+
+[10
+
+] <./img/graficof1.png, id=76, 834.11626pt x 486.81876pt>
+File: ./img/graficof1.png Graphic file (type png)
+
+<use ./img/graficof1.png>
+Package pdftex.def Info: ./img/graficof1.png used on input line 179.
+(pdftex.def)             Requested size: 304.54884pt x 177.74307pt.
+File: template/gsyc2.jpg Graphic file (type jpg)
+ <use template/gsyc2.jpg>
+Package pdftex.def Info: template/gsyc2.jpg used on input line 182.
+(pdftex.def)             Requested size: 37.90598pt x 19.91684pt.
+File: template/peloto.png Graphic file (type png)
+ <use template/peloto.png>
+Package pdftex.def Info: template/peloto.png used on input line 182.
+(pdftex.def)             Requested size: 15.785pt x 19.91684pt.
+
+Overfull \vbox (0.14795pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 182.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 182.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 182.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 182.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 182.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 182.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 182.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 182.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 182.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 182.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 182.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 182.
+
+[11
+
+ <./img/graficof1.png>]
+<./img/InterfazBlender05.png, id=81, 343.2825pt x 181.67876pt>
+File: ./img/InterfazBlender05.png Graphic file (type png)
+
+<use ./img/InterfazBlender05.png>
+Package pdftex.def Info: ./img/InterfazBlender05.png used on input line 187.
+(pdftex.def)             Requested size: 137.04604pt x 72.52882pt.
+
+<./img/mas.jpg, id=82, 628.3475pt x 628.3475pt>
+File: ./img/mas.jpg Graphic file (type jpg)
+ <use ./img/mas.jpg>
+Package pdftex.def Info: ./img/mas.jpg used on input line 194.
+(pdftex.def)             Requested size: 15.22836pt x 15.22542pt.
+
+<./img/CircuitoMonaco.png, id=83, 2007.5pt x 2093.8225pt>
+File: ./img/CircuitoMonaco.png Graphic file (type png)
+
+<use ./img/CircuitoMonaco.png>
+Package pdftex.def Info: ./img/CircuitoMonaco.png used on input line 198.
+(pdftex.def)             Requested size: 167.50279pt x 174.69777pt.
+
+Overfull \hbox (34.90115pt too wide) in paragraph at lines 186--203
+[]$[]$ $[]$ $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--203
+
+ []
+
+File: template/gsyc2.jpg Graphic file (type jpg)
+<use template/gsyc2.jpg>
+Package pdftex.def Info: template/gsyc2.jpg used on input line 203.
+(pdftex.def)             Requested size: 37.90598pt x 19.91684pt.
+File: template/peloto.png Graphic file (type png)
+ <use template/peloto.png>
+Package pdftex.def Info: template/peloto.png used on input line 203.
+(pdftex.def)             Requested size: 15.785pt x 19.91684pt.
+
+Overfull \vbox (0.14795pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 203.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 203.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 203.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 203.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 203.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 203.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 203.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 203.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 203.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 203.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 203.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 203.
+
+[12
+
+ <./img/InterfazBlender05.png> <./img/mas.jpg> <./img/CircuitoMonaco.png>]
+<./img/MonacoTrazado.png, id=90, 960.58875pt x 819.06pt>
+File: ./img/MonacoTrazado.png Graphic file (type png)
+
+<use ./img/MonacoTrazado.png>
+Package pdftex.def Info: ./img/MonacoTrazado.png used on input line 212.
+(pdftex.def)             Requested size: 228.41162pt x 194.75372pt.
+
+
+LaTeX Warning: Slide 13 overfull by 3.40926pt on input line 214.
+
+
+Overfull \vbox (3.40926pt too high) has occurred while \output is active []
+
+File: template/gsyc2.jpg Graphic file (type jpg)
+
+<use template/gsyc2.jpg>
+Package pdftex.def Info: template/gsyc2.jpg used on input line 214.
+(pdftex.def)             Requested size: 37.90598pt x 19.91684pt.
+File: template/peloto.png Graphic file (type png)
+ <use template/peloto.png>
+Package pdftex.def Info: template/peloto.png used on input line 214.
+(pdftex.def)             Requested size: 15.785pt x 19.91684pt.
+
+Overfull \vbox (0.14795pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 214.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 214.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 214.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 214.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 214.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 214.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 214.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 214.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 214.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 214.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 214.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 214.
+
+[13
+
+ <./img/MonacoTrazado.png>]
+File: template/gsyc2.jpg Graphic file (type jpg)
+ <use template/gsyc2.jpg>
+Package pdftex.def Info: template/gsyc2.jpg used on input line 223.
+(pdftex.def)             Requested size: 37.90598pt x 19.91684pt.
+File: template/peloto.png Graphic file (type png)
+
+<use template/peloto.png>
+Package pdftex.def Info: template/peloto.png used on input line 223.
+(pdftex.def)             Requested size: 15.785pt x 19.91684pt.
+
+Overfull \vbox (0.14795pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 223.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 223.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 223.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 223.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 223.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 223.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 223.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 223.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 223.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 223.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 223.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 223.
+
+[14
+
+] <./img/MonacoSegmento.png, id=99, 599.23875pt x 390.45876pt>
+File: ./img/MonacoSegmento.png Graphic file (type png)
+
+<use ./img/MonacoSegmento.png>
+Package pdftex.def Info: ./img/MonacoSegmento.png used on input line 231.
+(pdftex.def)             Requested size: 249.73227pt x 162.72252pt.
+File: template/gsyc2.jpg Graphic file (type jpg)
+ <use template/gsyc2.jpg>
+Package pdftex.def Info: template/gsyc2.jpg used on input line 234.
+(pdftex.def)             Requested size: 37.90598pt x 19.91684pt.
+File: template/peloto.png Graphic file (type png)
+
+<use template/peloto.png>
+Package pdftex.def Info: template/peloto.png used on input line 234.
+(pdftex.def)             Requested size: 15.785pt x 19.91684pt.
+
+Overfull \vbox (0.14795pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 234.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 234.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 234.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 234.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 234.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 234.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 234.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 234.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 234.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 234.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 234.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 234.
+
+[15
+
+ <./img/MonacoSegmento.png>]
+File: ./img/MonacoTrazado.png Graphic file (type png)
+ <use ./img/MonacoTrazado.png>
+Package pdftex.def Info: ./img/MonacoTrazado.png used on input line 238.
+(pdftex.def)             Requested size: 152.27441pt x 129.83998pt.
+File: ./img/mas.jpg Graphic file (type jpg)
+
+<use ./img/mas.jpg>
+Package pdftex.def Info: ./img/mas.jpg used on input line 242.
+(pdftex.def)             Requested size: 15.22836pt x 15.22542pt.
+File: ./img/MonacoSegmento.png Graphic file (type png)
+ <use ./img/MonacoSegmento.png>
+Package pdftex.def Info: ./img/MonacoSegmento.png used on input line 246.
+(pdftex.def)             Requested size: 152.27441pt x 99.21712pt.
+
+Overfull \hbox (34.90115pt too wide) in paragraph at lines 237--248
+[]$[]$ $[]$ $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--248
+
+ []
+
+File: template/gsyc2.jpg Graphic file (type jpg)
+<use template/gsyc2.jpg>
+Package pdftex.def Info: template/gsyc2.jpg used on input line 248.
+(pdftex.def)             Requested size: 37.90598pt x 19.91684pt.
+File: template/peloto.png Graphic file (type png)
+ <use template/peloto.png>
+Package pdftex.def Info: template/peloto.png used on input line 248.
+(pdftex.def)             Requested size: 15.785pt x 19.91684pt.
+
+Overfull \vbox (0.14795pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 248.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 248.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 248.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 248.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 248.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 248.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 248.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 248.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 248.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 248.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 248.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 248.
+
+[16
+
+] <./img/Circuito00.png, id=108, 1157.32375pt x 867.24pt>
+File: ./img/Circuito00.png Graphic file (type png)
+
+<use ./img/Circuito00.png>
+Package pdftex.def Info: ./img/Circuito00.png used on input line 253.
+(pdftex.def)             Requested size: 249.73227pt x 187.12785pt.
+File: template/gsyc2.jpg Graphic file (type jpg)
+ <use template/gsyc2.jpg>
+Package pdftex.def Info: template/gsyc2.jpg used on input line 256.
+(pdftex.def)             Requested size: 37.90598pt x 19.91684pt.
+File: template/peloto.png Graphic file (type png)
+ <use template/peloto.png>
+Package pdftex.def Info: template/peloto.png used on input line 256.
+(pdftex.def)             Requested size: 15.785pt x 19.91684pt.
+
+Overfull \vbox (0.14795pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 256.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 256.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 256.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 256.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 256.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 256.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 256.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 256.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 256.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 256.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 256.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 256.
+
+[17
+
+ <./img/Circuito00.png>]
+File: template/gsyc2.jpg Graphic file (type jpg)
+ <use template/gsyc2.jpg>
+Package pdftex.def Info: template/gsyc2.jpg used on input line 263.
+(pdftex.def)             Requested size: 37.90598pt x 19.91684pt.
+File: template/peloto.png Graphic file (type png)
+ <use template/peloto.png>
+Package pdftex.def Info: template/peloto.png used on input line 263.
+(pdftex.def)             Requested size: 15.785pt x 19.91684pt.
+
+Overfull \vbox (0.14795pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 263.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 263.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 263.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 263.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 263.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 263.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 263.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 263.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 263.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 263.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 263.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 263.
+
+[18
+
+]
+
+Package xcolor Warning: Incompatible color definition on input line 266.
+
+File: template/gsyc2.jpg Graphic file (type jpg)
+<use template/gsyc2.jpg>
+Package pdftex.def Info: template/gsyc2.jpg used on input line 272.
+(pdftex.def)             Requested size: 37.90598pt x 19.91684pt.
+File: template/peloto.png Graphic file (type png)
+ <use template/peloto.png>
+Package pdftex.def Info: template/peloto.png used on input line 272.
+(pdftex.def)             Requested size: 15.785pt x 19.91684pt.
+
+Overfull \vbox (0.14795pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 272.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 272.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 272.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 272.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 272.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 272.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 272.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 272.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 272.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 272.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 272.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 272.
+
+[19
+
+] <./img/graficobrazo.png, id=122, 814.04124pt x 522.95375pt>
+File: ./img/graficobrazo.png Graphic file (type png)
+
+<use ./img/graficobrazo.png>
+Package pdftex.def Info: ./img/graficobrazo.png used on input line 277.
+(pdftex.def)             Requested size: 304.54884pt x 195.64435pt.
+File: template/gsyc2.jpg Graphic file (type jpg)
+ <use template/gsyc2.jpg>
+Package pdftex.def Info: template/gsyc2.jpg used on input line 280.
+(pdftex.def)             Requested size: 37.90598pt x 19.91684pt.
+File: template/peloto.png Graphic file (type png)
+
+<use template/peloto.png>
+Package pdftex.def Info: template/peloto.png used on input line 280.
+(pdftex.def)             Requested size: 15.785pt x 19.91684pt.
+
+Overfull \vbox (0.14795pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 280.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 280.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 280.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 280.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 280.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 280.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 280.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 280.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 280.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 280.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 280.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 280.
+
+[20
+
+ <./img/graficobrazo.png>]
+
 *******************************************************
 ***** !! PRINT THIS DOCUMENT IN LANDSCAPE MODE !! *****
 *******************************************************
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 160.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 282.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 282.
 (./presentacion.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 160.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 160.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 282.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 282.
 Package rerunfilecheck Info: File `presentacion.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1589,13 +2121,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 16451 strings out of 493029
- 262971 string characters out of 6136235
+ 16511 strings out of 493029
+ 264108 string characters out of 6136235
  370550 words of memory out of 5000000
- 19729 multiletter control sequences out of 15000+600000
- 7848 words of font info for 27 fonts, out of 8000000 for 9000
+ 19767 multiletter control sequences out of 15000+600000
+ 8302 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,10n,40p,521b,610s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,10n,40p,521b,648s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb></usr/share/tex
@@ -1605,11 +2137,12 @@ ist/fonts/type1/public/amsfonts/cm/cmsl8.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsy5.pfb>
-Output written on presentacion.pdf (10 pages, 2700998 bytes).
+/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy5.pfb>
+Output written on presentacion.pdf (21 pages, 3253800 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 170 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
+ 22 named destinations out of 1000 (max. 500000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -21,6 +21,7 @@
 \usepackage{listings}
 \usepackage{multirow}
 
+\pretolerance=100
 
 \title{APORTES AL ENTORNO DOCENTE DE
 ROBÓTICA JDEROBOT-ACADEMY}
@@ -60,7 +61,7 @@ ROBÓTICA JDEROBOT-ACADEMY}
 
 \begin{hslide}
 	\slsubsect{JdeRobot-Academy}
-	\begin{minipage}[t]{0.6\textwidth}
+	\begin{minipage}{0.6\textwidth}
 		\begin{itemize}
 			\item Entorno docente de robótica universitaria orientado al aprendizaje práctico.
 			\item Énfasis en la programación de la inteligencia de los robots. 
@@ -68,7 +69,7 @@ ROBÓTICA JDEROBOT-ACADEMY}
 			\item Utiliza Gazebo y Python.
 		\end{itemize}
 	\end{minipage}
-	\begin{minipage}[t]{0.4\textwidth}
+	\begin{minipage}{0.4\textwidth}
 		\begin{center}
 			\begin{figure}
 				\includegraphics[width=0.8\textwidth]{esquemapracticas02.png}
@@ -84,12 +85,14 @@ ROBÓTICA JDEROBOT-ACADEMY}
 		\item Esquivar obstáculos.
 		\item Algoritmo de navegación local (VFF).
 	\end{itemize}
-	\begin{minipage}[t]{0.55\textwidth}
-		\includegraphics[width=\textwidth]{vff-gazebo.png}
-	\end{minipage}
-	\begin{minipage}[t]{0.25\textwidth}
-		\includegraphics[width=\textwidth]{vff-gui.png}
-	\end{minipage}
+	\begin{center}
+		\begin{minipage}[t]{0.55\textwidth}
+			\includegraphics[width=\textwidth]{vff-gazebo.png}
+		\end{minipage}
+		\begin{minipage}[t]{0.25\textwidth}
+			\includegraphics[width=\textwidth]{vff-gui.png}
+		\end{minipage}
+	\end{center}
 \end{hslide}
 
 \begin{hslide}
@@ -136,7 +139,7 @@ ROBÓTICA JDEROBOT-ACADEMY}
 	\slsubsect{Gazebo y ROS}
 	\begin{itemize}
 		\item \textbf{Gazebo}: Simula sensores, actuadores, robots,... en mundos virtuales.
-		\item \textbf{ROS}: Permite comunicaciones \textit{cross-language} y \textit{cross-platform}.
+		\item \textbf{ROS}: Es un \textit{middleware} para robots.
 	\end{itemize}
 	\begin{center}
 		\begin{figure}
@@ -154,7 +157,126 @@ ROBÓTICA JDEROBOT-ACADEMY}
 			\includegraphics[width=0.6\textwidth]{ariac01.png}
 		\end{figure}
 	\end{center}
-	
+\end{hslide}
+
+
+%%--------------------------------------------------------------
+\begin{hslide}
+	\slsect{Circuito de carreras de Fórmula 1}
+	\begin{itemize}
+		\item Reconstruir el circuito de Mónaco de forma que se pueda utilizar en:
+		\begin{itemize}
+			\item Práctica sigue línea.
+			\item Práctica navegación local.
+		\end{itemize}
+		\item Creación de mundos para Gazebo que sigan el esquema de las practicas.
+	\end{itemize}
+\end{hslide}
+
+\begin{hslide}
+	\begin{center}
+		\begin{figure}
+			\includegraphics[width=\textwidth]{graficof1.png}
+		\end{figure}
+	\end{center}
+\end{hslide}
+
+
+\begin{hslide}
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{InterfazBlender05.png}
+		\begin{center}
+			Curva Bezier
+		\end{center}
+	\end{minipage}
+	\begin{minipage}{0.1\textwidth}
+		\begin{center}
+			\includegraphics[width=0.5\textwidth]{mas.jpg}
+		\end{center}
+	\end{minipage}
+	\begin{minipage}{0.55\textwidth}
+		\includegraphics[width=\textwidth]{CircuitoMonaco.png}
+		\begin{center}
+			Plano del circuito
+		\end{center}
+	\end{minipage}
+\end{hslide}
+
+
+\begin{hslide}
+	\begin{center}
+		\begin{figure}
+			\begin{center}
+				Curva del trazado
+			\end{center}
+			\includegraphics[width=0.75\textwidth]{MonacoTrazado.png}
+		\end{figure}
+	\end{center}
+\end{hslide}
+
+\begin{hslide}
+**************************************************
+
+Modelar y aplicar texturas
+
+**************************************************
+\end{hslide}
+
+\begin{hslide}
+	\begin{center}
+		\begin{figure}
+			\begin{center}
+				Segmento del circuito
+			\end{center}
+			\includegraphics[width=0.82\textwidth]{MonacoSegmento.png}
+		\end{figure}
+	\end{center}
+\end{hslide}
+
+\begin{hslide}
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MonacoTrazado.png}
+	\end{minipage}
+	\begin{minipage}{0.1\textwidth}
+		\begin{center}
+			\includegraphics[width=0.5\textwidth]{mas.jpg}
+		\end{center}
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MonacoSegmento.png}
+	\end{minipage}
+\end{hslide}
+
+\begin{hslide}
+	\begin{center}
+		\begin{figure}
+			\includegraphics[width=0.82\textwidth]{Circuito00.png}
+		\end{figure}
+	\end{center}
+\end{hslide}
+
+
+\begin{hslide}
+	\begin{itemize}
+		\item 
+	\end{itemize}
+\end{hslide}
+
+\begin{hslide}
+	\slsect{Brazo robótico}
+	\begin{itemize}
+		\item 
+
+		\item 
+	\end{itemize}
+\end{hslide}
+
+\begin{hslide}
+	\begin{center}
+		\begin{figure}
+			\includegraphics[width=\textwidth]{graficobrazo.png}
+		\end{figure}
+	\end{center}
 \end{hslide}
 
 \end{document}
