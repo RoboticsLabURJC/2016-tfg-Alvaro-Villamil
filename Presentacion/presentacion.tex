@@ -150,8 +150,8 @@ ROBÓTICA JDEROBOT-ACADEMY}
 
 \begin{hslide}
 	\slsubsect{ARIAC}
-		\begin{center}(Agile Robotics for Industrial Automation Competition).	\end{center}
-		Competición para probar la agilidad de los sistemas robóticos industriales.
+	\begin{center}(Agile Robotics for Industrial Automation Competition). \end{center}
+	Competición para probar la agilidad de los sistemas robóticos industriales.
 	\begin{center}
 		\begin{figure}
 			\includegraphics[width=0.6\textwidth]{ariac01.png}
@@ -174,6 +174,7 @@ ROBÓTICA JDEROBOT-ACADEMY}
 \end{hslide}
 
 \begin{hslide}
+	\slsubsect{Esquema de componentes}
 	\begin{center}
 		\begin{figure}
 			\includegraphics[width=\textwidth]{graficof1.png}
@@ -183,6 +184,7 @@ ROBÓTICA JDEROBOT-ACADEMY}
 
 
 \begin{hslide}
+	\slsubsect{Circuito plano}
 	\begin{minipage}{0.45\textwidth}
 		\includegraphics[width=\textwidth]{InterfazBlender05.png}
 		\begin{center}
@@ -194,7 +196,7 @@ ROBÓTICA JDEROBOT-ACADEMY}
 			\includegraphics[width=0.5\textwidth]{mas.jpg}
 		\end{center}
 	\end{minipage}
-	\begin{minipage}{0.55\textwidth}
+	\begin{minipage}{0.5\textwidth}
 		\includegraphics[width=\textwidth]{CircuitoMonaco.png}
 		\begin{center}
 			Plano del circuito
@@ -215,11 +217,16 @@ ROBÓTICA JDEROBOT-ACADEMY}
 \end{hslide}
 
 \begin{hslide}
-**************************************************
-
-Modelar y aplicar texturas
-
-**************************************************
+	\begin{itemize}
+	\item Modelamos un segmento de circuito. Creamos:
+	\begin{itemize}
+		\item Carretera.
+		\item Vallas.
+		\item Aceras.
+	\end{itemize}
+	\item Texturizamos cada zona.
+	\item Asignamos materiales a las superficies.
+\end{itemize}
 \end{hslide}
 
 \begin{hslide}
@@ -234,7 +241,10 @@ Modelar y aplicar texturas
 \end{hslide}
 
 \begin{hslide}
-	\begin{minipage}{0.5\textwidth}
+	\begin{center}
+		Aplicamos modificadores:
+	\end{center}
+	\begin{minipage}{0.45\textwidth}
 		\includegraphics[width=\textwidth]{MonacoTrazado.png}
 	\end{minipage}
 	\begin{minipage}{0.1\textwidth}
@@ -242,41 +252,256 @@ Modelar y aplicar texturas
 			\includegraphics[width=0.5\textwidth]{mas.jpg}
 		\end{center}
 	\end{minipage}
-	\begin{minipage}{0.5\textwidth}
+	\begin{minipage}{0.45\textwidth}
 		\includegraphics[width=\textwidth]{MonacoSegmento.png}
 	\end{minipage}
 \end{hslide}
 
 \begin{hslide}
 	\begin{center}
+		Circuito modelado:
 		\begin{figure}
 			\includegraphics[width=0.82\textwidth]{Circuito00.png}
 		\end{figure}
 	\end{center}
 \end{hslide}
 
-
-\begin{hslide}
-	\begin{itemize}
-		\item 
-	\end{itemize}
-\end{hslide}
-
-\begin{hslide}
-	\slsect{Brazo robótico}
-	\begin{itemize}
-		\item 
-
-		\item 
-	\end{itemize}
-\end{hslide}
-
 \begin{hslide}
 	\begin{center}
+		Detalle del circuito modelado:
 		\begin{figure}
-			\includegraphics[width=\textwidth]{graficobrazo.png}
+			\includegraphics[width=0.82\textwidth]{Circuito01.png}
 		\end{figure}
 	\end{center}
 \end{hslide}
+
+\begin{hslide}
+	\begin{minipage}{0.5\textwidth}
+		\begin{itemize}
+			\item Añadimos fondo al circuito
+			\item Texturizamos de forma realista
+		\end{itemize}
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MonacoPlano1.jpg}
+	\end{minipage}
+\end{hslide}
+
+\begin{hslide}
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MonacoPlano3.png}
+	\end{minipage}
+	\begin{minipage}{0.515\textwidth}
+		\includegraphics[width=\textwidth]{MonacoPlano9.png}
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MonacoPlano10.png}
+	\end{minipage}
+	\begin{minipage}{0.53\textwidth}
+		\includegraphics[width=\textwidth]{MonacoPlano2.png}
+	\end{minipage}
+\end{hslide}
+
+\begin{hslide}
+	\slsubsect{Circuito con elevaciones}
+	\begin{itemize}
+		\item Creamos \textit{mesh} y esculpimos el fondo.
+		\item Modelamos y texturizamos trazado.
+		\item “Modificamos” el trazado con \textit{mesh}.
+		\item Texturizamos el circuito.
+	\end{itemize}
+	\begin{center}
+		\begin{figure}
+			\includegraphics[width=\textwidth]{MonacoElev05.png}
+		\end{figure}
+	\end{center}
+\end{hslide}
+
+\begin{hslide}
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MonacoElev01.png}
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MonacoElev02.png}
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MonacoElev03.png}
+	\end{minipage}
+	\begin{minipage}{0.51\textwidth}
+		\includegraphics[width=\textwidth]{MonacoElev04.png}
+	\end{minipage}
+\end{hslide}
+
+\begin{hslide}
+	\slsubsect{Circuitos con línea roja}
+	Modificamos la textura del asfalto pintando la línea roja.
+	
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{monacolinea.png}
+	\end{minipage}
+	\begin{minipage}{0.51\textwidth}
+		\includegraphics[width=\textwidth]{monacoelevlinea.png}
+	\end{minipage}
+\end{hslide}
+
+\begin{hslide}
+	\slsubsect{Circuitos en las prácticas}
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MonacoElev07.png}
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MonacoElev08.png}
+	\end{minipage}
+\end{hslide}
+
+
+
+
+%%--------------------------------------------------------------
+\begin{hslide}
+	\slsect{Brazo robótico}
+	\begin{minipage}{0.6\textwidth}
+		\begin{itemize}
+			\item Buscamos brazo que reuna requisitos:
+			\begin{itemize}
+				\item Gazebo 7.
+				\item ROS Kinetic.
+			\end{itemize}
+			\item Elegimos escenario ARIAC:
+			\begin{itemize}
+				\item UR10
+			\end{itemize}
+		\end{itemize}
+	\end{minipage}
+	\begin{minipage}{0.4\textwidth}
+		\includegraphics[width=\textwidth]{ur10.png}
+	\end{minipage}
+\end{hslide}
+
+\begin{hslide}
+	\slsubsect{Esquema de componentes}
+	\begin{center}
+		\begin{figure}
+			\includegraphics[width=0.95\textwidth]{graficobrazo.png}
+		\end{figure}
+	\end{center}
+\end{hslide}
+
+\begin{hslide}
+	\slsubsect{ROS}
+	Elementos básicos:
+	\begin{itemize}
+		\item \textbf{Nodos}: Procesos ejecutables. Se comunican entre sí:
+		\begin{itemize}
+			\item \textbf{}: Publica en topics.
+			\item \textit{Subscriber}: Recibe de topics.
+		\end{itemize}
+		\item \textbf{\textit{Topics}}: Canales de comunicación entre nodos de tipado fuerte. 
+		\item \textbf{Mensajes}: Estructuras de datos que se envían por los topics.
+	\end{itemize}
+	Se organiza en grafo.
+\end{hslide}
+
+
+\begin{hslide}
+	\slsubsect{ARIAC en ROS}
+	\begin{center}
+		\begin{figure}
+			\includegraphics[width=\textwidth]{Brazo10.png}
+		\end{figure}
+	\end{center}
+\end{hslide}
+
+\begin{hslide}
+	\slsubsect{\textit{Topics} y mensajes importantes}
+\begin{itemize}
+	\item \textbf{/ariac/joint\_states}: Publica las posiciones de las articulaciones del brazo.
+	\begin{itemize}
+		\item Mensaje: \textit{sensor\_msgs/JointState Message}.
+	\end{itemize}
+	\item \textbf{/ariac/arm/command}: Recibe la posición a la que mover el brazo.
+	\begin{itemize}
+		\item Mensaje: \textit{trajectory\_msgs/JointTrajectory Message}.
+	\end{itemize}
+\end{itemize}
+\end{hslide}
+
+\begin{hslide}
+	\slsubsect{Articulaciones del brazo}
+	\begin{center}
+		\begin{figure}
+			\includegraphics[width=0.8\textwidth]{brazoarticulaciones.jpg}
+		\end{figure}
+	\end{center}
+\end{hslide}
+
+\begin{hslide}
+	\slsubsect{Mensaje de posición}
+	\begin{center}
+		\begin{figure}
+			\includegraphics[width=0.9\textwidth]{mensajestate.png}
+		\end{figure}
+	\end{center}
+\end{hslide}
+
+\begin{hslide}
+	\slsubsect{Mensaje de orden}
+	\begin{center}
+		\begin{figure}
+			\includegraphics[width=0.8\textwidth]{mensajecommand.png}
+		\end{figure}
+	\end{center}
+\end{hslide}
+
+\begin{hslide}
+	\slsubsect{Teleoperador}
+	\begin{itemize}
+		\item \textbf{Bajo nivel}: Actúa directamente sobre las articulaciones.
+		\item \textbf{Interfaz gráfica}: Construida con Qt, manejo intuitivo.
+		\item \textbf{Python}: Programado en Python, compatible con ROS y JdeRobot.
+	\end{itemize}
+	\begin{center}
+		\begin{figure}
+			\includegraphics[width=\textwidth]{mando.png}
+		\end{figure}
+	\end{center}
+\end{hslide}
+
+%%---------------------------------------------------------------
+\begin{hslide}
+	\slsect{Conclusiones}
+	\begin{itemize}
+		\item \textbf{Objetivo cumplido}: Ampliar y mejorar la colección de prácticas de JdeRobot-Academy.
+		\begin{itemize}
+			\item Mundo de Gazebo con el Circuito de Mónaco realista.
+			\item Teleoperador para brazo robótico
+		\end{itemize}
+		\item Preparado para las últimas versiones de JdeRobot (5.5), Gazebo (7) y ROS (Kinetic).
+	\end{itemize}
+	\vspace{0.5cm}
+	Trabajos futuros:
+	\begin{itemize}
+		\item Mejora del diseño del Fórmula 1.
+		\item Uso de planificadores de movimiento articulado.
+		\item Desarrollo de práctica \textit{pick\&place}.
+	\end{itemize}
+\end{hslide}
+
+
+\begin{hslide}
+	\slsect{Enlaces}
+	\begin{itemize}
+		\item Mediawiki: \url{http://jderobot.org/Avillamil-tfg}
+		\item Repositorio:
+		
+		\url{https://github.com/RoboticsURJC-students/2016-tfg-Alvaro-Villamil}
+	\end{itemize}
+\end{hslide}
+
+
+
+
+
+
 
 \end{document}
