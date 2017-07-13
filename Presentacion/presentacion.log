@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.6.6)  13 JUL 2017 15:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.6.6)  13 JUL 2017 15:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1427,43 +1427,50 @@ File: ./img/InterfazBlender01.png Graphic file (type png)
 
 <use ./img/InterfazBlender01.png>
 Package pdftex.def Info: ./img/InterfazBlender01.png used on input line 133.
-(pdftex.def)             Requested size: 182.73116pt x 92.63046pt.
+(pdftex.def)             Requested size: 243.64pt x 123.50317pt.
+
+
+LaTeX Warning: Slide 7 overfull by 12.2637pt on input line 135.
+
+
+Overfull \vbox (4.71332pt too high) has occurred while \output is active []
+
 File: template/gsyc2.jpg Graphic file (type jpg)
- <use template/gsyc2.jpg>
-Package pdftex.def Info: template/gsyc2.jpg used on input line 136.
+
+<use template/gsyc2.jpg>
+Package pdftex.def Info: template/gsyc2.jpg used on input line 135.
 (pdftex.def)             Requested size: 37.90598pt x 19.91684pt.
 File: template/peloto.png Graphic file (type png)
-
-<use template/peloto.png>
-Package pdftex.def Info: template/peloto.png used on input line 136.
+ <use template/peloto.png>
+Package pdftex.def Info: template/peloto.png used on input line 135.
 (pdftex.def)             Requested size: 15.785pt x 19.91684pt.
 
 Overfull \vbox (0.14795pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 135.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 135.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 135.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 135.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 135.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 135.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 135.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 135.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 135.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 135.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 135.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 135.
 
 [7
 
@@ -1480,7 +1487,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10> not available
 File: ./img/ros.png Graphic file (type png)
  <use ./img/ros.png>
 Package pdftex.def Info: ./img/ros.png used on input line 146.
-(pdftex.def)             Requested size: 182.73116pt x 114.19664pt.
+(pdftex.def)             Requested size: 213.18326pt x 133.23746pt.
 File: template/gsyc2.jpg Graphic file (type jpg)
 
 <use template/gsyc2.jpg>
@@ -1528,7 +1535,7 @@ Package xcolor Warning: Incompatible color definition on input line 152.
 File: ./img/ariac01.png Graphic file (type png)
  <use ./img/ariac01.png>
 Package pdftex.def Info: ./img/ariac01.png used on input line 157.
-(pdftex.def)             Requested size: 182.73116pt x 100.36696pt.
+(pdftex.def)             Requested size: 213.18326pt x 117.10037pt.
 File: template/gsyc2.jpg Graphic file (type jpg)
 
 <use template/gsyc2.jpg>
@@ -3002,7 +3009,7 @@ Here is how much of TeX's memory you used:
  19856 multiletter control sequences out of 15000+600000
  8470 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,10n,40p,521b,648s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,10n,40p,521b,660s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb></usr/share/tex
@@ -3015,7 +3022,7 @@ ublic/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmtt10.pfb>
-Output written on presentacion.pdf (36 pages, 22907831 bytes).
+Output written on presentacion.pdf (36 pages, 22907833 bytes).
 PDF statistics:
  266 PDF objects out of 1000 (max. 8388607)
  168 compressed objects within 2 object streams
