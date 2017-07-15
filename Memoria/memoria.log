@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.6.6)  13 JUL 2017 12:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.6.6)  15 JUL 2017 12:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3466,12 +3466,12 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 34.
  [55 <./img/ur10.png>]
-<./img/graficobrazo1.png, id=901, 780.9175pt x 506.89375pt>
+<./img/graficobrazo1.png, id=901, 775.89874pt x 504.88625pt>
 File: ./img/graficobrazo1.png Graphic file (type png)
 
 <use ./img/graficobrazo1.png>
 Package pdftex.def Info: ./img/graficobrazo1.png used on input line 36.
-(pdftex.def)             Requested size: 322.6528pt x 209.42883pt.
+(pdftex.def)             Requested size: 322.6528pt x 209.95529pt.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 43.
 Package babel Info: Redefining spanish shorthand >>
@@ -4508,7 +4508,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 119.
 Here is how much of TeX's memory you used:
  12610 strings out of 493029
  181121 string characters out of 6136235
- 428417 words of memory out of 5000000
+ 428418 words of memory out of 5000000
  15349 multiletter control sequences out of 15000+600000
  11978 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -4528,7 +4528,7 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on memoria.pdf (92 pages, 37300874 bytes).
+Output written on memoria.pdf (92 pages, 37300573 bytes).
 PDF statistics:
  1414 PDF objects out of 1440 (max. 8388607)
  1221 compressed objects within 13 object streams
